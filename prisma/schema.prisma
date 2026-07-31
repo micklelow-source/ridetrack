@@ -91,6 +91,7 @@ model Park {
   longitude   Float?
   website     String?
   description String?
+  foundedYear Int?
   createdAt   DateTime  @default(now())
 
   rides    Ride[]

@@ -13,6 +13,8 @@ async function main() {
         city: park.city,
         state: park.state,
         website: park.website,
+        foundedYear: park.foundedYear,
+        description: park.description,
       },
       create: {
         slug: park.slug,
@@ -21,6 +23,8 @@ async function main() {
         city: park.city,
         state: park.state,
         website: park.website,
+        foundedYear: park.foundedYear,
+        description: park.description,
       },
     });
 

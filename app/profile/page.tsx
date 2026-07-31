@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import { auth } from "@/auth";
 import { prisma } from "@/lib/prisma";
 import { updateProfile } from "@/lib/actions";
+import { RideList } from "@/components/ride-list";
 
 export default async function ProfilePage() {
   const session = await auth();
@@ -185,27 +186,5 @@ function EmptyHint() {
       </Link>{" "}
       to start tracking.
     </p>
-  );
-}
-
-function RideList({
-  items,
-}: {
-  items: { ride: { id: string; name: string }; park: { slug: string; name: string } }[];
-}) {
-  return (
-    <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2">
-      {items.map(({ ride, park }) => (
-        <li
-          key={ride.id}
-          className="rounded-lg border border-black/10 p-3 text-sm dark:border-white/10"
-        >
-          <div className="font-medium">{ride.name}</div>
-          <Link href={`/parks/${park.slug}`} className="text-xs text-black/50 underline dark:text-white/50">
-            {park.name}
-          </Link>
-        </li>
-      ))}
-    </ul>
   );
 }

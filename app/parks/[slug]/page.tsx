@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { auth } from "@/auth";
 import { prisma } from "@/lib/prisma";
 import { getFriendIds } from "@/lib/friends";
+import { RideThumbnail } from "@/components/ride-thumbnail";
 import {
   setRideStatus,
   clearRideStatus,
@@ -100,6 +101,26 @@ export default async function ParkDetailPage({
         )}
       </div>
 
+      {(park.description || park.foundedYear) && (
+        <section className="rounded-lg border border-black/10 bg-black/[0.02] p-4 dark:border-white/10 dark:bg-white/[0.03]">
+          <h2 className="mb-1.5 text-sm font-semibold uppercase tracking-wide text-black/50 dark:text-white/50">
+            About &amp; history
+          </h2>
+          {park.foundedYear && (
+            <p className="mb-1.5 text-sm font-medium">
+              Opened in {park.foundedYear}
+              {" · "}
+              {new Date().getFullYear() - park.foundedYear} years of operation
+            </p>
+          )}
+          {park.description && (
+            <p className="text-sm leading-relaxed text-black/70 dark:text-white/70">
+              {park.description}
+            </p>
+          )}
+        </section>
+      )}
+
       {userId ? (
         <form action={checkInAction} className="flex flex-wrap items-end gap-3 rounded-lg border border-black/10 p-4 dark:border-white/10">
           <div className="flex-1 min-w-40">
@@ -154,15 +175,22 @@ export default async function ParkDetailPage({
                 key={ride.id}
                 className="flex flex-wrap items-center justify-between gap-3 rounded-lg border border-black/10 p-3 dark:border-white/10"
               >
-                <div>
-                  <div className="font-medium">
-                    {ride.name}
-                    {userStatus?.favorite && " ⭐"}
-                  </div>
-                  <div className="text-xs text-black/50 dark:text-white/50">
-                    {RIDE_TYPE_LABELS[ride.type]}
-                    {ride.manufacturer ? ` · ${ride.manufacturer}` : ""}
-                    {ride.opened ? ` · opened ${ride.opened}` : ""}
+                <div className="flex min-w-0 items-center gap-3">
+                  <RideThumbnail
+                    type={ride.type}
+                    seed={ride.slug}
+                    className="h-14 w-20 flex-shrink-0 rounded-md"
+                  />
+                  <div>
+                    <div className="font-medium">
+                      {ride.name}
+                      {userStatus?.favorite && " ⭐"}
+                    </div>
+                    <div className="text-xs text-black/50 dark:text-white/50">
+                      {RIDE_TYPE_LABELS[ride.type]}
+                      {ride.manufacturer ? ` · ${ride.manufacturer}` : ""}
+                      {ride.opened ? ` · opened ${ride.opened}` : ""}
+                    </div>
                   </div>
                 </div>
                 {userId ? (

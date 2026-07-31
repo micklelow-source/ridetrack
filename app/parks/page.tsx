@@ -129,6 +129,7 @@ export default async function ParksPage({
                 <span className="text-xs text-black/40 dark:text-white/40">
                   {park._count.rides} rides tracked
                   {session?.user?.id ? ` · ${riddenCount} ridden` : ""}
+                  {park.foundedYear ? ` · est. ${park.foundedYear}` : ""}
                 </span>
               </Link>
             </li>

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { auth } from "@/auth";
 import { prisma } from "@/lib/prisma";
 import { areFriends } from "@/lib/friends";
+import { RideList } from "@/components/ride-list";
 
 export default async function PublicProfilePage({
   params,
@@ -93,16 +94,9 @@ export default async function PublicProfilePage({
         {favorites.length === 0 ? (
           <p className="text-sm text-black/60 dark:text-white/60">None yet.</p>
         ) : (
-          <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2">
-            {favorites.map((f) => (
-              <li key={f.id} className="rounded-lg border border-black/10 p-3 text-sm dark:border-white/10">
-                <div className="font-medium">{f.ride.name}</div>
-                <Link href={`/parks/${f.ride.park.slug}`} className="text-xs text-black/50 underline dark:text-white/50">
-                  {f.ride.park.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <RideList
+            items={favorites.map((f) => ({ ride: f.ride, park: f.ride.park }))}
+          />
         )}
       </section>
 

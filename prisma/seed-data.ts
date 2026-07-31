@@ -673,4 +673,22 @@ export const parks: SeedPark[] = [
       { slug: "gale-force", name: "Gale Force", type: "ROLLER_COASTER", manufacturer: "S&S", opened: 2018 },
     ],
   },
+  {
+    slug: "canobie-lake-park",
+    name: "Canobie Lake Park",
+    chain: "INDEPENDENT",
+    city: "Salem",
+    state: "NH",
+    website: "https://www.canobie.com",
+    foundedYear: 1902,
+    description:
+      "Opened in 1902 as a trolley park on the shore of Canobie Lake, it's been run by the same family since the 1950s. Its Yankee Cannonball, relocated to the park in 1936, is one of the oldest wooden roller coasters still operating in the country.",
+    rides: [
+      { slug: "yankee-cannonball", name: "Yankee Cannonball", type: "ROLLER_COASTER", manufacturer: "Fred Church", opened: 1936 },
+      { slug: "untamed", name: "Untamed", type: "ROLLER_COASTER", manufacturer: "S&S", opened: 2019 },
+      { slug: "corkscrew", name: "Corkscrew", type: "ROLLER_COASTER", manufacturer: "Vekoma", opened: 1990 },
+      { slug: "boston-tea-party", name: "Boston Tea Party", type: "WATER_RIDE", opened: 1974 },
+      { slug: "starblaster", name: "Starblaster", type: "FLAT_RIDE", manufacturer: "HUSS", opened: 2007 },
+    ],
+  },
 ];

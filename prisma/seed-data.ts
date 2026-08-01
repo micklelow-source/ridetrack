@@ -902,4 +902,19 @@ export const parks: SeedPark[] = [
       { slug: "rampage", name: "Rampage", type: "ROLLER_COASTER", opened: 1998 },
     ],
   },
+
+  // --- State batch: Arizona ----------------------------------------------
+  {
+    slug: "castles-n-coasters",
+    name: "Castles N' Coasters",
+    chain: "INDEPENDENT",
+    city: "Phoenix",
+    state: "AZ",
+    foundedYear: 1978,
+    description:
+      "A family-owned park in Phoenix built around mini-golf castles and a small ride collection, headlined by the wooden coaster Desert Storm.",
+    rides: [
+      { slug: "desert-storm", name: "Desert Storm", type: "ROLLER_COASTER" },
+    ],
+  },
 ];

@@ -1007,4 +1007,19 @@ export const parks: SeedPark[] = [
       { slug: "canyon-blaster", name: "Canyon Blaster", type: "ROLLER_COASTER", opened: 1993 },
     ],
   },
+
+  // --- State batch: New Mexico -----------------------------------------
+  {
+    slug: "cliffs-amusement-park",
+    name: "Cliff's Amusement Park",
+    chain: "INDEPENDENT",
+    city: "Albuquerque",
+    state: "NM",
+    foundedYear: 1959,
+    description:
+      "Family-owned since it opened in 1959, Cliff's is Albuquerque's local amusement park, home to the wooden coaster New Mexico Rattler.",
+    rides: [
+      { slug: "new-mexico-rattler", name: "New Mexico Rattler", type: "ROLLER_COASTER", opened: 1997 },
+    ],
+  },
 ];

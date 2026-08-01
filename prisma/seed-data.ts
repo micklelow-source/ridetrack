@@ -1052,4 +1052,19 @@ export const parks: SeedPark[] = [
       { slug: "swamp-fox", name: "Swamp Fox", type: "ROLLER_COASTER", opened: 1966 },
     ],
   },
+
+  // --- State batch: Washington -----------------------------------------
+  {
+    slug: "wild-waves",
+    name: "Wild Waves Theme & Water Park",
+    chain: "INDEPENDENT",
+    city: "Federal Way",
+    state: "WA",
+    foundedYear: 1977,
+    description:
+      "Opened in 1977 as Enchanted Village, a children's storybook-themed park south of Seattle, later expanded into a combined theme and water park under its current name.",
+    rides: [
+      { slug: "timberhawk", name: "Timberhawk", type: "ROLLER_COASTER" },
+    ],
+  },
 ];

@@ -1067,4 +1067,19 @@ export const parks: SeedPark[] = [
       { slug: "timberhawk", name: "Timberhawk", type: "ROLLER_COASTER" },
     ],
   },
+
+  // --- State batch: West Virginia ----------------------------------------
+  {
+    slug: "camden-park",
+    name: "Camden Park",
+    chain: "INDEPENDENT",
+    city: "Huntington",
+    state: "WV",
+    foundedYear: 1903,
+    description:
+      "West Virginia's only major amusement park, opened in 1903 as a trolley park and still family-owned. Its Big Dipper wooden coaster has run since 1958.",
+    rides: [
+      { slug: "big-dipper", name: "Big Dipper", type: "ROLLER_COASTER", opened: 1958 },
+    ],
+  },
 ];

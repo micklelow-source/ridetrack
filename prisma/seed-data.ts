@@ -1037,4 +1037,19 @@ export const parks: SeedPark[] = [
       { slug: "oaks-park-carousel", name: "Oaks Park Carousel", type: "FLAT_RIDE", opened: 1912 },
     ],
   },
+
+  // --- State batch: South Carolina ---------------------------------------
+  {
+    slug: "family-kingdom-fun-park",
+    name: "Family Kingdom Fun Park",
+    chain: "INDEPENDENT",
+    city: "Myrtle Beach",
+    state: "SC",
+    foundedYear: 1966,
+    description:
+      "An oceanfront amusement park on the Myrtle Beach boardwalk, home to the Swamp Fox, a wooden coaster that has run there since the park opened in the 1960s.",
+    rides: [
+      { slug: "swamp-fox", name: "Swamp Fox", type: "ROLLER_COASTER", opened: 1966 },
+    ],
+  },
 ];

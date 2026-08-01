@@ -962,4 +962,19 @@ export const parks: SeedPark[] = [
       { slug: "wildcat", name: "Wildcat", type: "ROLLER_COASTER" },
     ],
   },
+
+  // --- State batch: Maine --------------------------------------------
+  {
+    slug: "funtown-splashtown-usa",
+    name: "Funtown Splashtown USA",
+    chain: "INDEPENDENT",
+    city: "Saco",
+    state: "ME",
+    foundedYear: 1961,
+    description:
+      "Maine's largest amusement park, combining a dry ride park with an adjoining water park. Its Excalibur wooden coaster, added in 1998, is the state's tallest and fastest roller coaster.",
+    rides: [
+      { slug: "excalibur", name: "Excalibur", type: "ROLLER_COASTER", opened: 1998 },
+    ],
+  },
 ];

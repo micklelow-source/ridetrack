@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { Session } from "next-auth";
 import { auth } from "@/auth";
 import { prisma } from "@/lib/prisma";
 
@@ -13,13 +14,23 @@ const CHAIN_LABELS: Record<string, string> = {
   OTHER: "Other",
 };
 
+type SortOption = "state" | "name" | "founded";
+
+const SORT_ORDER_BY: Record<SortOption, object> = {
+  state: [{ state: "asc" }, { name: "asc" }],
+  name: [{ name: "asc" }],
+  founded: [{ foundedYear: "asc" }, { name: "asc" }],
+};
+
 export default async function ParksPage({
   searchParams,
 }: {
-  searchParams: Promise<{ q?: string; state?: string; chain?: string }>;
+  searchParams: Promise<{ q?: string; state?: string; chain?: string; sort?: string }>;
 }) {
-  const { q, state, chain } = await searchParams;
+  const { q, state, chain, sort } = await searchParams;
   const session = await auth();
+  const sortBy: SortOption =
+    sort === "name" || sort === "founded" ? sort : "state";
 
   const parks = await prisma.park.findMany({
     where: {
@@ -36,7 +47,7 @@ export default async function ParksPage({
         chain ? { chain: chain as never } : {},
       ],
     },
-    orderBy: [{ state: "asc" }, { name: "asc" }],
+    orderBy: SORT_ORDER_BY[sortBy],
     include: {
       _count: { select: { rides: true } },
       rides: {
@@ -98,6 +109,15 @@ export default async function ParksPage({
             </option>
           ))}
         </select>
+        <select
+          name="sort"
+          defaultValue={sortBy}
+          className="rounded-md border border-black/10 px-3 py-2 text-sm dark:border-white/20 dark:bg-black"
+        >
+          <option value="state">Sort: State</option>
+          <option value="name">Sort: Name</option>
+          <option value="founded">Sort: Founded year</option>
+        </select>
         <button
           type="submit"
           className="rounded-md bg-foreground px-4 py-2 text-sm font-medium text-background hover:opacity-90"
@@ -106,36 +126,26 @@ export default async function ParksPage({
         </button>
       </form>
 
-      <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-        {parks.map((park) => {
-          const riddenCount = session?.user?.id
-            ? park.rides.filter((r) => r.userStatuses.length > 0).length
-            : 0;
-          return (
-            <li key={park.id}>
-              <Link
-                href={`/parks/${park.slug}`}
-                className="flex flex-col gap-1 rounded-lg border border-black/10 p-4 hover:bg-black/5 dark:border-white/10 dark:hover:bg-white/5"
-              >
-                <div className="flex items-center justify-between">
-                  <span className="font-semibold">{park.name}</span>
-                  <span className="text-xs text-black/50 dark:text-white/50">
-                    {CHAIN_LABELS[park.chain]}
-                  </span>
-                </div>
-                <span className="text-sm text-black/60 dark:text-white/60">
-                  {park.city}, {park.state}
-                </span>
-                <span className="text-xs text-black/40 dark:text-white/40">
-                  {park._count.rides} rides tracked
-                  {session?.user?.id ? ` · ${riddenCount} ridden` : ""}
-                  {park.foundedYear ? ` · est. ${park.foundedYear}` : ""}
-                </span>
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
+      {sortBy === "state" ? (
+        Object.entries(groupByState(parks)).map(([stateCode, stateParks]) => (
+          <div key={stateCode}>
+            <h2 className="mb-2 text-xs font-semibold uppercase tracking-wide text-black/40 dark:text-white/40">
+              {stateCode} · {stateParks.length} park{stateParks.length === 1 ? "" : "s"}
+            </h2>
+            <ul className="mb-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
+              {stateParks.map((park) => (
+                <ParkItem key={park.id} park={park} session={session} />
+              ))}
+            </ul>
+          </div>
+        ))
+      ) : (
+        <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+          {parks.map((park) => (
+            <ParkItem key={park.id} park={park} session={session} />
+          ))}
+        </ul>
+      )}
 
       {parks.length === 0 && (
         <p className="text-sm text-black/60 dark:text-white/60">
@@ -143,5 +153,55 @@ export default async function ParksPage({
         </p>
       )}
     </div>
+  );
+}
+
+type ParkWithRides = Awaited<ReturnType<typeof prisma.park.findMany<{
+  include: {
+    _count: { select: { rides: true } };
+    rides: { select: { userStatuses: { select: { id: true } } } };
+  };
+}>>>[number];
+
+function groupByState(parks: ParkWithRides[]) {
+  const groups: Record<string, ParkWithRides[]> = {};
+  for (const park of parks) {
+    (groups[park.state] ??= []).push(park);
+  }
+  return groups;
+}
+
+function ParkItem({
+  park,
+  session,
+}: {
+  park: ParkWithRides;
+  session: Session | null;
+}) {
+  const riddenCount = session?.user?.id
+    ? park.rides.filter((r) => r.userStatuses.length > 0).length
+    : 0;
+  return (
+    <li>
+      <Link
+        href={`/parks/${park.slug}`}
+        className="flex flex-col gap-1 rounded-lg border border-black/10 p-4 hover:bg-black/5 dark:border-white/10 dark:hover:bg-white/5"
+      >
+        <div className="flex items-center justify-between">
+          <span className="font-semibold">{park.name}</span>
+          <span className="text-xs text-black/50 dark:text-white/50">
+            {CHAIN_LABELS[park.chain]}
+          </span>
+        </div>
+        <span className="text-sm text-black/60 dark:text-white/60">
+          {park.city}, {park.state}
+        </span>
+        <span className="text-xs text-black/40 dark:text-white/40">
+          {park._count.rides} rides tracked
+          {session?.user?.id ? ` · ${riddenCount} ridden` : ""}
+          {park.foundedYear ? ` · est. ${park.foundedYear}` : ""}
+        </span>
+      </Link>
+    </li>
   );
 }

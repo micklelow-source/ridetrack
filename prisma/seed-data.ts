@@ -977,4 +977,19 @@ export const parks: SeedPark[] = [
       { slug: "excalibur", name: "Excalibur", type: "ROLLER_COASTER", opened: 1998 },
     ],
   },
+
+  // --- State batch: Maryland -------------------------------------------
+  {
+    slug: "six-flags-america",
+    name: "Six Flags America",
+    chain: "SIX_FLAGS",
+    city: "Upper Marlboro",
+    state: "MD",
+    foundedYear: 1991,
+    description:
+      "Opened in 1991 as Wild World, later Adventure World, before Premier Parks (soon renamed Six Flags) acquired it and rebranded it Six Flags America in 1999. It's paired with the Hurricane Harbor water park.",
+    rides: [
+      { slug: "superman-ride-of-steel", name: "Superman: Ride of Steel", type: "ROLLER_COASTER", manufacturer: "Intamin", opened: 2000 },
+    ],
+  },
 ];

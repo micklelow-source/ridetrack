@@ -887,4 +887,19 @@ export const parks: SeedPark[] = [
       { slug: "big-birds-rambling-river", name: "Big Bird's Rambling River", type: "WATER_RIDE" },
     ],
   },
+
+  // --- State batch: Alabama ---------------------------------------------
+  {
+    slug: "alabama-splash-adventure",
+    name: "Alabama Splash Adventure",
+    chain: "INDEPENDENT",
+    city: "Bessemer",
+    state: "AL",
+    foundedYear: 1998,
+    description:
+      "Opened in 1998 as VisionLand near Birmingham, the park has changed hands and names several times since; it now pairs a water park with a small collection of rides including the wooden coaster Rampage.",
+    rides: [
+      { slug: "rampage", name: "Rampage", type: "ROLLER_COASTER", opened: 1998 },
+    ],
+  },
 ];

@@ -1082,4 +1082,19 @@ export const parks: SeedPark[] = [
       { slug: "big-dipper", name: "Big Dipper", type: "ROLLER_COASTER", opened: 1958 },
     ],
   },
+
+  // --- State batch: Wisconsin ------------------------------------------
+  {
+    slug: "mt-olympus",
+    name: "Mt. Olympus Water & Theme Park",
+    chain: "INDEPENDENT",
+    city: "Wisconsin Dells",
+    state: "WI",
+    foundedYear: 1998,
+    description:
+      "A Greek mythology-themed park in Wisconsin Dells, the self-proclaimed water park capital of the world, combining water slides with a handful of wooden and steel coasters.",
+    rides: [
+      { slug: "hades-360", name: "Hades 360", type: "ROLLER_COASTER", opened: 2013 },
+    ],
+  },
 ];

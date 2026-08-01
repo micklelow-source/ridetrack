@@ -947,4 +947,19 @@ export const parks: SeedPark[] = [
       { slug: "kiddie-coaster", name: "Kiddie Coaster", type: "KIDDIE" },
     ],
   },
+
+  // --- State batch: Louisiana --------------------------------------------
+  {
+    slug: "dixie-landin",
+    name: "Dixie Landin'",
+    chain: "INDEPENDENT",
+    city: "Baton Rouge",
+    state: "LA",
+    foundedYear: 1996,
+    description:
+      "A family amusement park in Baton Rouge paired with the adjoining Blue Bayou water park, opened in the 1990s and now Louisiana's main operating theme park following the 2005 closure of Six Flags New Orleans.",
+    rides: [
+      { slug: "wildcat", name: "Wildcat", type: "ROLLER_COASTER" },
+    ],
+  },
 ];

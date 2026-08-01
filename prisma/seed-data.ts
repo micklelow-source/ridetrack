@@ -691,4 +691,116 @@ export const parks: SeedPark[] = [
       { slug: "starblaster", name: "Starblaster", type: "FLAT_RIDE", manufacturer: "HUSS", opened: 2007 },
     ],
   },
+
+  // --- More independents & regional chains -----------------------------
+  {
+    slug: "six-flags-new-england",
+    name: "Six Flags New England",
+    chain: "SIX_FLAGS",
+    city: "Agawam",
+    state: "MA",
+    foundedYear: 1870,
+    description:
+      "Traces back to Gallup's Grove, a picnic ground established in 1870 along the Connecticut River, which grew into Riverside Park through the 20th century. Six Flags took over in 2000.",
+    rides: [
+      { slug: "wicked-cyclone", name: "Wicked Cyclone", type: "ROLLER_COASTER", manufacturer: "RMC", opened: 2015 },
+      { slug: "superman-the-ride", name: "Superman The Ride", type: "ROLLER_COASTER", manufacturer: "Intamin", opened: 2000 },
+    ],
+  },
+  {
+    slug: "six-flags-discovery-kingdom",
+    name: "Six Flags Discovery Kingdom",
+    chain: "SIX_FLAGS",
+    city: "Vallejo",
+    state: "CA",
+    foundedYear: 1968,
+    description:
+      "Opened in 1968 as Marine World, a marine-life and wildlife park in Redwood City before relocating to Vallejo in 1986. Six Flags began operating it in 2007, blending drive-through wildlife, marine shows, and thrill rides.",
+    rides: [
+      { slug: "medusa", name: "Medusa", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2000 },
+      { slug: "superman-ultimate-flight", name: "Superman Ultimate Flight", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2011 },
+    ],
+  },
+  {
+    slug: "elitch-gardens",
+    name: "Elitch Gardens",
+    chain: "INDEPENDENT",
+    city: "Denver",
+    state: "CO",
+    foundedYear: 1890,
+    description:
+      "Founded in 1890 as a zoological garden and amusement park by John and Mary Elitch, it was one of the first amusement parks in the American West. It relocated from its original Highlands neighborhood site to downtown Denver in 1995.",
+    rides: [
+      { slug: "twister-ii", name: "Twister II", type: "ROLLER_COASTER", opened: 1995 },
+      { slug: "sidewinder", name: "Sidewinder", type: "ROLLER_COASTER", manufacturer: "Vekoma" },
+    ],
+  },
+  {
+    slug: "michigans-adventure",
+    name: "Michigan's Adventure",
+    chain: "CEDAR_FAIR",
+    city: "Muskegon",
+    state: "MI",
+    foundedYear: 1956,
+    description:
+      "Began in 1956 as a small children's park called Deer Park Funland and expanded into a full-scale amusement park over the following decades. Cedar Fair acquired it in 2001.",
+    rides: [
+      { slug: "shivering-timbers", name: "Shivering Timbers", type: "ROLLER_COASTER", opened: 1998 },
+      { slug: "wolverine-wildcat", name: "Wolverine Wildcat", type: "ROLLER_COASTER", opened: 1988 },
+    ],
+  },
+  {
+    slug: "waldameer-park",
+    name: "Waldameer Park & Water World",
+    chain: "INDEPENDENT",
+    city: "Erie",
+    state: "PA",
+    foundedYear: 1896,
+    description:
+      "Founded in 1896 on the shore of Lake Erie next to Presque Isle State Park, Waldameer remains family-owned and free to enter — guests pay only for rides or a wristband.",
+    rides: [
+      { slug: "ravine-flyer-ii", name: "Ravine Flyer II", type: "ROLLER_COASTER", opened: 2008 },
+    ],
+  },
+  {
+    slug: "rye-playland",
+    name: "Playland",
+    chain: "INDEPENDENT",
+    city: "Rye",
+    state: "NY",
+    foundedYear: 1928,
+    description:
+      "Opened in 1928 on Long Island Sound, Playland is one of only two amusement parks in the U.S. designated a National Historic Landmark, alongside Kennywood, and is still owned and operated by Westchester County.",
+    rides: [
+      { slug: "dragon-coaster", name: "Dragon Coaster", type: "ROLLER_COASTER", opened: 1929 },
+    ],
+  },
+  {
+    slug: "story-land",
+    name: "Story Land",
+    chain: "HERSCHEND",
+    city: "Glen",
+    state: "NH",
+    foundedYear: 1954,
+    description:
+      "Opened in 1954 in New Hampshire's White Mountains as a fairy-tale themed park built for young children, Story Land joined the Herschend family of parks in 2019.",
+    rides: [
+      { slug: "polar-coaster", name: "Polar Coaster", type: "ROLLER_COASTER", opened: 2006 },
+      { slug: "antique-cars", name: "Antique Cars", type: "TRANSPORT" },
+    ],
+  },
+  {
+    slug: "legoland-florida",
+    name: "Legoland Florida",
+    chain: "OTHER",
+    city: "Winter Haven",
+    state: "FL",
+    foundedYear: 1936,
+    description:
+      "Cypress Gardens opened on this site in 1936, one of Florida's first tourist attractions and a birthplace of competitive water skiing. The current Legoland Florida rides opened in 2011, preserving parts of the historic botanical gardens within the new park.",
+    rides: [
+      { slug: "coastersaurus", name: "Coastersaurus", type: "ROLLER_COASTER", opened: 2011 },
+      { slug: "the-great-lego-race", name: "The Great LEGO Race", type: "DARK_RIDE", opened: 2017 },
+    ],
+  },
 ];

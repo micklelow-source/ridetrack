@@ -803,4 +803,88 @@ export const parks: SeedPark[] = [
       { slug: "the-great-lego-race", name: "The Great LEGO Race", type: "DARK_RIDE", opened: 2017 },
     ],
   },
+
+  // --- Batch 3: more independents + a SeaWorld family park -------------
+  {
+    slug: "adventureland-iowa",
+    name: "Adventureland",
+    chain: "INDEPENDENT",
+    city: "Altoona",
+    state: "IA",
+    foundedYear: 1974,
+    description:
+      "Opened in 1974 near Des Moines, Adventureland grew around The Dragon, a wooden roller coaster added in 1978 that remains one of its signature rides.",
+    rides: [
+      { slug: "the-dragon", name: "The Dragon", type: "ROLLER_COASTER", opened: 1978 },
+      { slug: "tornado", name: "Tornado", type: "ROLLER_COASTER", opened: 2001 },
+    ],
+  },
+  {
+    slug: "indiana-beach",
+    name: "Indiana Beach",
+    chain: "INDEPENDENT",
+    city: "Monticello",
+    state: "IN",
+    foundedYear: 1926,
+    description:
+      "Opened in 1926 on the shore of Lake Shafer, Indiana Beach combines a traditional boardwalk amusement park with lakefront resort cabins and a public beach.",
+    rides: [
+      { slug: "cornball-express", name: "Cornball Express", type: "ROLLER_COASTER", opened: 1997 },
+      { slug: "steel-hawg", name: "Steel Hawg", type: "ROLLER_COASTER", manufacturer: "S&S", opened: 2010 },
+    ],
+  },
+  {
+    slug: "quassy-amusement-park",
+    name: "Quassy Amusement Park",
+    chain: "INDEPENDENT",
+    city: "Middlebury",
+    state: "CT",
+    foundedYear: 1908,
+    description:
+      "Opened in 1908 on the shore of Lake Quassapaug, Quassy is one of the oldest amusement parks in New England and remains family-owned.",
+    rides: [
+      { slug: "wooden-warrior", name: "Wooden Warrior", type: "ROLLER_COASTER", manufacturer: "GCI", opened: 2011 },
+    ],
+  },
+  {
+    slug: "kentucky-kingdom",
+    name: "Kentucky Kingdom",
+    chain: "INDEPENDENT",
+    city: "Louisville",
+    state: "KY",
+    foundedYear: 1987,
+    description:
+      "Opened in 1987 on the Kentucky State Fairgrounds, the park closed in 2010 amid financial troubles and reopened in 2014 under new local ownership, headlined by the launch coaster Lightning Run.",
+    rides: [
+      { slug: "storm-chaser", name: "Storm Chaser", type: "ROLLER_COASTER", manufacturer: "RMC", opened: 2016 },
+      { slug: "lightning-run", name: "Lightning Run", type: "ROLLER_COASTER", manufacturer: "Chance Rides", opened: 2014 },
+    ],
+  },
+  {
+    slug: "conneaut-lake-park",
+    name: "Conneaut Lake Park",
+    chain: "INDEPENDENT",
+    city: "Conneaut Lake",
+    state: "PA",
+    foundedYear: 1892,
+    description:
+      "Opened in 1892 on the shore of Pennsylvania's largest natural glacial lake, Conneaut Lake Park is one of the oldest amusement parks in the country and has weathered multiple financial crises to stay open.",
+    rides: [
+      { slug: "blue-streak", name: "Blue Streak", type: "ROLLER_COASTER", opened: 1938 },
+    ],
+  },
+  {
+    slug: "sesame-place",
+    name: "Sesame Place",
+    chain: "SEAWORLD",
+    city: "Langhorne",
+    state: "PA",
+    foundedYear: 1980,
+    description:
+      "Opened in 1980 as the first theme park built entirely around a TV show, based on Sesame Street. SeaWorld Entertainment acquired it in 2019, and a second location opened near San Diego in 2022.",
+    rides: [
+      { slug: "vapor-trail", name: "Vapor Trail", type: "ROLLER_COASTER" },
+      { slug: "big-birds-rambling-river", name: "Big Bird's Rambling River", type: "WATER_RIDE" },
+    ],
+  },
 ];

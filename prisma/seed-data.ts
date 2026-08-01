@@ -992,4 +992,19 @@ export const parks: SeedPark[] = [
       { slug: "superman-ride-of-steel", name: "Superman: Ride of Steel", type: "ROLLER_COASTER", manufacturer: "Intamin", opened: 2000 },
     ],
   },
+
+  // --- State batch: Nevada -------------------------------------------
+  {
+    slug: "adventuredome",
+    name: "Adventuredome",
+    chain: "INDEPENDENT",
+    city: "Las Vegas",
+    state: "NV",
+    foundedYear: 1993,
+    description:
+      "A five-acre indoor theme park under a pink glass dome at Circus Circus on the Las Vegas Strip, opened in 1993. Its Canyon Blaster is the only indoor double-loop, double-corkscrew roller coaster in the United States.",
+    rides: [
+      { slug: "canyon-blaster", name: "Canyon Blaster", type: "ROLLER_COASTER", opened: 1993 },
+    ],
+  },
 ];

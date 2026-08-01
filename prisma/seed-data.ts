@@ -1022,4 +1022,19 @@ export const parks: SeedPark[] = [
       { slug: "new-mexico-rattler", name: "New Mexico Rattler", type: "ROLLER_COASTER", opened: 1997 },
     ],
   },
+
+  // --- State batch: Oregon -------------------------------------------
+  {
+    slug: "oaks-amusement-park",
+    name: "Oaks Amusement Park",
+    chain: "INDEPENDENT",
+    city: "Portland",
+    state: "OR",
+    foundedYear: 1905,
+    description:
+      "Opened in 1905 as a trolley park along the Willamette River, Oaks Park is one of the oldest continuously operating amusement parks in the country, still known for its historic carousel and roller skating rink.",
+    rides: [
+      { slug: "oaks-park-carousel", name: "Oaks Park Carousel", type: "FLAT_RIDE", opened: 1912 },
+    ],
+  },
 ];

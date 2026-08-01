@@ -932,4 +932,19 @@ export const parks: SeedPark[] = [
       { slug: "arkansas-twister", name: "Arkansas Twister", type: "ROLLER_COASTER" },
     ],
   },
+
+  // --- State batch: Delaware -------------------------------------------
+  {
+    slug: "funland",
+    name: "Funland",
+    chain: "INDEPENDENT",
+    city: "Rehoboth Beach",
+    state: "DE",
+    foundedYear: 1962,
+    description:
+      "A small, family-owned boardwalk amusement park in Rehoboth Beach, open every summer since 1962 with classic kiddie rides, an arcade, and a wooden Kiddie Coaster.",
+    rides: [
+      { slug: "kiddie-coaster", name: "Kiddie Coaster", type: "KIDDIE" },
+    ],
+  },
 ];

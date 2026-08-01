@@ -917,4 +917,19 @@ export const parks: SeedPark[] = [
       { slug: "desert-storm", name: "Desert Storm", type: "ROLLER_COASTER" },
     ],
   },
+
+  // --- State batch: Arkansas -----------------------------------------
+  {
+    slug: "magic-springs",
+    name: "Magic Springs",
+    chain: "INDEPENDENT",
+    city: "Hot Springs",
+    state: "AR",
+    foundedYear: 1978,
+    description:
+      "Opened in 1978 as Magic Springs Family Fun Park near the resort town of Hot Springs, it remains Arkansas's only major theme park, paired with the Crystal Falls water park.",
+    rides: [
+      { slug: "arkansas-twister", name: "Arkansas Twister", type: "ROLLER_COASTER" },
+    ],
+  },
 ];

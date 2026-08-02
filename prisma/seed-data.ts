@@ -383,6 +383,10 @@ export const parks: SeedPark[] = [
       { slug: "goliath-sfog", name: "Goliath", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2006 },
       { slug: "twisted-cyclone", name: "Twisted Cyclone", type: "ROLLER_COASTER", manufacturer: "RMC", opened: 2018 },
       { slug: "blue-hawk", name: "Blue Hawk", type: "ROLLER_COASTER", opened: 2023 },
+      { slug: "georgia-scorcher", name: "Georgia Scorcher", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 1998 },
+      { slug: "mind-bender-sfog", name: "Mind Bender", type: "ROLLER_COASTER", opened: 1978 },
+      { slug: "great-american-scream-machine-sfog", name: "Great American Scream Machine", type: "ROLLER_COASTER", opened: 1973 },
+      { slug: "dahlonega-mine-train", name: "Dahlonega Mine Train", type: "ROLLER_COASTER", manufacturer: "Arrow Dynamics", opened: 1978 },
     ],
   },
   {
@@ -397,6 +401,9 @@ export const parks: SeedPark[] = [
     rides: [
       { slug: "wonder-woman-golden-lasso-coaster", name: "Wonder Woman Golden Lasso Coaster", type: "ROLLER_COASTER", manufacturer: "RMC", opened: 2018 },
       { slug: "iron-rattler", name: "Iron Rattler", type: "ROLLER_COASTER", manufacturer: "RMC", opened: 2013 },
+      { slug: "poltergeist-sfft", name: "Poltergeist", type: "ROLLER_COASTER", manufacturer: "S&S", opened: 2011 },
+      { slug: "batman-the-ride-sfft", name: "Batman: The Ride", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2015 },
+      { slug: "superman-krypton-coaster", name: "Superman Krypton Coaster", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2000 },
     ],
   },
   {
@@ -411,6 +418,8 @@ export const parks: SeedPark[] = [
     rides: [
       { slug: "titan", name: "Titan", type: "ROLLER_COASTER", manufacturer: "Morgan", opened: 2001 },
       { slug: "new-texas-giant", name: "New Texas Giant", type: "ROLLER_COASTER", manufacturer: "RMC", opened: 2011 },
+      { slug: "runaway-mountain", name: "Runaway Mountain", type: "ROLLER_COASTER", opened: 1997 },
+      { slug: "batman-the-ride-sfot", name: "Batman: The Ride", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2020 },
     ],
   },
   {
@@ -426,6 +435,10 @@ export const parks: SeedPark[] = [
       { slug: "goliath-sfga", name: "Goliath", type: "ROLLER_COASTER", manufacturer: "RMC", opened: 2014 },
       { slug: "raging-bull", name: "Raging Bull", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 1999 },
       { slug: "maxx-force", name: "Maxx Force", type: "ROLLER_COASTER", manufacturer: "S&S", opened: 2019 },
+      { slug: "american-eagle", name: "American Eagle", type: "ROLLER_COASTER", opened: 1981 },
+      { slug: "viper-sfga", name: "Viper", type: "ROLLER_COASTER", opened: 1995 },
+      { slug: "batman-the-ride-sfga", name: "Batman: The Ride", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 1992 },
+      { slug: "demon-sfga", name: "Demon", type: "ROLLER_COASTER", manufacturer: "Arrow Dynamics", opened: 1980 },
     ],
   },
   {
@@ -440,6 +453,8 @@ export const parks: SeedPark[] = [
     rides: [
       { slug: "boss", name: "The Boss", type: "ROLLER_COASTER", opened: 2000 },
       { slug: "americas-thrill-ride", name: "American Thunder", type: "ROLLER_COASTER", opened: 2008 },
+      { slug: "batman-the-ride-stl", name: "Batman: The Ride", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 1995 },
+      { slug: "screamin-eagle", name: "Screamin' Eagle", type: "ROLLER_COASTER", opened: 1976 },
     ],
   },
 
@@ -863,6 +878,7 @@ export const parks: SeedPark[] = [
     rides: [
       { slug: "wicked-cyclone", name: "Wicked Cyclone", type: "ROLLER_COASTER", manufacturer: "RMC", opened: 2015 },
       { slug: "superman-the-ride", name: "Superman The Ride", type: "ROLLER_COASTER", manufacturer: "Intamin", opened: 2000 },
+      { slug: "batman-the-dark-knight-sfne", name: "Batman: The Dark Knight", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2021 },
     ],
   },
   {

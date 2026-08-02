@@ -728,6 +728,10 @@ export const parks: SeedPark[] = [
       { slug: "big-bear-mountain", name: "Big Bear Mountain", type: "ROLLER_COASTER", manufacturer: "GCI", opened: 2022 },
       { slug: "lightning-rod", name: "Lightning Rod", type: "ROLLER_COASTER", manufacturer: "RMC", opened: 2016 },
       { slug: "wild-eagle", name: "Wild Eagle", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2012 },
+      { slug: "tennessee-tornado", name: "Tennessee Tornado", type: "ROLLER_COASTER", manufacturer: "Arrow Dynamics", opened: 1999 },
+      { slug: "thunderhead", name: "Thunderhead", type: "ROLLER_COASTER", manufacturer: "GCI", opened: 2004 },
+      { slug: "firechaser-express", name: "FireChaser Express", type: "ROLLER_COASTER", opened: 2014 },
+      { slug: "mystery-mine", name: "Mystery Mine", type: "ROLLER_COASTER", manufacturer: "S&S", opened: 2007 },
     ],
   },
   {
@@ -743,6 +747,8 @@ export const parks: SeedPark[] = [
       { slug: "time-traveler", name: "Time Traveler", type: "ROLLER_COASTER", manufacturer: "Mack Rides", opened: 2018 },
       { slug: "outlaw-run", name: "Outlaw Run", type: "ROLLER_COASTER", manufacturer: "RMC", opened: 2013 },
       { slug: "powder-keg", name: "Powder Keg", type: "ROLLER_COASTER", manufacturer: "S&S", opened: 2010 },
+      { slug: "wildfire-sdc", name: "Wildfire", type: "ROLLER_COASTER", opened: 2001 },
+      { slug: "thunderation", name: "Thunderation", type: "ROLLER_COASTER", opened: 1994 },
     ],
   },
 
@@ -802,6 +808,8 @@ export const parks: SeedPark[] = [
       { slug: "phoenix", name: "Phoenix", type: "ROLLER_COASTER", opened: 1947 },
       { slug: "twister", name: "Twister", type: "ROLLER_COASTER", opened: 1999 },
       { slug: "impulse", name: "Impulse", type: "ROLLER_COASTER", manufacturer: "S&S", opened: 2015 },
+      { slug: "flying-turns", name: "Flying Turns", type: "ROLLER_COASTER", opened: 2013 },
+      { slug: "black-diamond", name: "Black Diamond", type: "ROLLER_COASTER", opened: 2007 },
     ],
   },
   {
@@ -817,6 +825,7 @@ export const parks: SeedPark[] = [
       { slug: "thunderbird", name: "Thunderbird", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2015 },
       { slug: "the-voyage", name: "The Voyage", type: "ROLLER_COASTER", manufacturer: "GCI", opened: 2006 },
       { slug: "the-raven", name: "The Raven", type: "ROLLER_COASTER", opened: 1995 },
+      { slug: "legend", name: "Legend", type: "ROLLER_COASTER", opened: 2000 },
     ],
   },
   {
@@ -950,6 +959,7 @@ export const parks: SeedPark[] = [
     rides: [
       { slug: "shivering-timbers", name: "Shivering Timbers", type: "ROLLER_COASTER", opened: 1998 },
       { slug: "wolverine-wildcat", name: "Wolverine Wildcat", type: "ROLLER_COASTER", opened: 1988 },
+      { slug: "corkscrew-mi-adventure", name: "Corkscrew", type: "ROLLER_COASTER", manufacturer: "Arrow Dynamics", opened: 1978 },
     ],
   },
   {

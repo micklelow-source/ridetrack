@@ -653,6 +653,11 @@ export const parks: SeedPark[] = [
       { slug: "iron-gwazi", name: "Iron Gwazi", type: "ROLLER_COASTER", manufacturer: "RMC", opened: 2022 },
       { slug: "cheetah-hunt", name: "Cheetah Hunt", type: "ROLLER_COASTER", manufacturer: "S&S", opened: 2011 },
       { slug: "sheikra", name: "SheiKra", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2005 },
+      { slug: "kumba", name: "Kumba", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 1993 },
+      { slug: "montu", name: "Montu", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 1996 },
+      { slug: "falcons-fury", name: "Falcon's Fury", type: "FLAT_RIDE", manufacturer: "S&S", opened: 2014 },
+      { slug: "congo-river-rapids", name: "Congo River Rapids", type: "WATER_RIDE", opened: 1980 },
+      { slug: "stanley-falls-flume", name: "Stanley Falls Flume", type: "WATER_RIDE", opened: 1979 },
     ],
   },
   {
@@ -668,6 +673,10 @@ export const parks: SeedPark[] = [
       { slug: "pantheon", name: "Pantheon", type: "ROLLER_COASTER", manufacturer: "Intamin", opened: 2022 },
       { slug: "verbolten", name: "Verbolten", type: "ROLLER_COASTER", manufacturer: "Zierer", opened: 2012 },
       { slug: "apollos-chariot", name: "Apollo's Chariot", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 1999 },
+      { slug: "alpengeist", name: "Alpengeist", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 1997 },
+      { slug: "griffon", name: "Griffon", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2007 },
+      { slug: "loch-ness-monster", name: "Loch Ness Monster", type: "ROLLER_COASTER", manufacturer: "Arrow Dynamics", opened: 1978 },
+      { slug: "tempesto", name: "Tempesto", type: "ROLLER_COASTER", manufacturer: "Premier Rides", opened: 2015 },
     ],
   },
   {
@@ -683,6 +692,9 @@ export const parks: SeedPark[] = [
       { slug: "ice-breaker", name: "Ice Breaker", type: "ROLLER_COASTER", manufacturer: "S&S", opened: 2022 },
       { slug: "mako", name: "Mako", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2016 },
       { slug: "manta", name: "Manta", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2009 },
+      { slug: "kraken", name: "Kraken", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2000 },
+      { slug: "journey-to-atlantis-orlando", name: "Journey to Atlantis", type: "WATER_RIDE", opened: 1998 },
+      { slug: "pipeline-the-surf-coaster", name: "Pipeline: The Surf Coaster", type: "ROLLER_COASTER", opened: 2023 },
     ],
   },
   {
@@ -697,6 +709,8 @@ export const parks: SeedPark[] = [
     rides: [
       { slug: "emperor", name: "Emperor", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2022 },
       { slug: "electric-eel", name: "Electric Eel", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2018 },
+      { slug: "journey-to-atlantis-sd", name: "Journey to Atlantis", type: "WATER_RIDE", opened: 2004 },
+      { slug: "tidal-twister", name: "Tidal Twister", type: "ROLLER_COASTER", opened: 2021 },
     ],
   },
 

@@ -528,6 +528,10 @@ export const parks: SeedPark[] = [
       { slug: "twisted-timbers", name: "Twisted Timbers", type: "ROLLER_COASTER", manufacturer: "RMC", opened: 2018 },
       { slug: "intimidator-305", name: "Intimidator 305", type: "ROLLER_COASTER", manufacturer: "Intamin", opened: 2010 },
       { slug: "dominator", name: "Dominator", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2007 },
+      { slug: "grizzly-kd", name: "Grizzly", type: "ROLLER_COASTER", opened: 1982 },
+      { slug: "flight-of-fear-kd", name: "Flight of Fear", type: "ROLLER_COASTER", manufacturer: "Premier Rides", opened: 1996 },
+      { slug: "anaconda", name: "Anaconda", type: "ROLLER_COASTER", manufacturer: "Arrow Dynamics", opened: 1991 },
+      { slug: "racer-75", name: "Racer 75", type: "ROLLER_COASTER", opened: 1975 },
     ],
   },
   {
@@ -542,6 +546,9 @@ export const parks: SeedPark[] = [
     rides: [
       { slug: "fury-325", name: "Fury 325", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2015 },
       { slug: "copperhead-strike", name: "Copperhead Strike", type: "ROLLER_COASTER", manufacturer: "Mack Rides", opened: 2019 },
+      { slug: "intimidator-carowinds", name: "Intimidator", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2010 },
+      { slug: "afterburn", name: "Afterburn", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 1999 },
+      { slug: "nighthawk", name: "Nighthawk", type: "ROLLER_COASTER", manufacturer: "Vekoma", opened: 2001 },
     ],
   },
   {
@@ -579,6 +586,9 @@ export const parks: SeedPark[] = [
     rides: [
       { slug: "railblazer", name: "RailBlazer", type: "ROLLER_COASTER", manufacturer: "RMC", opened: 2018 },
       { slug: "gold-striker", name: "Gold Striker", type: "ROLLER_COASTER", manufacturer: "GCI", opened: 2013 },
+      { slug: "patriot-cga", name: "Patriot", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2005 },
+      { slug: "flight-deck", name: "Flight Deck", type: "ROLLER_COASTER", manufacturer: "Vekoma", opened: 1993 },
+      { slug: "grizzly-cga", name: "Grizzly", type: "ROLLER_COASTER", opened: 1986 },
     ],
   },
   {
@@ -593,6 +603,9 @@ export const parks: SeedPark[] = [
     rides: [
       { slug: "iron-menace", name: "Iron Menace", type: "ROLLER_COASTER", manufacturer: "S&S", opened: 2022 },
       { slug: "hydra-the-revenge", name: "Hydra the Revenge", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2005 },
+      { slug: "steel-force", name: "Steel Force", type: "ROLLER_COASTER", manufacturer: "Morgan", opened: 1997 },
+      { slug: "talon", name: "Talon", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2001 },
+      { slug: "thunderhawk", name: "Thunderhawk", type: "ROLLER_COASTER", opened: 1923 },
     ],
   },
   {
@@ -607,6 +620,7 @@ export const parks: SeedPark[] = [
     rides: [
       { slug: "wild-thing", name: "Wild Thing", type: "ROLLER_COASTER", opened: 1996 },
       { slug: "steel-venom", name: "Steel Venom", type: "ROLLER_COASTER", manufacturer: "S&S", opened: 2003 },
+      { slug: "renegade-valleyfair", name: "Renegade", type: "ROLLER_COASTER", opened: 1995 },
     ],
   },
   {
@@ -621,6 +635,7 @@ export const parks: SeedPark[] = [
     rides: [
       { slug: "mamba", name: "Mamba", type: "ROLLER_COASTER", opened: 1998 },
       { slug: "patriot", name: "Patriot", type: "ROLLER_COASTER", manufacturer: "S&S", opened: 2006 },
+      { slug: "prowler", name: "Prowler", type: "ROLLER_COASTER", manufacturer: "GCI", opened: 2010 },
     ],
   },
 

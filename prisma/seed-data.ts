@@ -943,8 +943,12 @@ export const parks: SeedPark[] = [
     description:
       "Founded in 1890 as a zoological garden and amusement park by John and Mary Elitch, it was one of the first amusement parks in the American West. It relocated from its original Highlands neighborhood site to downtown Denver in 1995.",
     rides: [
-      { slug: "twister-ii", name: "Twister II", type: "ROLLER_COASTER", opened: 1995 },
+      { slug: "twister-ii", name: "Twister III: Storm Chaser", type: "ROLLER_COASTER", opened: 1995 },
       { slug: "sidewinder", name: "Sidewinder", type: "ROLLER_COASTER", manufacturer: "Vekoma" },
+      { slug: "mind-eraser-elitch", name: "Mind Eraser", type: "ROLLER_COASTER", manufacturer: "Vekoma" },
+      { slug: "half-pipe-elitch", name: "Half Pipe", type: "ROLLER_COASTER", manufacturer: "Intamin" },
+      { slug: "boomerang-elitch", name: "Boomerang", type: "ROLLER_COASTER", manufacturer: "Vekoma" },
+      { slug: "flying-coaster-elitch", name: "Flying Coaster", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -1057,6 +1061,15 @@ export const parks: SeedPark[] = [
       "Opened in 1908 on the shore of Lake Quassapaug, Quassy is one of the oldest amusement parks in New England and remains family-owned.",
     rides: [
       { slug: "wooden-warrior", name: "Wooden Warrior", type: "ROLLER_COASTER", manufacturer: "GCI", opened: 2011 },
+      { slug: "little-dipper-quassy", name: "Little Dipper", type: "KIDDIE" },
+      { slug: "free-fall-quassy", name: "Free Fall", type: "FLAT_RIDE" },
+      { slug: "grand-carousel-quassy", name: "Grand Carousel", type: "FLAT_RIDE" },
+      { slug: "yo-yo-super-swing", name: "Yo-Yo Super Swing", type: "FLAT_RIDE" },
+      { slug: "pirate-ship-quassy", name: "Pirate Ship", type: "FLAT_RIDE" },
+      { slug: "bumper-cars-quassy", name: "Bumper Cars", type: "FLAT_RIDE" },
+      { slug: "frog-hopper-quassy", name: "Frog Hopper", type: "KIDDIE" },
+      { slug: "crazy-cups-quassy", name: "Crazy Cups", type: "FLAT_RIDE" },
+      { slug: "quassy-train", name: "Quassy Train", type: "TRANSPORT" },
     ],
   },
   {
@@ -1113,6 +1126,9 @@ export const parks: SeedPark[] = [
       "Opened in 1998 as VisionLand near Birmingham, the park has changed hands and names several times since; it now pairs a water park with a small collection of rides including the wooden coaster Rampage.",
     rides: [
       { slug: "rampage", name: "Rampage", type: "ROLLER_COASTER", opened: 1998 },
+      { slug: "galleon-asa", name: "Galleon", type: "FLAT_RIDE", opened: 2019 },
+      { slug: "scrambler-asa", name: "Scrambler", type: "FLAT_RIDE", opened: 2018 },
+      { slug: "yo-yo-asa", name: "Yo-Yo", type: "FLAT_RIDE", opened: 2018 },
     ],
   },
 
@@ -1128,6 +1144,12 @@ export const parks: SeedPark[] = [
       "A family-owned park in Phoenix built around mini-golf castles and a small ride collection, headlined by the wooden coaster Desert Storm.",
     rides: [
       { slug: "desert-storm", name: "Desert Storm", type: "ROLLER_COASTER" },
+      { slug: "patriot-cnc", name: "Patriot", type: "ROLLER_COASTER" },
+      { slug: "splashdown", name: "Splashdown", type: "WATER_RIDE" },
+      { slug: "magic-carpet-cnc", name: "Magic Carpet", type: "FLAT_RIDE" },
+      { slug: "sea-dragon-cnc", name: "Sea Dragon", type: "FLAT_RIDE" },
+      { slug: "sky-diver-cnc", name: "Sky Diver", type: "FLAT_RIDE" },
+      { slug: "bumper-boats-cnc", name: "Bumper Boats", type: "WATER_RIDE" },
     ],
   },
 
@@ -1143,6 +1165,9 @@ export const parks: SeedPark[] = [
       "Opened in 1978 as Magic Springs Family Fun Park near the resort town of Hot Springs, it remains Arkansas's only major theme park, paired with the Crystal Falls water park.",
     rides: [
       { slug: "arkansas-twister", name: "Arkansas Twister", type: "ROLLER_COASTER" },
+      { slug: "big-bad-john", name: "Big Bad John", type: "ROLLER_COASTER", opened: 2002 },
+      { slug: "x-coaster", name: "X-Coaster", type: "ROLLER_COASTER", manufacturer: "Maurer Söhne", opened: 2006 },
+      { slug: "the-gauntlet", name: "The Gauntlet", type: "ROLLER_COASTER", opened: 2004 },
     ],
   },
 

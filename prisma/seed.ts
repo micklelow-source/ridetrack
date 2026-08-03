@@ -47,6 +47,27 @@ async function main() {
         },
       });
     }
+
+    // Prune rides that have been removed from seed-data (e.g. a coaster
+    // that has since been demolished). Without this the upsert above would
+    // leave defunct rides in the database forever.
+    const removed = await prisma.ride.deleteMany({
+      where: {
+        parkId: created.id,
+        slug: { notIn: park.rides.map((r) => r.slug) },
+      },
+    });
+    if (removed.count > 0) {
+      console.log(`  ${park.name}: pruned ${removed.count} removed ride(s)`);
+    }
+  }
+
+  // Prune parks no longer present in seed-data.
+  const removedParks = await prisma.park.deleteMany({
+    where: { slug: { notIn: parks.map((p) => p.slug) } },
+  });
+  if (removedParks.count > 0) {
+    console.log(`Pruned ${removedParks.count} removed park(s)`);
   }
 
   const parkCount = await prisma.park.count();

@@ -404,6 +404,12 @@ export const parks: SeedPark[] = [
       { slug: "poltergeist-sfft", name: "Poltergeist", type: "ROLLER_COASTER", manufacturer: "S&S", opened: 2011 },
       { slug: "batman-the-ride-sfft", name: "Batman: The Ride", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2015 },
       { slug: "superman-krypton-coaster", name: "Superman Krypton Coaster", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2000 },
+      { slug: "dr-diabolicals-cliffhanger", name: "Dr. Diabolical's Cliffhanger", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2022 },
+      { slug: "chupacabra-sfft", name: "Chupacabra", type: "ROLLER_COASTER", manufacturer: "Vekoma" },
+      { slug: "batgirl-coaster-chase", name: "Batgirl Coaster Chase", type: "ROLLER_COASTER" },
+      { slug: "boomerang-coast-to-coaster-sfft", name: "Boomerang Coast to Coaster", type: "ROLLER_COASTER", manufacturer: "Vekoma" },
+      { slug: "pandemonium-sfft", name: "Pandemonium", type: "ROLLER_COASTER", manufacturer: "Gerstlauer" },
+      { slug: "road-runner-express", name: "Road Runner Express", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -461,6 +467,12 @@ export const parks: SeedPark[] = [
       { slug: "americas-thrill-ride", name: "American Thunder", type: "ROLLER_COASTER", opened: 2008 },
       { slug: "batman-the-ride-stl", name: "Batman: The Ride", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 1995 },
       { slug: "screamin-eagle", name: "Screamin' Eagle", type: "ROLLER_COASTER", opened: 1976 },
+      { slug: "mr-freeze-reverse-blast-stl", name: "Mr. Freeze Reverse Blast", type: "ROLLER_COASTER", manufacturer: "Premier Rides", opened: 1998 },
+      { slug: "ninja-stl", name: "Ninja", type: "ROLLER_COASTER", manufacturer: "Vekoma", opened: 1989 },
+      { slug: "boomerang-stl", name: "Boomerang", type: "ROLLER_COASTER", manufacturer: "Vekoma" },
+      { slug: "pandemonium-stl", name: "Pandemonium", type: "ROLLER_COASTER", manufacturer: "Gerstlauer", opened: 2011 },
+      { slug: "river-king-mine-train", name: "River King Mine Train", type: "ROLLER_COASTER", manufacturer: "Arrow Dynamics", opened: 1971 },
+      { slug: "rookie-racer", name: "Rookie Racer", type: "KIDDIE" },
     ],
   },
 
@@ -601,6 +613,10 @@ export const parks: SeedPark[] = [
       { slug: "patriot-cga", name: "Patriot", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2005 },
       { slug: "flight-deck", name: "Flight Deck", type: "ROLLER_COASTER", manufacturer: "Vekoma", opened: 1993 },
       { slug: "grizzly-cga", name: "Grizzly", type: "ROLLER_COASTER", opened: 1986 },
+      { slug: "demon-cga", name: "Demon", type: "ROLLER_COASTER", manufacturer: "Arrow Dynamics", opened: 1976 },
+      { slug: "psycho-mouse-cga", name: "Psycho Mouse", type: "ROLLER_COASTER", manufacturer: "Arrow Dynamics", opened: 2001 },
+      { slug: "woodstock-express-cga", name: "Woodstock Express", type: "KIDDIE" },
+      { slug: "lucys-crabbie-cabbies", name: "Lucy's Crabbie Cabbies", type: "KIDDIE" },
     ],
   },
   {
@@ -618,6 +634,9 @@ export const parks: SeedPark[] = [
       { slug: "steel-force", name: "Steel Force", type: "ROLLER_COASTER", manufacturer: "Morgan", opened: 1997 },
       { slug: "talon", name: "Talon", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2001 },
       { slug: "thunderhawk", name: "Thunderhawk", type: "ROLLER_COASTER", opened: 1923 },
+      { slug: "possessed-dorney", name: "Possessed", type: "ROLLER_COASTER", manufacturer: "Intamin", opened: 2008 },
+      { slug: "wild-mouse-dorney", name: "Wild Mouse", type: "ROLLER_COASTER" },
+      { slug: "woodstock-express-dorney", name: "Woodstock Express", type: "KIDDIE" },
     ],
   },
   {
@@ -733,7 +752,8 @@ export const parks: SeedPark[] = [
       { slug: "emperor", name: "Emperor", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2022 },
       { slug: "electric-eel", name: "Electric Eel", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2018 },
       { slug: "journey-to-atlantis-sd", name: "Journey to Atlantis", type: "WATER_RIDE", opened: 2004 },
-      { slug: "tidal-twister", name: "Tidal Twister", type: "ROLLER_COASTER", opened: 2021 },
+      { slug: "manta-sd", name: "Manta", type: "ROLLER_COASTER", manufacturer: "Mack Rides", opened: 2012 },
+      { slug: "arctic-rescue", name: "Arctic Rescue", type: "ROLLER_COASTER", manufacturer: "Intamin", opened: 2023 },
     ],
   },
 
@@ -1284,10 +1304,10 @@ export const parks: SeedPark[] = [
     description:
       "Opened in 1978 as Magic Springs Family Fun Park near the resort town of Hot Springs, it remains Arkansas's only major theme park, paired with the Crystal Falls water park.",
     rides: [
-      { slug: "arkansas-twister", name: "Arkansas Twister", type: "ROLLER_COASTER" },
       { slug: "big-bad-john", name: "Big Bad John", type: "ROLLER_COASTER", opened: 2002 },
-      { slug: "x-coaster", name: "X-Coaster", type: "ROLLER_COASTER", manufacturer: "Maurer Söhne", opened: 2006 },
-      { slug: "the-gauntlet", name: "The Gauntlet", type: "ROLLER_COASTER", opened: 2004 },
+      { slug: "x-coaster", name: "X Coaster", type: "ROLLER_COASTER", manufacturer: "Maurer Söhne", opened: 2006 },
+      { slug: "the-gauntlet", name: "Gauntlet", type: "ROLLER_COASTER", opened: 2004 },
+      { slug: "diamond-mine-run", name: "Diamond Mine Run", type: "ROLLER_COASTER" },
     ],
   },
 

@@ -1374,6 +1374,13 @@ export const parks: SeedPark[] = [
       "An oceanfront amusement park on the Myrtle Beach boardwalk, home to the Swamp Fox, a wooden coaster that has run there since the park opened in the 1960s.",
     rides: [
       { slug: "swamp-fox", name: "Swamp Fox", type: "ROLLER_COASTER", opened: 1966 },
+      { slug: "twist-n-shout", name: "Twist 'n Shout", type: "ROLLER_COASTER" },
+      { slug: "log-flume-family-kingdom", name: "Log Flume", type: "WATER_RIDE" },
+      { slug: "ferris-wheel-family-kingdom", name: "Ferris Wheel", type: "FLAT_RIDE" },
+      { slug: "slingshot-family-kingdom", name: "Slingshot", type: "FLAT_RIDE" },
+      { slug: "inferno-family-kingdom", name: "Inferno", type: "FLAT_RIDE", opened: 2026 },
+      { slug: "kraken-family-kingdom", name: "Kraken", type: "FLAT_RIDE", opened: 2026 },
+      { slug: "colossus-family-kingdom", name: "Colossus", type: "FLAT_RIDE", opened: 2026 },
     ],
   },
 
@@ -1403,7 +1410,16 @@ export const parks: SeedPark[] = [
     description:
       "West Virginia's only major amusement park, opened in 1903 as a trolley park and still family-owned. Its Big Dipper wooden coaster has run since 1958.",
     rides: [
-      { slug: "big-dipper", name: "Big Dipper", type: "ROLLER_COASTER", opened: 1958 },
+      { slug: "big-dipper", name: "Big Dipper", type: "ROLLER_COASTER", manufacturer: "National Amusement Devices", opened: 1958 },
+      { slug: "lil-dipper-camden", name: "Lil' Dipper", type: "KIDDIE", opened: 1961 },
+      { slug: "haunted-house-camden", name: "Haunted House", type: "DARK_RIDE" },
+      { slug: "carousel-camden", name: "Carousel", type: "FLAT_RIDE" },
+      { slug: "the-whip-camden", name: "The Whip", type: "FLAT_RIDE" },
+      { slug: "tilt-a-whirl-camden", name: "Tilt-A-Whirl", type: "FLAT_RIDE" },
+      { slug: "paratrooper-camden", name: "Paratrooper", type: "FLAT_RIDE" },
+      { slug: "dodgem-camden", name: "Dodgem Cars", type: "FLAT_RIDE" },
+      { slug: "scrambler-camden", name: "Scrambler", type: "FLAT_RIDE" },
+      { slug: "camden-park-railway", name: "Miniature Railway", type: "TRANSPORT" },
     ],
   },
 
@@ -1419,6 +1435,10 @@ export const parks: SeedPark[] = [
       "A Greek mythology-themed park in Wisconsin Dells, the self-proclaimed water park capital of the world, combining water slides with a handful of wooden and steel coasters.",
     rides: [
       { slug: "hades-360", name: "Hades 360", type: "ROLLER_COASTER", opened: 2013 },
+      { slug: "zeus-mt-olympus", name: "Zeus", type: "ROLLER_COASTER", manufacturer: "CCI", opened: 1997 },
+      { slug: "cyclops-mt-olympus", name: "Cyclops", type: "ROLLER_COASTER", manufacturer: "CCI", opened: 1995 },
+      { slug: "pegasus-mt-olympus", name: "Pegasus", type: "ROLLER_COASTER", opened: 1995 },
+      { slug: "little-titans", name: "Little Titans", type: "KIDDIE" },
     ],
   },
 ];

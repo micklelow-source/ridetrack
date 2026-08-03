@@ -1308,7 +1308,14 @@ export const parks: SeedPark[] = [
     description:
       "A five-acre indoor theme park under a pink glass dome at Circus Circus on the Las Vegas Strip, opened in 1993. Its Canyon Blaster is the only indoor double-loop, double-corkscrew roller coaster in the United States.",
     rides: [
-      { slug: "canyon-blaster", name: "Canyon Blaster", type: "ROLLER_COASTER", opened: 1993 },
+      { slug: "canyon-blaster", name: "Canyon Blaster", type: "ROLLER_COASTER", manufacturer: "Arrow Dynamics", opened: 1993 },
+      { slug: "el-loco-adventuredome", name: "El Loco", type: "ROLLER_COASTER", manufacturer: "S&S", opened: 2014 },
+      { slug: "inverter-adventuredome", name: "Inverter", type: "FLAT_RIDE" },
+      { slug: "nebulaz", name: "NebulaZ", type: "FLAT_RIDE" },
+      { slug: "disko-adventuredome", name: "Disk'O", type: "FLAT_RIDE" },
+      { slug: "chaos-adventuredome", name: "Chaos", type: "FLAT_RIDE" },
+      { slug: "sling-shot-adventuredome", name: "Sling Shot", type: "FLAT_RIDE" },
+      { slug: "bumper-cars-adventuredome", name: "Bumper Cars", type: "FLAT_RIDE" },
     ],
   },
 
@@ -1323,7 +1330,12 @@ export const parks: SeedPark[] = [
     description:
       "Family-owned since it opened in 1959, Cliff's is Albuquerque's local amusement park, home to the wooden coaster New Mexico Rattler.",
     rides: [
-      { slug: "new-mexico-rattler", name: "New Mexico Rattler", type: "ROLLER_COASTER", opened: 1997 },
+      { slug: "new-mexico-rattler", name: "New Mexico Rattler", type: "ROLLER_COASTER", manufacturer: "CCI", opened: 1997 },
+      { slug: "cliff-hanger", name: "Cliff Hanger", type: "FLAT_RIDE" },
+      { slug: "sidewinder-cliffs", name: "SideWinder", type: "FLAT_RIDE" },
+      { slug: "super-fire-ball", name: "Super Fire Ball", type: "FLAT_RIDE" },
+      { slug: "sea-dragon-cliffs", name: "Sea Dragon", type: "FLAT_RIDE" },
+      { slug: "tilt-a-whirl-cliffs", name: "Tilt-A-Whirl", type: "FLAT_RIDE" },
     ],
   },
 
@@ -1338,7 +1350,15 @@ export const parks: SeedPark[] = [
     description:
       "Opened in 1905 as a trolley park along the Willamette River, Oaks Park is one of the oldest continuously operating amusement parks in the country, still known for its historic carousel and roller skating rink.",
     rides: [
-      { slug: "oaks-park-carousel", name: "Oaks Park Carousel", type: "FLAT_RIDE", opened: 1912 },
+      { slug: "oaks-park-carousel", name: "Oaks Park Carousel", type: "FLAT_RIDE", opened: 1917 },
+      { slug: "adrenaline-peak", name: "Adrenaline Peak", type: "ROLLER_COASTER", manufacturer: "Gerstlauer", opened: 2018 },
+      { slug: "tree-top-drop", name: "Tree Top Drop", type: "FLAT_RIDE" },
+      { slug: "spider-oaks", name: "Spider", type: "FLAT_RIDE" },
+      { slug: "scrambler-oaks", name: "The Scrambler", type: "FLAT_RIDE" },
+      { slug: "tilt-a-whirl-oaks", name: "Tilt-A-Whirl", type: "FLAT_RIDE" },
+      { slug: "cosmic-crash", name: "Cosmic Crash", type: "FLAT_RIDE" },
+      { slug: "sky-fighters-oaks", name: "Sky Fighters", type: "KIDDIE", opened: 1949 },
+      { slug: "oaks-park-train", name: "Oaks Park Train", type: "TRANSPORT" },
     ],
   },
 

@@ -886,8 +886,13 @@ export const parks: SeedPark[] = [
     description:
       "Founded in 1969 by the Morey family, this still family-owned collection of piers and boardwalk rides has anchored the Wildwood, New Jersey beach resort for over 50 years.",
     rides: [
-      { slug: "great-white", name: "Great White", type: "ROLLER_COASTER", manufacturer: "S&S", opened: 1996 },
+      { slug: "great-white", name: "Great White", type: "ROLLER_COASTER", manufacturer: "CCI", opened: 1996 },
       { slug: "gale-force", name: "Gale Force", type: "ROLLER_COASTER", manufacturer: "S&S", opened: 2018 },
+      { slug: "great-noreaster", name: "The Great Nor'Easter", type: "ROLLER_COASTER", manufacturer: "Vekoma", opened: 1995 },
+      { slug: "sea-serpent-moreys", name: "Sea Serpent", type: "ROLLER_COASTER", manufacturer: "Vekoma", opened: 1984 },
+      { slug: "runaway-tram", name: "Runaway Tram", type: "ROLLER_COASTER", opened: 2000 },
+      { slug: "rollies-coaster", name: "Rollie's Coaster", type: "ROLLER_COASTER" },
+      { slug: "wild-whizzer", name: "The Wild Whizzer", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -902,10 +907,14 @@ export const parks: SeedPark[] = [
       "Opened in 1902 as a trolley park on the shore of Canobie Lake, it's been run by the same family since the 1950s. Its Yankee Cannonball, relocated to the park in 1936, is one of the oldest wooden roller coasters still operating in the country.",
     rides: [
       { slug: "yankee-cannonball", name: "Yankee Cannonball", type: "ROLLER_COASTER", manufacturer: "Fred Church", opened: 1936 },
-      { slug: "untamed", name: "Untamed", type: "ROLLER_COASTER", manufacturer: "S&S", opened: 2019 },
-      { slug: "corkscrew", name: "Corkscrew", type: "ROLLER_COASTER", manufacturer: "Vekoma", opened: 1990 },
+      { slug: "untamed", name: "Untamed", type: "ROLLER_COASTER", manufacturer: "Gerstlauer", opened: 2011 },
       { slug: "boston-tea-party", name: "Boston Tea Party", type: "WATER_RIDE", opened: 1974 },
       { slug: "starblaster", name: "Starblaster", type: "FLAT_RIDE", manufacturer: "HUSS", opened: 2007 },
+      { slug: "mine-of-lost-souls", name: "The Mine of Lost Souls", type: "DARK_RIDE", opened: 1985 },
+      { slug: "psychodrome", name: "Psychodrome", type: "FLAT_RIDE" },
+      { slug: "turkish-twist", name: "Turkish Twist", type: "FLAT_RIDE" },
+      { slug: "antique-carousel-canobie", name: "Antique Carousel", type: "FLAT_RIDE" },
+      { slug: "antique-cars-canobie", name: "Antique Cars", type: "TRANSPORT" },
     ],
   },
 
@@ -1238,6 +1247,10 @@ export const parks: SeedPark[] = [
       "Maine's largest amusement park, combining a dry ride park with an adjoining water park. Its Excalibur wooden coaster, added in 1998, is the state's tallest and fastest roller coaster.",
     rides: [
       { slug: "excalibur", name: "Excalibur", type: "ROLLER_COASTER", opened: 1998 },
+      { slug: "dragons-descent", name: "Dragon's Descent", type: "FLAT_RIDE", manufacturer: "S&S" },
+      { slug: "thunder-falls", name: "Thunder Falls", type: "WATER_RIDE" },
+      { slug: "astrosphere", name: "Astrosphere", type: "FLAT_RIDE" },
+      { slug: "grand-carousel-funtown", name: "Grand Carousel", type: "FLAT_RIDE" },
     ],
   },
 

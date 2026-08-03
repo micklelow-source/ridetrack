@@ -838,8 +838,14 @@ export const parks: SeedPark[] = [
     description:
       "Opened in 1988 by aviation enthusiast Gary Norton, Silverwood pairs a theme park with an antique-aircraft museum, plus the adjoining Boulder Beach water park in summer.",
     rides: [
-      { slug: "stunt-pilot", name: "Stunt Pilot", type: "ROLLER_COASTER", manufacturer: "S&S", opened: 2017 },
-      { slug: "aftershock", name: "Aftershock", type: "ROLLER_COASTER", opened: 1998 },
+      { slug: "stunt-pilot", name: "Stunt Pilot", type: "ROLLER_COASTER", manufacturer: "RMC", opened: 2021 },
+      { slug: "aftershock", name: "Aftershock", type: "ROLLER_COASTER", manufacturer: "Vekoma", opened: 2008 },
+      { slug: "tremors", name: "Tremors", type: "ROLLER_COASTER", manufacturer: "CCI", opened: 1999 },
+      { slug: "timber-terror", name: "Timber Terror", type: "ROLLER_COASTER", manufacturer: "CCI", opened: 1996 },
+      { slug: "corkscrew-silverwood", name: "Corkscrew", type: "ROLLER_COASTER", manufacturer: "Arrow Dynamics", opened: 1975 },
+      { slug: "panic-plunge", name: "Panic Plunge", type: "FLAT_RIDE" },
+      { slug: "krazy-koaster", name: "Krazy Koaster", type: "KIDDIE" },
+      { slug: "tiny-toot", name: "Tiny Toot", type: "KIDDIE" },
     ],
   },
   {
@@ -1032,8 +1038,13 @@ export const parks: SeedPark[] = [
     description:
       "Opened in 1974 near Des Moines, Adventureland grew around The Dragon, a wooden roller coaster added in 1978 that remains one of its signature rides.",
     rides: [
-      { slug: "the-dragon", name: "The Dragon", type: "ROLLER_COASTER", opened: 1978 },
-      { slug: "tornado", name: "Tornado", type: "ROLLER_COASTER", opened: 2001 },
+      { slug: "tornado", name: "Tornado", type: "ROLLER_COASTER", opened: 1978 },
+      { slug: "monster-adventureland", name: "Monster", type: "ROLLER_COASTER", manufacturer: "Gerstlauer", opened: 2016 },
+      { slug: "underground", name: "Underground", type: "ROLLER_COASTER", manufacturer: "CCI", opened: 1996 },
+      { slug: "outlaw-adventureland", name: "Outlaw", type: "ROLLER_COASTER", opened: 1993 },
+      { slug: "dragon-slayer", name: "Dragon Slayer", type: "ROLLER_COASTER", manufacturer: "S&S", opened: 2021 },
+      { slug: "draken-falls", name: "Draken Falls", type: "WATER_RIDE" },
+      { slug: "flying-viking", name: "Flying Viking", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -1183,6 +1194,12 @@ export const parks: SeedPark[] = [
       "A small, family-owned boardwalk amusement park in Rehoboth Beach, open every summer since 1962 with classic kiddie rides, an arcade, and a wooden Kiddie Coaster.",
     rides: [
       { slug: "kiddie-coaster", name: "Kiddie Coaster", type: "KIDDIE" },
+      { slug: "haunted-mansion-funland", name: "Haunted Mansion", type: "DARK_RIDE" },
+      { slug: "carousel-funland", name: "Carousel", type: "FLAT_RIDE" },
+      { slug: "tilt-a-whirl-funland", name: "Tilt-A-Whirl", type: "FLAT_RIDE" },
+      { slug: "scrambler-funland", name: "Scrambler", type: "FLAT_RIDE" },
+      { slug: "bumper-cars-funland", name: "Bumper Cars", type: "FLAT_RIDE" },
+      { slug: "ferris-wheel-funland", name: "Ferris Wheel", type: "FLAT_RIDE" },
     ],
   },
 

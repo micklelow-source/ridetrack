@@ -22,14 +22,51 @@ const RIDE_TYPE_LABELS: Record<string, string> = {
   OTHER: "Other",
 };
 
+// Ride types grouped for the filter control. "Roller coasters" and
+// "Kiddie rides" get their own entries; everything else is browsable
+// individually or lumped under "Other rides".
+const TYPE_FILTERS: { value: string; label: string; types: string[] }[] = [
+  { value: "all", label: "All ride types", types: [] },
+  { value: "ROLLER_COASTER", label: "Roller coasters", types: ["ROLLER_COASTER"] },
+  { value: "KIDDIE", label: "Kiddie rides", types: ["KIDDIE"] },
+  { value: "DARK_RIDE", label: "Dark rides", types: ["DARK_RIDE"] },
+  { value: "WATER_RIDE", label: "Water rides", types: ["WATER_RIDE"] },
+  { value: "FLAT_RIDE", label: "Flat rides", types: ["FLAT_RIDE"] },
+  { value: "TRANSPORT", label: "Transport", types: ["TRANSPORT"] },
+  { value: "SHOW", label: "Shows", types: ["SHOW"] },
+  {
+    value: "other",
+    label: "Other rides (non-coaster)",
+    types: ["DARK_RIDE", "WATER_RIDE", "FLAT_RIDE", "TRANSPORT", "SHOW", "OTHER"],
+  },
+];
+
+const STATUS_FILTERS = [
+  { value: "all", label: "All rides" },
+  { value: "RIDDEN", label: "✅ Ridden" },
+  { value: "WANT_TO_RIDE", label: "🎯 Want to ride" },
+  { value: "FAVORITE", label: "⭐ Favorites" },
+  { value: "UNTRACKED", label: "Not tracked yet" },
+];
+
 export default async function ParkDetailPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ slug: string }>;
+  searchParams: Promise<{ type?: string; status?: string }>;
 }) {
   const { slug } = await params;
+  const { type: typeParam, status: statusParam } = await searchParams;
   const session = await auth();
   const userId = session?.user?.id;
+
+  const typeFilter =
+    TYPE_FILTERS.find((t) => t.value === typeParam)?.value ?? "all";
+  // Status filtering is per-account, so it only applies when signed in.
+  const statusFilter = userId
+    ? STATUS_FILTERS.find((s) => s.value === statusParam)?.value ?? "all"
+    : "all";
 
   const park = await prisma.park.findUnique({
     where: { slug },
@@ -64,6 +101,24 @@ export default async function ParkDetailPage({
   const riddenCount = park.rides.filter(
     (r) => "userStatuses" in r && r.userStatuses?.[0]?.status === "RIDDEN"
   ).length;
+
+  // Apply the ride-type and per-account status filters.
+  const activeTypes =
+    TYPE_FILTERS.find((t) => t.value === typeFilter)?.types ?? [];
+  const visibleRides = park.rides.filter((ride) => {
+    if (activeTypes.length && !activeTypes.includes(ride.type)) return false;
+    if (statusFilter === "all") return true;
+    const st = "userStatuses" in ride ? ride.userStatuses?.[0] : undefined;
+    if (statusFilter === "FAVORITE") return !!st?.favorite;
+    if (statusFilter === "UNTRACKED") return !st || (!st.status && !st.favorite);
+    return st?.status === statusFilter;
+  });
+
+  // Counts for the type filter, so the user can see what's available.
+  const typeCounts = park.rides.reduce<Record<string, number>>((acc, r) => {
+    acc[r.type] = (acc[r.type] ?? 0) + 1;
+    return acc;
+  }, {});
 
   async function checkInAction(formData: FormData) {
     "use server";
@@ -165,9 +220,69 @@ export default async function ParkDetailPage({
       )}
 
       <section>
-        <h2 className="mb-3 text-lg font-semibold">Rides</h2>
+        <div className="mb-3 flex flex-wrap items-baseline justify-between gap-2">
+          <h2 className="text-lg font-semibold">Rides</h2>
+          <span className="text-xs text-black/50 dark:text-white/50">
+            Showing {visibleRides.length} of {park.rides.length}
+          </span>
+        </div>
+
+        <form method="get" className="mb-4 flex flex-wrap gap-2">
+          <select
+            name="type"
+            defaultValue={typeFilter}
+            className="rounded-md border border-black/10 px-3 py-2 text-sm dark:border-white/20 dark:bg-black"
+          >
+            {TYPE_FILTERS.map((t) => {
+              const n = t.value === "all"
+                ? park.rides.length
+                : t.types.reduce((s, ty) => s + (typeCounts[ty] ?? 0), 0);
+              return (
+                <option key={t.value} value={t.value} disabled={n === 0}>
+                  {t.label} ({n})
+                </option>
+              );
+            })}
+          </select>
+
+          {userId && (
+            <select
+              name="status"
+              defaultValue={statusFilter}
+              className="rounded-md border border-black/10 px-3 py-2 text-sm dark:border-white/20 dark:bg-black"
+            >
+              {STATUS_FILTERS.map((s) => (
+                <option key={s.value} value={s.value}>
+                  {s.label}
+                </option>
+              ))}
+            </select>
+          )}
+
+          <button
+            type="submit"
+            className="rounded-md bg-foreground px-4 py-2 text-sm font-medium text-background hover:opacity-90"
+          >
+            Apply
+          </button>
+          {(typeFilter !== "all" || statusFilter !== "all") && (
+            <Link
+              href={`/parks/${park.slug}`}
+              className="rounded-md border border-black/10 px-4 py-2 text-sm hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/10"
+            >
+              Reset
+            </Link>
+          )}
+        </form>
+
+        {visibleRides.length === 0 && (
+          <p className="mb-3 text-sm text-black/60 dark:text-white/60">
+            No rides match these filters.
+          </p>
+        )}
+
         <ul className="flex flex-col gap-2">
-          {park.rides.map((ride) => {
+          {visibleRides.map((ride) => {
             const userStatus =
               userId && "userStatuses" in ride ? ride.userStatuses?.[0] : undefined;
             return (

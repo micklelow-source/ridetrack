@@ -1007,6 +1007,11 @@ export const parks: SeedPark[] = [
       "Founded in 1896 on the shore of Lake Erie next to Presque Isle State Park, Waldameer remains family-owned and free to enter — guests pay only for rides or a wristband.",
     rides: [
       { slug: "ravine-flyer-ii", name: "Ravine Flyer II", type: "ROLLER_COASTER", opened: 2008 },
+      { slug: "comet-waldameer", name: "Comet", type: "ROLLER_COASTER", opened: 1951 },
+      { slug: "steel-dragon-waldameer", name: "Steel Dragon", type: "ROLLER_COASTER", manufacturer: "Maurer Söhne", opened: 2004 },
+      { slug: "whacky-shack", name: "Whacky Shack", type: "DARK_RIDE", opened: 1970 },
+      { slug: "pirates-cove-waldameer", name: "Pirate's Cove", type: "DARK_RIDE" },
+      { slug: "waldameer-carousel", name: "Carousel", type: "FLAT_RIDE" },
     ],
   },
   {
@@ -1143,9 +1148,11 @@ export const parks: SeedPark[] = [
     state: "PA",
     foundedYear: 1892,
     description:
-      "Opened in 1892 on the shore of Pennsylvania's largest natural glacial lake, Conneaut Lake Park is one of the oldest amusement parks in the country and has weathered multiple financial crises to stay open.",
+      "Opened in 1892 on the shore of Pennsylvania's largest natural glacial lake, Conneaut Lake Park is one of the oldest amusement parks in the country and has weathered multiple financial crises to stay open. Its landmark Blue Streak wooden coaster (1938) stopped running in 2019 and was destroyed by fire during demolition in 2022; the park operates a reduced ride lineup today.",
     rides: [
-      { slug: "blue-streak", name: "Blue Streak", type: "ROLLER_COASTER", opened: 1938 },
+      { slug: "little-dipper-conneaut", name: "Little Dipper", type: "KIDDIE" },
+      { slug: "toboggan-conneaut", name: "Toboggan", type: "ROLLER_COASTER" },
+      { slug: "devils-den", name: "Devil's Den", type: "DARK_RIDE" },
     ],
   },
   {
@@ -1395,7 +1402,14 @@ export const parks: SeedPark[] = [
     description:
       "Opened in 1977 as Enchanted Village, a children's storybook-themed park south of Seattle, later expanded into a combined theme and water park under its current name.",
     rides: [
-      { slug: "timberhawk", name: "Timberhawk", type: "ROLLER_COASTER" },
+      { slug: "timberhawk", name: "Timberhawk: Ride of Prey", type: "ROLLER_COASTER", opened: 2003 },
+      { slug: "wild-thing-wild-waves", name: "Wild Thing", type: "ROLLER_COASTER" },
+      { slug: "enchanted-railway", name: "Enchanted Railway", type: "TRANSPORT" },
+      { slug: "wild-waves-carousel", name: "Carousel", type: "FLAT_RIDE", opened: 1906 },
+      { slug: "hang-glider-wild-waves", name: "Hang Glider", type: "FLAT_RIDE" },
+      { slug: "pirate-ship-wild-waves", name: "Pirate Ship", type: "FLAT_RIDE" },
+      { slug: "wild-wagon", name: "Wild Wagon", type: "KIDDIE" },
+      { slug: "red-baron-wild-waves", name: "Red Baron", type: "KIDDIE" },
     ],
   },
 

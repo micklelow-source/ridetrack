@@ -134,6 +134,7 @@ export const parks: SeedPark[] = [
       { slug: "mickey-minnies-runaway-railway", name: "Mickey & Minnie's Runaway Railway", type: "DARK_RIDE", opened: 2020 },
       { slug: "muppet-vision-3d", name: "Muppet*Vision 3D", type: "SHOW", opened: 1991 },
       { slug: "indiana-jones-epic-stunt-spectacular", name: "Indiana Jones Epic Stunt Spectacular", type: "SHOW", opened: 1989 },
+      { slug: "rock-n-roller-coaster-starring-the-muppets", name: "Rock ‘n Roller Coaster Starring The Muppets", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -199,6 +200,7 @@ export const parks: SeedPark[] = [
       { slug: "finding-nemo-submarine-voyage", name: "Finding Nemo Submarine Voyage", type: "DARK_RIDE", opened: 1959 },
       { slug: "millennium-falcon-smugglers-run-dl", name: "Millennium Falcon: Smugglers Run", type: "DARK_RIDE", opened: 2019 },
       { slug: "disneyland-railroad", name: "Disneyland Railroad", type: "TRANSPORT", opened: 1955 },
+      { slug: "chip-dales-gadget-coaster", name: "Chip & Dale's Gadget Coaster", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -250,6 +252,7 @@ export const parks: SeedPark[] = [
       { slug: "despicable-me-minion-mayhem", name: "Despicable Me Minion Mayhem", type: "DARK_RIDE", opened: 2012 },
       { slug: "fievels-playland", name: "Fievel's Playland", type: "KIDDIE", opened: 1990 },
       { slug: "woody-woodpeckers-nuthouse-coaster", name: "Woody Woodpecker's Nuthouse Coaster", type: "ROLLER_COASTER", opened: 1999 },
+      { slug: "trolls-trollercoaster", name: "Trolls Trollercoaster", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -320,6 +323,7 @@ export const parks: SeedPark[] = [
       { slug: "fast-and-furious-hollywood-drift", name: "Fast & Furious: Hollywood Drift", type: "ROLLER_COASTER", opened: 2026 },
       { slug: "despicable-me-minion-mayhem-usc", name: "Despicable Me Minion Mayhem", type: "DARK_RIDE", opened: 2014 },
       { slug: "the-simpsons-ride", name: "The Simpsons Ride", type: "DARK_RIDE", opened: 2008 },
+      { slug: "flight-of-the-hippogriff", name: "Flight of the Hippogriff", type: "ROLLER_COASTER" },
     ],
   },
 
@@ -347,6 +351,12 @@ export const parks: SeedPark[] = [
       { slug: "wonder-woman-flight-of-courage", name: "Wonder Woman Flight of Courage", type: "ROLLER_COASTER", manufacturer: "RMC", opened: 2022 },
       { slug: "scream", name: "Scream!", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2003 },
       { slug: "apocalypse", name: "Apocalypse", type: "ROLLER_COASTER", opened: 2009 },
+      { slug: "canyon-cruiser", name: "Canyon Cruiser", type: "ROLLER_COASTER" },
+      { slug: "gold-rusher", name: "Gold Rusher", type: "ROLLER_COASTER" },
+      { slug: "great-american-revolution", name: "Great American Revolution", type: "ROLLER_COASTER" },
+      { slug: "ninja", name: "Ninja", type: "ROLLER_COASTER" },
+      { slug: "road-runner-express", name: "Road Runner Express", type: "ROLLER_COASTER" },
+      { slug: "west-coast-racers", name: "West Coast Racers", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -368,6 +378,13 @@ export const parks: SeedPark[] = [
       { slug: "green-lantern-sfga", name: "Green Lantern", type: "ROLLER_COASTER", opened: 2012 },
       { slug: "skull-mountain", name: "Skull Mountain", type: "ROLLER_COASTER", opened: 1996 },
       { slug: "runaway-mine-train", name: "Runaway Mine Train", type: "ROLLER_COASTER", manufacturer: "Arrow Dynamics", opened: 1974 },
+      { slug: "barrels-o-fun", name: "Barrels O' Fun", type: "ROLLER_COASTER" },
+      { slug: "dark-knight", name: "Dark Knight", type: "ROLLER_COASTER" },
+      { slug: "flash-vertical-velocity", name: "Flash: Vertical Velocity", type: "ROLLER_COASTER" },
+      { slug: "harley-quinn-crazy-train", name: "Harley Quinn Crazy Train", type: "ROLLER_COASTER" },
+      { slug: "joker", name: "Joker", type: "ROLLER_COASTER" },
+      { slug: "lil-devil-coaster", name: "Lil' Devil Coaster", type: "ROLLER_COASTER" },
+      { slug: "medusa", name: "Medusa", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -387,6 +404,10 @@ export const parks: SeedPark[] = [
       { slug: "mind-bender-sfog", name: "Mind Bender", type: "ROLLER_COASTER", opened: 1978 },
       { slug: "great-american-scream-machine-sfog", name: "Great American Scream Machine", type: "ROLLER_COASTER", opened: 1973 },
       { slug: "dahlonega-mine-train", name: "Dahlonega Mine Train", type: "ROLLER_COASTER", manufacturer: "Arrow Dynamics", opened: 1978 },
+      { slug: "batman-the-ride", name: "Batman The Ride", type: "ROLLER_COASTER" },
+      { slug: "dare-devil-dive", name: "Dare Devil Dive", type: "ROLLER_COASTER" },
+      { slug: "joker-funhouse-coaster", name: "Joker Funhouse Coaster", type: "ROLLER_COASTER" },
+      { slug: "superman-ultimate-flight", name: "Superman - Ultimate Flight", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -432,6 +453,11 @@ export const parks: SeedPark[] = [
       { slug: "tormenta-rampaging-run", name: "Tormenta Rampaging Run", type: "ROLLER_COASTER", opened: 2025 },
       { slug: "la-vibora", name: "La Vibora", type: "ROLLER_COASTER", opened: 1986 },
       { slug: "runaway-mine-train-sfot", name: "Runaway Mine Train", type: "ROLLER_COASTER", opened: 1966 },
+      { slug: "aquaman-power-wave", name: "Aquaman: Power Wave", type: "ROLLER_COASTER" },
+      { slug: "joker", name: "Joker", type: "ROLLER_COASTER" },
+      { slug: "mini-mine-train", name: "Mini Mine Train", type: "ROLLER_COASTER" },
+      { slug: "pandemonium", name: "Pandemonium", type: "ROLLER_COASTER" },
+      { slug: "wile-e-coyotes-grand-canyon-blaster", name: "Wile E. Coyote's Grand Canyon Blaster", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -451,6 +477,15 @@ export const parks: SeedPark[] = [
       { slug: "viper-sfga", name: "Viper", type: "ROLLER_COASTER", opened: 1995 },
       { slug: "batman-the-ride-sfga", name: "Batman: The Ride", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 1992 },
       { slug: "demon-sfga", name: "Demon", type: "ROLLER_COASTER", manufacturer: "Arrow Dynamics", opened: 1980 },
+      { slug: "dark-knight", name: "Dark Knight", type: "ROLLER_COASTER" },
+      { slug: "flash-vertical-velocity", name: "Flash: Vertical Velocity", type: "ROLLER_COASTER" },
+      { slug: "joker", name: "Joker", type: "ROLLER_COASTER" },
+      { slug: "little-dipper", name: "Little Dipper", type: "ROLLER_COASTER" },
+      { slug: "sprocket-rockets", name: "Sprocket Rockets", type: "ROLLER_COASTER" },
+      { slug: "superman-ultimate-flight", name: "Superman - Ultimate Flight", type: "ROLLER_COASTER" },
+      { slug: "whizzer", name: "Whizzer", type: "ROLLER_COASTER" },
+      { slug: "wrath-of-rakshasa", name: "Wrath of Rakshasa", type: "ROLLER_COASTER" },
+      { slug: "x-flight", name: "X-Flight", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -506,6 +541,10 @@ export const parks: SeedPark[] = [
       { slug: "skyhawk", name: "Skyhawk", type: "FLAT_RIDE", manufacturer: "S&S", opened: 2003 },
       { slug: "maxair", name: "MaXair", type: "FLAT_RIDE", manufacturer: "HUSS", opened: 2005 },
       { slug: "windseeker-cp", name: "WindSeeker", type: "FLAT_RIDE", opened: 2012 },
+      { slug: "sirens-curse", name: "Siren’s Curse", type: "ROLLER_COASTER" },
+      { slug: "wilderness-run", name: "Wilderness Run", type: "ROLLER_COASTER" },
+      { slug: "wild-mouse", name: "Wild Mouse", type: "ROLLER_COASTER" },
+      { slug: "woodstock-express", name: "Woodstock Express", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -531,6 +570,11 @@ export const parks: SeedPark[] = [
       { slug: "delirium", name: "Delirium", type: "FLAT_RIDE", manufacturer: "HUSS", opened: 2010 },
       { slug: "drop-tower-scream-zone", name: "Drop Tower: Scream Zone", type: "FLAT_RIDE", manufacturer: "S&S", opened: 2011 },
       { slug: "backlot-stunt-coaster", name: "Backlot Stunt Coaster", type: "ROLLER_COASTER", manufacturer: "Premier Rides", opened: 2005 },
+      { slug: "great-pumpkin-coaster", name: "Great Pumpkin Coaster", type: "ROLLER_COASTER" },
+      { slug: "invertigo", name: "Invertigo", type: "ROLLER_COASTER" },
+      { slug: "queen-city-stunt-coaster", name: "Queen City Stunt Coaster", type: "ROLLER_COASTER" },
+      { slug: "woodstock-express", name: "Woodstock Express", type: "ROLLER_COASTER" },
+      { slug: "woodstocks-air-rail", name: "Woodstock’s Air Rail", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -550,6 +594,14 @@ export const parks: SeedPark[] = [
       { slug: "flight-of-fear-kd", name: "Flight of Fear", type: "ROLLER_COASTER", manufacturer: "Premier Rides", opened: 1996 },
       { slug: "anaconda", name: "Anaconda", type: "ROLLER_COASTER", manufacturer: "Arrow Dynamics", opened: 1991 },
       { slug: "racer-75", name: "Racer 75", type: "ROLLER_COASTER", opened: 1975 },
+      { slug: "apple-zapple", name: "Apple Zapple", type: "ROLLER_COASTER" },
+      { slug: "backlot-stunt-coaster", name: "Backlot Stunt Coaster", type: "ROLLER_COASTER" },
+      { slug: "great-pumpkin-coaster", name: "Great Pumpkin Coaster", type: "ROLLER_COASTER" },
+      { slug: "pantherian", name: "Pantherian", type: "ROLLER_COASTER" },
+      { slug: "rapterra", name: "Rapterra", type: "ROLLER_COASTER" },
+      { slug: "reptilian", name: "Reptilian", type: "ROLLER_COASTER" },
+      { slug: "tumbili", name: "Tumbili", type: "ROLLER_COASTER" },
+      { slug: "woodstock-express", name: "Woodstock Express", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -573,6 +625,11 @@ export const parks: SeedPark[] = [
       { slug: "carolina-goldrusher", name: "Carolina Goldrusher", type: "ROLLER_COASTER", manufacturer: "Arrow Dynamics", opened: 1973 },
       { slug: "flying-cobras", name: "Flying Cobras", type: "ROLLER_COASTER", manufacturer: "Vekoma", opened: 2000 },
       { slug: "vortex-carowinds", name: "Vortex", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 1992 },
+      { slug: "kiddy-hawk", name: "Kiddy Hawk", type: "ROLLER_COASTER" },
+      { slug: "snoopys-racing-railway", name: "Snoopy’s Racing Railway", type: "ROLLER_COASTER" },
+      { slug: "thunder-striker", name: "Thunder Striker", type: "ROLLER_COASTER" },
+      { slug: "wilderness-run", name: "Wilderness Run", type: "ROLLER_COASTER" },
+      { slug: "woodstock-express", name: "Woodstock Express", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -596,6 +653,9 @@ export const parks: SeedPark[] = [
       { slug: "timber-mountain-log-ride", name: "Timber Mountain Log Ride", type: "WATER_RIDE", opened: 1969 },
       { slug: "supreme-scream", name: "Supreme Scream", type: "FLAT_RIDE", manufacturer: "S&S", opened: 2000 },
       { slug: "windseeker-knotts", name: "WindSeeker", type: "FLAT_RIDE", opened: 2013 },
+      { slug: "coast-rider", name: "Coast Rider", type: "ROLLER_COASTER" },
+      { slug: "pony-express", name: "Pony Express", type: "ROLLER_COASTER" },
+      { slug: "snoopys-tenderpaw-twister-coaster", name: "Snoopy’s Tenderpaw Twister Coaster", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -700,6 +760,10 @@ export const parks: SeedPark[] = [
       { slug: "falcons-fury", name: "Falcon's Fury", type: "FLAT_RIDE", manufacturer: "S&S", opened: 2014 },
       { slug: "congo-river-rapids", name: "Congo River Rapids", type: "WATER_RIDE", opened: 1980 },
       { slug: "stanley-falls-flume", name: "Stanley Falls Flume", type: "WATER_RIDE", opened: 1979 },
+      { slug: "air-grover", name: "Air Grover", type: "ROLLER_COASTER" },
+      { slug: "cobras-curse", name: "Cobra's Curse", type: "ROLLER_COASTER" },
+      { slug: "phoenix-rising", name: "Phoenix Rising", type: "ROLLER_COASTER" },
+      { slug: "tigris", name: "Tigris", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -719,6 +783,10 @@ export const parks: SeedPark[] = [
       { slug: "griffon", name: "Griffon", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2007 },
       { slug: "loch-ness-monster", name: "Loch Ness Monster", type: "ROLLER_COASTER", manufacturer: "Arrow Dynamics", opened: 1978 },
       { slug: "tempesto", name: "Tempesto", type: "ROLLER_COASTER", manufacturer: "Premier Rides", opened: 2015 },
+      { slug: "big-bad-wolf-the-wolfs-revenge", name: "Big Bad Wolf: The Wolf’s Revenge", type: "ROLLER_COASTER" },
+      { slug: "darkoaster", name: "DarKoaster", type: "ROLLER_COASTER" },
+      { slug: "grovers-alpine-express", name: "Grover's Alpine Express", type: "ROLLER_COASTER" },
+      { slug: "invadr", name: "InvadR", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -737,6 +805,8 @@ export const parks: SeedPark[] = [
       { slug: "kraken", name: "Kraken", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2000 },
       { slug: "journey-to-atlantis-orlando", name: "Journey to Atlantis", type: "WATER_RIDE", opened: 1998 },
       { slug: "pipeline-the-surf-coaster", name: "Pipeline: The Surf Coaster", type: "ROLLER_COASTER", opened: 2023 },
+      { slug: "penguin-trek", name: "Penguin Trek", type: "ROLLER_COASTER" },
+      { slug: "super-grovers-box-car-derby", name: "Super Grover's Box Car Derby", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -775,6 +845,9 @@ export const parks: SeedPark[] = [
       { slug: "thunderhead", name: "Thunderhead", type: "ROLLER_COASTER", manufacturer: "GCI", opened: 2004 },
       { slug: "firechaser-express", name: "FireChaser Express", type: "ROLLER_COASTER", opened: 2014 },
       { slug: "mystery-mine", name: "Mystery Mine", type: "ROLLER_COASTER", manufacturer: "S&S", opened: 2007 },
+      { slug: "blazing-fury", name: "Blazing Fury", type: "ROLLER_COASTER" },
+      { slug: "dragonflier", name: "Dragonflier", type: "ROLLER_COASTER" },
+      { slug: "whistle-punk-chaser", name: "Whistle Punk Chaser", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -792,6 +865,8 @@ export const parks: SeedPark[] = [
       { slug: "powder-keg", name: "Powder Keg", type: "ROLLER_COASTER", manufacturer: "S&S", opened: 2010 },
       { slug: "wildfire-sdc", name: "Wildfire", type: "ROLLER_COASTER", opened: 2001 },
       { slug: "thunderation", name: "Thunderation", type: "ROLLER_COASTER", opened: 1994 },
+      { slug: "fire-in-the-hole", name: "Fire In The Hole", type: "ROLLER_COASTER" },
+      { slug: "grand-exposition-coaster", name: "Grand Exposition Coaster", type: "ROLLER_COASTER" },
     ],
   },
 
@@ -817,6 +892,9 @@ export const parks: SeedPark[] = [
       { slug: "comet-hp", name: "Comet", type: "ROLLER_COASTER", opened: 1946 },
       { slug: "trailblazer", name: "Trailblazer", type: "ROLLER_COASTER", manufacturer: "Mack Rides", opened: 1974 },
       { slug: "laff-trakk", name: "Laff Trakk", type: "ROLLER_COASTER", manufacturer: "Maurer Söhne", opened: 2011 },
+      { slug: "cocoa-cruiser", name: "Cocoa Cruiser", type: "ROLLER_COASTER" },
+      { slug: "jolly-rancher-remix", name: "Jolly Rancher Remix", type: "ROLLER_COASTER" },
+      { slug: "wild-mouse", name: "Wild Mouse", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -836,6 +914,7 @@ export const parks: SeedPark[] = [
       { slug: "racer-kennywood", name: "Racer", type: "ROLLER_COASTER", opened: 1927 },
       { slug: "sky-rocket", name: "Sky Rocket", type: "ROLLER_COASTER", manufacturer: "Premier Rides", opened: 2010 },
       { slug: "exterminator", name: "Exterminator", type: "ROLLER_COASTER", opened: 1999 },
+      { slug: "lil-phantom", name: "Lil' Phantom", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -947,6 +1026,7 @@ export const parks: SeedPark[] = [
       { slug: "mind-eraser-darien", name: "Mind Eraser", type: "ROLLER_COASTER", manufacturer: "Vekoma", opened: 1994 },
       { slug: "boomerang-darien", name: "Boomerang", type: "ROLLER_COASTER", manufacturer: "Vekoma" },
       { slug: "motocoaster", name: "Motocoaster", type: "ROLLER_COASTER", manufacturer: "Intamin", opened: 2008 },
+      { slug: "hoot-n-holler", name: "Hoot N Holler", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -966,6 +1046,7 @@ export const parks: SeedPark[] = [
       { slug: "runaway-tram", name: "Runaway Tram", type: "ROLLER_COASTER", opened: 2000 },
       { slug: "rollies-coaster", name: "Rollie's Coaster", type: "ROLLER_COASTER" },
       { slug: "wild-whizzer", name: "The Wild Whizzer", type: "ROLLER_COASTER" },
+      { slug: "doo-wopper", name: "Doo Wopper", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -988,6 +1069,7 @@ export const parks: SeedPark[] = [
       { slug: "turkish-twist", name: "Turkish Twist", type: "FLAT_RIDE" },
       { slug: "antique-carousel-canobie", name: "Antique Carousel", type: "FLAT_RIDE" },
       { slug: "antique-cars-canobie", name: "Antique Cars", type: "TRANSPORT" },
+      { slug: "dragon", name: "Dragon", type: "ROLLER_COASTER" },
     ],
   },
 
@@ -1010,6 +1092,12 @@ export const parks: SeedPark[] = [
       { slug: "thunderbolt-sfne", name: "Thunderbolt", type: "ROLLER_COASTER", opened: 1941 },
       { slug: "flashback-sfne", name: "Flashback", type: "ROLLER_COASTER", manufacturer: "Vekoma" },
       { slug: "goliath-sfne", name: "Goliath", type: "ROLLER_COASTER", manufacturer: "Vekoma" },
+      { slug: "catwoman-whip", name: "Catwoman Whip", type: "ROLLER_COASTER" },
+      { slug: "gotham-city-gauntlet-escape-from-arkham-asylum", name: "Gotham City Gauntlet Escape from Arkham Asylum", type: "ROLLER_COASTER" },
+      { slug: "great-chase", name: "Great Chase", type: "ROLLER_COASTER" },
+      { slug: "joker", name: "Joker", type: "ROLLER_COASTER" },
+      { slug: "quantum-accelerator", name: "Quantum Accelerator", type: "ROLLER_COASTER" },
+      { slug: "riddler-revenge", name: "Riddler Revenge", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -1030,6 +1118,9 @@ export const parks: SeedPark[] = [
       { slug: "the-joker-sfdk", name: "THE JOKER", type: "ROLLER_COASTER", manufacturer: "RMC", opened: 2016 },
       { slug: "batman-the-ride-sfdk", name: "BATMAN: The Ride", type: "ROLLER_COASTER", manufacturer: "S&S", opened: 2019 },
       { slug: "v2-vertical-velocity", name: "V2: Vertical Velocity", type: "ROLLER_COASTER", manufacturer: "Intamin", opened: 2001 },
+      { slug: "flash-vertical-velocity", name: "Flash: Vertical Velocity", type: "ROLLER_COASTER" },
+      { slug: "roadrunner-express", name: "Roadrunner Express", type: "ROLLER_COASTER" },
+      { slug: "sidewinder-safari", name: "Sidewinder Safari", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -1104,6 +1195,9 @@ export const parks: SeedPark[] = [
       { slug: "kiddie-coaster-playland", name: "The Kiddie Coaster", type: "KIDDIE", opened: 1928 },
       { slug: "kiddie-carousel-playland", name: "The Kiddie Carousel", type: "KIDDIE", opened: 1928 },
       { slug: "ye-olde-mill", name: "Ye Olde Mill", type: "DARK_RIDE", opened: 1928 },
+      { slug: "crazy-mouse", name: "Crazy Mouse", type: "ROLLER_COASTER" },
+      { slug: "family-flyer", name: "Family Flyer", type: "ROLLER_COASTER" },
+      { slug: "kiddy-coaster", name: "Kiddy Coaster", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -1140,6 +1234,7 @@ export const parks: SeedPark[] = [
       { slug: "lego-ninjago-the-ride", name: "LEGO NINJAGO The Ride", type: "DARK_RIDE", opened: 2017 },
       { slug: "driving-school-legoland", name: "Driving School", type: "KIDDIE", opened: 2011 },
       { slug: "flying-school", name: "Flying School", type: "ROLLER_COASTER", opened: 2011 },
+      { slug: "galacticoaster", name: "Galacticoaster", type: "ROLLER_COASTER" },
     ],
   },
 
@@ -1161,6 +1256,7 @@ export const parks: SeedPark[] = [
       { slug: "dragon-slayer", name: "Dragon Slayer", type: "ROLLER_COASTER", manufacturer: "S&S", opened: 2021 },
       { slug: "draken-falls", name: "Draken Falls", type: "WATER_RIDE" },
       { slug: "flying-viking", name: "Flying Viking", type: "ROLLER_COASTER" },
+      { slug: "phoenix", name: "Phoenix", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -1179,6 +1275,7 @@ export const parks: SeedPark[] = [
       { slug: "lost-coaster-superstition-mountain", name: "Lost Coaster of Superstition Mountain", type: "ROLLER_COASTER", opened: 2002 },
       { slug: "tigrr-coaster", name: "Tig'rr Coaster", type: "ROLLER_COASTER", manufacturer: "Anton Schwarzkopf", opened: 1984 },
       { slug: "all-american-triple-loop", name: "All American Triple Loop", type: "ROLLER_COASTER", opened: 2024 },
+      { slug: "cyclone", name: "Cyclone", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -1201,6 +1298,7 @@ export const parks: SeedPark[] = [
       { slug: "frog-hopper-quassy", name: "Frog Hopper", type: "KIDDIE" },
       { slug: "crazy-cups-quassy", name: "Crazy Cups", type: "FLAT_RIDE" },
       { slug: "quassy-train", name: "Quassy Train", type: "TRANSPORT" },
+      { slug: "crazy-8-spin-coaster", name: "Crazy 8 Spin Coaster", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -1219,6 +1317,9 @@ export const parks: SeedPark[] = [
       { slug: "kentucky-flyer", name: "Kentucky Flyer", type: "ROLLER_COASTER", manufacturer: "GCI", opened: 2019 },
       { slug: "roller-skater-kk", name: "Roller Skater", type: "KIDDIE" },
       { slug: "flying-fox-kk", name: "Flying Fox", type: "ROLLER_COASTER", opened: 2026 },
+      { slug: "hollyhock-and-roll", name: "Hollyhock and Roll", type: "ROLLER_COASTER" },
+      { slug: "wind-chaser", name: "Wind Chaser", type: "ROLLER_COASTER" },
+      { slug: "woodland-run", name: "Woodland Run", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -1363,6 +1464,7 @@ export const parks: SeedPark[] = [
       { slug: "thunder-falls", name: "Thunder Falls", type: "WATER_RIDE" },
       { slug: "astrosphere", name: "Astrosphere", type: "FLAT_RIDE" },
       { slug: "grand-carousel-funtown", name: "Grand Carousel", type: "FLAT_RIDE" },
+      { slug: "wild-mouse", name: "Wild Mouse", type: "ROLLER_COASTER" },
     ],
   },
 
@@ -1427,6 +1529,8 @@ export const parks: SeedPark[] = [
       { slug: "super-fire-ball", name: "Super Fire Ball", type: "FLAT_RIDE" },
       { slug: "sea-dragon-cliffs", name: "Sea Dragon", type: "FLAT_RIDE" },
       { slug: "tilt-a-whirl-cliffs", name: "Tilt-A-Whirl", type: "FLAT_RIDE" },
+      { slug: "galaxi", name: "Galaxi", type: "ROLLER_COASTER" },
+      { slug: "spin-o-rama", name: "Spin-O-Rama", type: "ROLLER_COASTER" },
     ],
   },
 
@@ -1450,6 +1554,7 @@ export const parks: SeedPark[] = [
       { slug: "cosmic-crash", name: "Cosmic Crash", type: "FLAT_RIDE" },
       { slug: "sky-fighters-oaks", name: "Sky Fighters", type: "KIDDIE", opened: 1949 },
       { slug: "oaks-park-train", name: "Oaks Park Train", type: "TRANSPORT" },
+      { slug: "zoooooom-coaster", name: "Zoooooom Coaster", type: "ROLLER_COASTER" },
     ],
   },
 
@@ -1494,6 +1599,8 @@ export const parks: SeedPark[] = [
       { slug: "pirate-ship-wild-waves", name: "Pirate Ship", type: "FLAT_RIDE" },
       { slug: "wild-wagon", name: "Wild Wagon", type: "KIDDIE" },
       { slug: "red-baron-wild-waves", name: "Red Baron", type: "KIDDIE" },
+      { slug: "kiddie-coaster", name: "Kiddie Coaster", type: "ROLLER_COASTER" },
+      { slug: "klondike-gold-rusher", name: "Klondike Gold Rusher", type: "ROLLER_COASTER" },
     ],
   },
 
@@ -1518,6 +1625,7 @@ export const parks: SeedPark[] = [
       { slug: "dodgem-camden", name: "Dodgem Cars", type: "FLAT_RIDE" },
       { slug: "scrambler-camden", name: "Scrambler", type: "FLAT_RIDE" },
       { slug: "camden-park-railway", name: "Miniature Railway", type: "TRANSPORT" },
+      { slug: "slingshot", name: "Slingshot", type: "ROLLER_COASTER" },
     ],
   },
 

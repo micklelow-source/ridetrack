@@ -4,7 +4,7 @@ A web app for tracking your personal ride status at amusement parks, checking in
 
 ## Features
 
-- **Browse parks** — search and filter 40 seeded USA amusement parks (Disney, Universal, Six Flags, Cedar Fair legacy parks, SeaWorld/Busch Gardens, Herschend, and notable independents) with 130+ headline rides.
+- **Browse parks** — search, filter, and sort 69 seeded USA amusement parks across 38 states (Disney, Universal, Six Flags, Cedar Fair legacy parks, SeaWorld/Busch Gardens, Herschend, and notable independents) with 587 rides.
 - **Track ride status** — mark each ride as *ridden*, *want to ride*, or *favorite* per park.
 - **Check in** — check in at a park with an optional note, and choose who can see it (public, friends, or just you).
 - **Google sign-in** — login via your Google account (NextAuth).
@@ -51,10 +51,10 @@ npm run db:studio    # browse the database in Prisma Studio
 
 ## Adding more parks
 
-Park and ride data lives in `prisma/seed-data.ts` as a plain TypeScript array — it currently covers the major US chains plus notable independents (40 parks / 130+ rides) as a starting point, not the full universe of USA amusement parks. To extend it:
+Park and ride data lives in `prisma/seed-data.ts` as a plain TypeScript array — it currently covers the major US chains plus notable independents (69 parks / 587 rides across 38 states). It lists each park's notable rides rather than literally every attraction, so there's still room to extend it. To do so:
 
 1. Add a new `SeedPark` entry (or more `SeedRide`s to an existing park) to `prisma/seed-data.ts`.
-2. Run `npm run db:seed` — it's an upsert, so re-running is safe and idempotent.
+2. Run `npm run db:seed` — it upserts, and it also **prunes**: anything removed from `seed-data.ts` is deleted from the database, so the seed file is the single source of truth.
 
 ## Project structure
 

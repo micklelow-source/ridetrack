@@ -618,9 +618,16 @@ export const parks: SeedPark[] = [
     description:
       "Opened in 1976 on the banks of the Minnesota River in Shakopee, Valleyfair has long been the Twin Cities' major regional theme park.",
     rides: [
-      { slug: "wild-thing", name: "Wild Thing", type: "ROLLER_COASTER", opened: 1996 },
-      { slug: "steel-venom", name: "Steel Venom", type: "ROLLER_COASTER", manufacturer: "S&S", opened: 2003 },
-      { slug: "renegade-valleyfair", name: "Renegade", type: "ROLLER_COASTER", opened: 1995 },
+      { slug: "wild-thing", name: "Wild Thing", type: "ROLLER_COASTER", manufacturer: "Morgan", opened: 1996 },
+      { slug: "steel-venom", name: "Steel Venom", type: "ROLLER_COASTER", manufacturer: "Intamin", opened: 2003 },
+      { slug: "renegade-valleyfair", name: "Renegade", type: "ROLLER_COASTER", manufacturer: "GCI", opened: 2007 },
+      { slug: "high-roller-valleyfair", name: "High Roller", type: "ROLLER_COASTER", opened: 1976 },
+      { slug: "corkscrew-valleyfair", name: "Corkscrew", type: "ROLLER_COASTER", manufacturer: "Arrow Dynamics", opened: 1980 },
+      { slug: "excalibur-valleyfair", name: "Excalibur", type: "ROLLER_COASTER", manufacturer: "Arrow Dynamics", opened: 1989 },
+      { slug: "mad-mouse-valleyfair", name: "Mad Mouse", type: "ROLLER_COASTER", manufacturer: "Arrow Dynamics", opened: 1999 },
+      { slug: "cosmic-coaster", name: "Cosmic Coaster", type: "KIDDIE", manufacturer: "Zamperla", opened: 2011 },
+      { slug: "power-tower-valleyfair", name: "Power Tower", type: "FLAT_RIDE", manufacturer: "S&S" },
+      { slug: "xtreme-swing", name: "Xtreme Swing", type: "FLAT_RIDE" },
     ],
   },
   {
@@ -946,7 +953,12 @@ export const parks: SeedPark[] = [
     rides: [
       { slug: "wicked-cyclone", name: "Wicked Cyclone", type: "ROLLER_COASTER", manufacturer: "RMC", opened: 2015 },
       { slug: "superman-the-ride", name: "Superman The Ride", type: "ROLLER_COASTER", manufacturer: "Intamin", opened: 2000 },
-      { slug: "batman-the-dark-knight-sfne", name: "Batman: The Dark Knight", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2021 },
+      { slug: "batman-the-dark-knight-sfne", name: "Batman: The Dark Knight", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2002 },
+      { slug: "catwomans-whip", name: "Catwoman's Whip", type: "ROLLER_COASTER" },
+      { slug: "pandemonium-sfne", name: "Pandemonium", type: "ROLLER_COASTER", manufacturer: "Gerstlauer" },
+      { slug: "thunderbolt-sfne", name: "Thunderbolt", type: "ROLLER_COASTER", opened: 1941 },
+      { slug: "flashback-sfne", name: "Flashback", type: "ROLLER_COASTER", manufacturer: "Vekoma" },
+      { slug: "goliath-sfne", name: "Goliath", type: "ROLLER_COASTER", manufacturer: "Vekoma" },
     ],
   },
   {
@@ -960,7 +972,13 @@ export const parks: SeedPark[] = [
       "Opened in 1968 as Marine World, a marine-life and wildlife park in Redwood City before relocating to Vallejo in 1986. Six Flags began operating it in 2007, blending drive-through wildlife, marine shows, and thrill rides.",
     rides: [
       { slug: "medusa", name: "Medusa", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2000 },
-      { slug: "superman-ultimate-flight", name: "Superman Ultimate Flight", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2011 },
+      { slug: "superman-ultimate-flight", name: "Superman Ultimate Flight", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2012 },
+      { slug: "kong-sfdk", name: "Kong", type: "ROLLER_COASTER", manufacturer: "Vekoma", opened: 1998 },
+      { slug: "boomerang-sfdk", name: "Boomerang: Coast to Coaster", type: "ROLLER_COASTER", manufacturer: "Vekoma" },
+      { slug: "cobra-sfdk", name: "Cobra", type: "ROLLER_COASTER" },
+      { slug: "the-joker-sfdk", name: "THE JOKER", type: "ROLLER_COASTER", manufacturer: "RMC", opened: 2016 },
+      { slug: "batman-the-ride-sfdk", name: "BATMAN: The Ride", type: "ROLLER_COASTER", manufacturer: "S&S", opened: 2019 },
+      { slug: "v2-vertical-velocity", name: "V2: Vertical Velocity", type: "ROLLER_COASTER", manufacturer: "Intamin", opened: 2001 },
     ],
   },
   {

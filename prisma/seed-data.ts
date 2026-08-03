@@ -640,9 +640,13 @@ export const parks: SeedPark[] = [
     description:
       "Opened in 1973 in Kansas City, loosely themed around Jules Verne's 'Around the World in Eighty Days,' with lands representing Africa, Europe, and Asia.",
     rides: [
-      { slug: "mamba", name: "Mamba", type: "ROLLER_COASTER", opened: 1998 },
-      { slug: "patriot", name: "Patriot", type: "ROLLER_COASTER", manufacturer: "S&S", opened: 2006 },
-      { slug: "prowler", name: "Prowler", type: "ROLLER_COASTER", manufacturer: "GCI", opened: 2010 },
+      { slug: "mamba", name: "Mamba", type: "ROLLER_COASTER", manufacturer: "Morgan", opened: 1998 },
+      { slug: "patriot", name: "Patriot", type: "ROLLER_COASTER", manufacturer: "B&M", opened: 2006 },
+      { slug: "prowler", name: "Prowler", type: "ROLLER_COASTER", manufacturer: "GCI", opened: 2009 },
+      { slug: "timber-wolf", name: "Timber Wolf", type: "ROLLER_COASTER", opened: 1989 },
+      { slug: "zambezi-zinger", name: "Zambezi Zinger", type: "ROLLER_COASTER", manufacturer: "GCI", opened: 2023 },
+      { slug: "spinning-dragons", name: "Spinning Dragons", type: "ROLLER_COASTER", manufacturer: "Maurer Söhne", opened: 2004 },
+      { slug: "boomerang-wof", name: "Boomerang", type: "ROLLER_COASTER", manufacturer: "Vekoma" },
     ],
   },
 
@@ -1009,9 +1013,13 @@ export const parks: SeedPark[] = [
     description:
       "Began in 1956 as a small children's park called Deer Park Funland and expanded into a full-scale amusement park over the following decades. Cedar Fair acquired it in 2001.",
     rides: [
-      { slug: "shivering-timbers", name: "Shivering Timbers", type: "ROLLER_COASTER", opened: 1998 },
+      { slug: "shivering-timbers", name: "Shivering Timbers", type: "ROLLER_COASTER", manufacturer: "CCI", opened: 1998 },
       { slug: "wolverine-wildcat", name: "Wolverine Wildcat", type: "ROLLER_COASTER", opened: 1988 },
-      { slug: "corkscrew-mi-adventure", name: "Corkscrew", type: "ROLLER_COASTER", manufacturer: "Arrow Dynamics", opened: 1978 },
+      { slug: "corkscrew-mi-adventure", name: "Corkscrew", type: "ROLLER_COASTER", manufacturer: "Arrow Dynamics", opened: 1979 },
+      { slug: "thunderhawk-mi-adventure", name: "Thunderhawk", type: "ROLLER_COASTER", manufacturer: "Vekoma", opened: 2008 },
+      { slug: "zachs-zoomer", name: "Zach's Zoomer", type: "ROLLER_COASTER", opened: 1994 },
+      { slug: "mad-mouse-mi-adventure", name: "Mad Mouse", type: "ROLLER_COASTER", opened: 1999 },
+      { slug: "woodstock-express-mi", name: "Woodstock Express", type: "KIDDIE", opened: 1999 },
     ],
   },
   {
@@ -1191,8 +1199,11 @@ export const parks: SeedPark[] = [
     description:
       "Opened in 1980 as the first theme park built entirely around a TV show, based on Sesame Street. SeaWorld Entertainment acquired it in 2019, and a second location opened near San Diego in 2022.",
     rides: [
-      { slug: "vapor-trail", name: "Vapor Trail", type: "ROLLER_COASTER" },
+      { slug: "vapor-trail", name: "Vapor Trail", type: "ROLLER_COASTER", manufacturer: "Vekoma", opened: 1998 },
       { slug: "big-birds-rambling-river", name: "Big Bird's Rambling River", type: "WATER_RIDE" },
+      { slug: "oscars-wacky-taxi", name: "Oscar's Wacky Taxi", type: "ROLLER_COASTER", manufacturer: "GCI", opened: 2018 },
+      { slug: "elmos-cloud-chaser", name: "Elmo's Cloud Chaser", type: "FLAT_RIDE", opened: 2011 },
+      { slug: "flyin-fish", name: "Flyin' Fish", type: "KIDDIE", opened: 2006 },
     ],
   },
 

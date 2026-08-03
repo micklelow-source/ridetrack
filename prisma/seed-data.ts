@@ -859,7 +859,17 @@ export const parks: SeedPark[] = [
       "Founded in 1886 on the shore of the Great Salt Lake before relocating to its current Farmington site in 1896, Lagoon is Utah's largest amusement park and one of the oldest still operating in the U.S.",
     rides: [
       { slug: "cannibal", name: "Cannibal", type: "ROLLER_COASTER", opened: 2015 },
-      { slug: "wicked", name: "Wicked", type: "ROLLER_COASTER", manufacturer: "S&S", opened: 2007 },
+      { slug: "wicked", name: "Wicked", type: "ROLLER_COASTER", manufacturer: "Zierer", opened: 2007 },
+      { slug: "primordial", name: "Primordial", type: "DARK_RIDE", opened: 2023 },
+      { slug: "colossus-the-fire-dragon", name: "Colossus the Fire Dragon", type: "ROLLER_COASTER", manufacturer: "Anton Schwarzkopf", opened: 1983 },
+      { slug: "roller-coaster-lagoon", name: "Roller Coaster", type: "ROLLER_COASTER", opened: 1921 },
+      { slug: "bombora", name: "BomBora", type: "ROLLER_COASTER", opened: 2011 },
+      { slug: "wild-mouse-lagoon", name: "Wild Mouse", type: "ROLLER_COASTER", opened: 1998 },
+      { slug: "spider-lagoon", name: "Spider", type: "ROLLER_COASTER", opened: 2003 },
+      { slug: "bat-lagoon", name: "Bat", type: "ROLLER_COASTER", opened: 2005 },
+      { slug: "jet-star-2", name: "Jet Star 2", type: "ROLLER_COASTER", manufacturer: "Anton Schwarzkopf", opened: 1976 },
+      { slug: "puff-little-fire-dragon", name: "Puff the Little Fire Dragon", type: "KIDDIE", opened: 1985 },
+      { slug: "lagoon-carousel", name: "Lagoon Carousel", type: "FLAT_RIDE", opened: 1906 },
     ],
   },
   {
@@ -874,6 +884,11 @@ export const parks: SeedPark[] = [
     rides: [
       { slug: "tantrum", name: "Tantrum", type: "ROLLER_COASTER", manufacturer: "Gerstlauer", opened: 2018 },
       { slug: "ride-of-steel", name: "Ride of Steel", type: "ROLLER_COASTER", manufacturer: "Intamin", opened: 1999 },
+      { slug: "predator-darien", name: "Predator", type: "ROLLER_COASTER", opened: 1990 },
+      { slug: "viper-darien", name: "Viper", type: "ROLLER_COASTER", manufacturer: "Arrow Dynamics", opened: 1982 },
+      { slug: "mind-eraser-darien", name: "Mind Eraser", type: "ROLLER_COASTER", manufacturer: "Vekoma", opened: 1994 },
+      { slug: "boomerang-darien", name: "Boomerang", type: "ROLLER_COASTER", manufacturer: "Vekoma" },
+      { slug: "motocoaster", name: "Motocoaster", type: "ROLLER_COASTER", manufacturer: "Intamin", opened: 2008 },
     ],
   },
   {
@@ -1005,6 +1020,12 @@ export const parks: SeedPark[] = [
       "Opened in 1928 on Long Island Sound, Playland is one of only two amusement parks in the U.S. designated a National Historic Landmark, alongside Kennywood, and is still owned and operated by Westchester County.",
     rides: [
       { slug: "dragon-coaster", name: "Dragon Coaster", type: "ROLLER_COASTER", opened: 1929 },
+      { slug: "grand-carousel-playland", name: "The Grand Carousel", type: "FLAT_RIDE", opened: 1915 },
+      { slug: "derby-racer", name: "The Derby Racer", type: "FLAT_RIDE", opened: 1928 },
+      { slug: "the-whip-playland", name: "The Whip", type: "FLAT_RIDE", opened: 1928 },
+      { slug: "kiddie-coaster-playland", name: "The Kiddie Coaster", type: "KIDDIE", opened: 1928 },
+      { slug: "kiddie-carousel-playland", name: "The Kiddie Carousel", type: "KIDDIE", opened: 1928 },
+      { slug: "ye-olde-mill", name: "Ye Olde Mill", type: "DARK_RIDE", opened: 1928 },
     ],
   },
   {

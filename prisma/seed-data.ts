@@ -1057,8 +1057,12 @@ export const parks: SeedPark[] = [
     description:
       "Opened in 1926 on the shore of Lake Shafer, Indiana Beach combines a traditional boardwalk amusement park with lakefront resort cabins and a public beach.",
     rides: [
-      { slug: "cornball-express", name: "Cornball Express", type: "ROLLER_COASTER", opened: 1997 },
-      { slug: "steel-hawg", name: "Steel Hawg", type: "ROLLER_COASTER", manufacturer: "S&S", opened: 2010 },
+      { slug: "cornball-express", name: "Cornball Express", type: "ROLLER_COASTER", opened: 2001 },
+      { slug: "steel-hawg", name: "Steel Hawg", type: "ROLLER_COASTER", manufacturer: "S&S", opened: 2008 },
+      { slug: "hoosier-hurricane", name: "Hoosier Hurricane", type: "ROLLER_COASTER", opened: 1994 },
+      { slug: "lost-coaster-superstition-mountain", name: "Lost Coaster of Superstition Mountain", type: "ROLLER_COASTER", opened: 2002 },
+      { slug: "tigrr-coaster", name: "Tig'rr Coaster", type: "ROLLER_COASTER", manufacturer: "Anton Schwarzkopf", opened: 1984 },
+      { slug: "all-american-triple-loop", name: "All American Triple Loop", type: "ROLLER_COASTER", opened: 2024 },
     ],
   },
   {
@@ -1095,6 +1099,10 @@ export const parks: SeedPark[] = [
     rides: [
       { slug: "storm-chaser", name: "Storm Chaser", type: "ROLLER_COASTER", manufacturer: "RMC", opened: 2016 },
       { slug: "lightning-run", name: "Lightning Run", type: "ROLLER_COASTER", manufacturer: "Chance Rides", opened: 2014 },
+      { slug: "thunder-run-kk", name: "Thunder Run", type: "ROLLER_COASTER", opened: 1990 },
+      { slug: "kentucky-flyer", name: "Kentucky Flyer", type: "ROLLER_COASTER", manufacturer: "GCI", opened: 2019 },
+      { slug: "roller-skater-kk", name: "Roller Skater", type: "KIDDIE" },
+      { slug: "flying-fox-kk", name: "Flying Fox", type: "ROLLER_COASTER", opened: 2026 },
     ],
   },
   {
@@ -1242,9 +1250,16 @@ export const parks: SeedPark[] = [
     state: "MD",
     foundedYear: 1991,
     description:
-      "Opened in 1991 as Wild World, later Adventure World, before Premier Parks (soon renamed Six Flags) acquired it and rebranded it Six Flags America in 1999. It's paired with the Hurricane Harbor water park.",
+      "Opened in 1991 as Wild World, later Adventure World, before Premier Parks (soon renamed Six Flags) acquired it and rebranded it Six Flags America in 1999. CLOSED PERMANENTLY after the 2025 season (final day November 2, 2025) when Six Flags deemed it outside its long-term plans; listed here for historical ride tracking.",
     rides: [
       { slug: "superman-ride-of-steel", name: "Superman: Ride of Steel", type: "ROLLER_COASTER", manufacturer: "Intamin", opened: 2000 },
+      { slug: "wild-one", name: "The Wild One", type: "ROLLER_COASTER", opened: 1917 },
+      { slug: "jokers-jinx", name: "Joker's Jinx", type: "ROLLER_COASTER", manufacturer: "Premier Rides", opened: 1999 },
+      { slug: "roar-sfa", name: "Roar", type: "ROLLER_COASTER", manufacturer: "GCI", opened: 1998 },
+      { slug: "batwing-sfa", name: "Batwing", type: "ROLLER_COASTER", manufacturer: "Vekoma", opened: 2001 },
+      { slug: "firebird-sfa", name: "Firebird", type: "ROLLER_COASTER", manufacturer: "Vekoma", opened: 2019 },
+      { slug: "ragin-cajun-sfa", name: "Ragin' Cajun", type: "ROLLER_COASTER" },
+      { slug: "apocalypse-sfa", name: "Apocalypse", type: "ROLLER_COASTER" },
     ],
   },
 

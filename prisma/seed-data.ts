@@ -1043,8 +1043,12 @@ export const parks: SeedPark[] = [
     description:
       "Opened in 1954 in New Hampshire's White Mountains as a fairy-tale themed park built for young children, Story Land joined the Herschend family of parks in 2019.",
     rides: [
-      { slug: "polar-coaster", name: "Polar Coaster", type: "ROLLER_COASTER", opened: 2006 },
+      { slug: "polar-coaster", name: "Polar Coaster", type: "ROLLER_COASTER", opened: 1987 },
       { slug: "antique-cars", name: "Antique Cars", type: "TRANSPORT" },
+      { slug: "roar-o-saurus", name: "Roar-O-Saurus", type: "ROLLER_COASTER", manufacturer: "GCI", opened: 2014 },
+      { slug: "bamboo-chutes", name: "Bamboo Chutes", type: "WATER_RIDE" },
+      { slug: "swan-boats-story-land", name: "Swan Boats", type: "KIDDIE" },
+      { slug: "teacups-story-land", name: "Teacups", type: "FLAT_RIDE" },
     ],
   },
   {
@@ -1058,7 +1062,11 @@ export const parks: SeedPark[] = [
       "Cypress Gardens opened on this site in 1936, one of Florida's first tourist attractions and a birthplace of competitive water skiing. The current Legoland Florida rides opened in 2011, preserving parts of the historic botanical gardens within the new park.",
     rides: [
       { slug: "coastersaurus", name: "Coastersaurus", type: "ROLLER_COASTER", opened: 2011 },
-      { slug: "the-great-lego-race", name: "The Great LEGO Race", type: "DARK_RIDE", opened: 2017 },
+      { slug: "the-great-lego-race", name: "The Great LEGO Race", type: "ROLLER_COASTER", opened: 2018 },
+      { slug: "the-dragon-legoland", name: "The Dragon", type: "ROLLER_COASTER", opened: 2011 },
+      { slug: "lego-ninjago-the-ride", name: "LEGO NINJAGO The Ride", type: "DARK_RIDE", opened: 2017 },
+      { slug: "driving-school-legoland", name: "Driving School", type: "KIDDIE", opened: 2011 },
+      { slug: "flying-school", name: "Flying School", type: "ROLLER_COASTER", opened: 2011 },
     ],
   },
 
@@ -1257,9 +1265,9 @@ export const parks: SeedPark[] = [
     state: "LA",
     foundedYear: 1996,
     description:
-      "A family amusement park in Baton Rouge paired with the adjoining Blue Bayou water park, opened in the 1990s and now Louisiana's main operating theme park following the 2005 closure of Six Flags New Orleans.",
+      "A family amusement park in Baton Rouge paired with the adjoining Blue Bayou water park. CLOSED PERMANENTLY — the theme park shut down in 2025 after barely a week of that season; the neighboring water park is set to reopen separately under new management. Listed here for historical ride tracking.",
     rides: [
-      { slug: "wildcat", name: "Wildcat", type: "ROLLER_COASTER" },
+      { slug: "ragin-cajun-dixie", name: "Ragin' Cajun", type: "ROLLER_COASTER", manufacturer: "Vekoma" },
     ],
   },
 

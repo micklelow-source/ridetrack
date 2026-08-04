@@ -197,8 +197,10 @@ function ParkItem({
           {park.city}, {park.state}
         </span>
         <span className="text-xs text-black/40 dark:text-white/40">
-          {park._count.rides} rides tracked
-          {session?.user?.id ? ` · ${riddenCount} ridden` : ""}
+          {park._count.rides === 0
+            ? "No rides listed yet"
+            : `${park._count.rides} ride${park._count.rides === 1 ? "" : "s"} tracked`}
+          {session?.user?.id && park._count.rides > 0 ? ` · ${riddenCount} ridden` : ""}
           {park.foundedYear ? ` · est. ${park.foundedYear}` : ""}
         </span>
       </Link>

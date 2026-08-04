@@ -277,7 +277,9 @@ export default async function ParkDetailPage({
 
         {visibleRides.length === 0 && (
           <p className="mb-3 text-sm text-black/60 dark:text-white/60">
-            No rides match these filters.
+            {park.rides.length === 0
+              ? "No rides are listed for this park yet."
+              : "No rides match these filters."}
           </p>
         )}
 

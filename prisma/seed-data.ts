@@ -2805,8 +2805,10 @@ export const parks: SeedPark[] = [
     city: "Westerly",
     state: "RI",
     foundedYear: 1920,
-    description: "Amusement park in Westerly, RI. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "2 rides and attractions listed from the park's own information (https://www.atlanticbeachpark.com/).",
     rides: [
+      { slug: "herschell-spillman-carousel", name: "Herschell-Spillman Carousel", type: "FLAT_RIDE", opened: 1915 },
+      { slug: "bumper-cars", name: "Bumper Cars", type: "FLAT_RIDE" },
     ],
   },
   {
@@ -2819,17 +2821,6 @@ export const parks: SeedPark[] = [
     description: "Amusement park in North Las Vegas, NV. 1 operating roller coaster cataloged by the Roller Coaster Database; other flat and family rides are not yet listed here.",
     rides: [
       { slug: "toy-story-land", name: "Toy Story Land", type: "KIDDIE", opened: 2021 },
-    ],
-  },
-  {
-    slug: "buffalo-bills-resort-and-casino",
-    name: "Buffalo Bill's Resort & Casino",
-    chain: "INDEPENDENT",
-    city: "Primm",
-    state: "NV",
-    foundedYear: 1994,
-    description: "Amusement park in Primm, NV. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
-    rides: [
     ],
   },
   {
@@ -2863,8 +2854,11 @@ export const parks: SeedPark[] = [
     city: "Las Vegas",
     state: "NV",
     foundedYear: 1996,
-    description: "Amusement park in Las Vegas, NV. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "3 rides and attractions listed from the park's own information (https://thestrat.com/attractions/thrill-rides).",
     rides: [
+      { slug: "big-shot", name: "Big Shot", type: "FLAT_RIDE", opened: 1996 },
+      { slug: "x-scream", name: "X-Scream", type: "FLAT_RIDE", opened: 2003 },
+      { slug: "skyjump-las-vegas", name: "SkyJump Las Vegas", type: "OTHER", opened: 2010 },
     ],
   },
   {
@@ -2874,8 +2868,18 @@ export const parks: SeedPark[] = [
     city: "Sparks",
     state: "NV",
     foundedYear: 1994,
-    description: "Amusement park in Sparks, NV. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "10 rides and attractions listed from the park's own information (https://wildisland.com/).",
     rides: [
+      { slug: "black-widow", name: "Black Widow", type: "WATER_RIDE" },
+      { slug: "red-viper", name: "Red Viper", type: "WATER_RIDE" },
+      { slug: "tortuga", name: "Tortuga", type: "WATER_RIDE" },
+      { slug: "g-force", name: "G-Force", type: "WATER_RIDE" },
+      { slug: "eye-of-the-dragon", name: "Eye of the Dragon", type: "WATER_RIDE" },
+      { slug: "zulu-racer", name: "Zulu Racer", type: "WATER_RIDE" },
+      { slug: "montego-bay", name: "Montego Bay", type: "WATER_RIDE" },
+      { slug: "bahama-mama", name: "Bahama Mama", type: "WATER_RIDE" },
+      { slug: "tiny-tides", name: "Tiny Tides", type: "KIDDIE" },
+      { slug: "jungle-karts", name: "Jungle Karts", type: "FLAT_RIDE" },
     ],
   },
   {
@@ -2909,7 +2913,7 @@ export const parks: SeedPark[] = [
     city: "Portage",
     state: "WI",
     foundedYear: 1978,
-    description: "Amusement park in Portage, WI. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "Ski, snowboard and snow-tubing area; its 1970s-80s alpine coaster is long gone and no amusement rides operate.",
     rides: [
     ],
   },
@@ -2947,8 +2951,19 @@ export const parks: SeedPark[] = [
     city: "Wisconsin Dells",
     state: "WI",
     foundedYear: 1979,
-    description: "Amusement park in Wisconsin Dells, WI. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "11 rides and attractions listed from the park's own information (https://www.noahsarkwaterpark.com/discover-the-park/attractions/).",
     rides: [
+      { slug: "scorpions-tail", name: "Scorpion's Tail", type: "WATER_RIDE" },
+      { slug: "black-anaconda", name: "Black Anaconda", type: "WATER_RIDE" },
+      { slug: "raja", name: "Raja", type: "WATER_RIDE" },
+      { slug: "congo-bongo", name: "Congo Bongo", type: "WATER_RIDE" },
+      { slug: "flash-flood", name: "Flash Flood", type: "WATER_RIDE" },
+      { slug: "dark-voyage", name: "Dark Voyage", type: "WATER_RIDE" },
+      { slug: "black-thunder", name: "Black Thunder", type: "WATER_RIDE" },
+      { slug: "chameleon", name: "Chameleon", type: "WATER_RIDE" },
+      { slug: "tadpole-bay", name: "Tadpole Bay", type: "KIDDIE" },
+      { slug: "bumper-boats", name: "Bumper Boats", type: "WATER_RIDE" },
+      { slug: "4-d-movie-theater", name: "4-D Movie Theater", type: "SHOW" },
     ],
   },
   {
@@ -2957,8 +2972,12 @@ export const parks: SeedPark[] = [
     chain: "INDEPENDENT",
     city: "Wisconsin Dells",
     state: "WI",
-    description: "Amusement park in Wisconsin Dells, WI. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "4 rides and attractions listed from the park's own information (https://www.timberfallspark.com/).",
     rides: [
+      { slug: "hellcat", name: "Hellcat", type: "ROLLER_COASTER" },
+      { slug: "timberwolf-log-flume", name: "Timberwolf Log Flume", type: "WATER_RIDE" },
+      { slug: "loggers-lagoon-bumper-boats", name: "Logger's Lagoon Bumper Boats", type: "WATER_RIDE" },
+      { slug: "skyscraper", name: "Skyscraper", type: "FLAT_RIDE" },
     ],
   },
   {
@@ -3039,8 +3058,13 @@ export const parks: SeedPark[] = [
     city: "Sioux Falls",
     state: "SD",
     foundedYear: 1996,
-    description: "Amusement park in Sioux Falls, SD. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "5 rides and attractions listed from the park's own information (https://thunderroadsiouxfalls.com/attractions/outdoor-attractions-prices/).",
     rides: [
+      { slug: "screaming-dragon", name: "Screaming Dragon", type: "ROLLER_COASTER" },
+      { slug: "tilt-a-whirl", name: "Tilt-A-Whirl", type: "FLAT_RIDE" },
+      { slug: "euro-bungy", name: "Euro-Bungy", type: "FLAT_RIDE" },
+      { slug: "go-karts", name: "Go-Karts", type: "FLAT_RIDE" },
+      { slug: "bumper-boats", name: "Bumper Boats", type: "WATER_RIDE" },
     ],
   },
   {
@@ -3075,8 +3099,20 @@ export const parks: SeedPark[] = [
     city: "Pigeon Forge",
     state: "TN",
     foundedYear: 2012,
-    description: "Amusement park in Pigeon Forge, TN. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "12 rides and attractions listed from the park's own information (https://funstopfamilyactionpark.com/).",
     rides: [
+      { slug: "dragon-wagon", name: "Dragon Wagon", type: "ROLLER_COASTER" },
+      { slug: "samba-tower", name: "Samba Tower", type: "FLAT_RIDE" },
+      { slug: "fun-stop-carousel", name: "Fun Stop Carousel", type: "FLAT_RIDE" },
+      { slug: "slingshot", name: "Slingshot", type: "FLAT_RIDE" },
+      { slug: "sky-scraper", name: "Sky Scraper", type: "FLAT_RIDE" },
+      { slug: "soaring-eagle-zipline", name: "Soaring Eagle Zipline", type: "OTHER" },
+      { slug: "space-sled", name: "Space Sled", type: "FLAT_RIDE" },
+      { slug: "ferris-wheel", name: "Ferris Wheel", type: "FLAT_RIDE" },
+      { slug: "sun-slide", name: "Sun Slide", type: "OTHER" },
+      { slug: "elevated-track", name: "Elevated Track", type: "FLAT_RIDE" },
+      { slug: "slick-track", name: "Slick Track", type: "FLAT_RIDE" },
+      { slug: "indoor-pro-track", name: "Indoor Pro Track", type: "FLAT_RIDE" },
     ],
   },
   {
@@ -3193,8 +3229,10 @@ export const parks: SeedPark[] = [
     city: "Pigeon Forge",
     state: "TN",
     foundedYear: 1987,
-    description: "Amusement park in Pigeon Forge, TN. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "2 rides and attractions listed from the park's own information (https://www.visitmysmokies.com/attractions/rockin-raceway/).",
     rides: [
+      { slug: "slick-track-go-karts", name: "Slick Track Go-Karts", type: "FLAT_RIDE" },
+      { slug: "bumper-cars", name: "Bumper Cars", type: "FLAT_RIDE" },
     ],
   },
   {
@@ -3229,8 +3267,12 @@ export const parks: SeedPark[] = [
     city: "Chattanooga",
     state: "TN",
     foundedYear: 1997,
-    description: "Amusement park in Chattanooga, TN. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "4 rides and attractions listed from the park's own information (https://sirgoonys.com/attractions/).",
     rides: [
+      { slug: "power-up-racing", name: "POWER UP Racing", type: "FLAT_RIDE" },
+      { slug: "supercharged-high-speed-racing", name: "Supercharged High Speed Racing", type: "FLAT_RIDE" },
+      { slug: "spin-and-flip-bumper-cars", name: "Spin & Flip Bumper Cars", type: "FLAT_RIDE" },
+      { slug: "bumper-boats", name: "Bumper Boats", type: "WATER_RIDE" },
     ],
   },
   {
@@ -3264,8 +3306,10 @@ export const parks: SeedPark[] = [
     city: "Chattanooga",
     state: "TN",
     foundedYear: 1890,
-    description: "Amusement park in Chattanooga, TN. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "2 rides and attractions listed from the park's own information (https://chattanoogazoo.org/).",
     rides: [
+      { slug: "carousel", name: "Carousel", type: "FLAT_RIDE" },
+      { slug: "zoo-train", name: "Zoo Train", type: "TRANSPORT" },
     ],
   },
   {
@@ -3323,8 +3367,17 @@ export const parks: SeedPark[] = [
     city: "Virginia Beach",
     state: "VA",
     foundedYear: 1994,
-    description: "Amusement park in Virginia Beach, VA. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "9 rides and attractions listed from the park's own information (https://vbmotorworld.com/kart-tracks/).",
     rides: [
+      { slug: "adult-speed-track", name: "Adult Speed Track", type: "FLAT_RIDE" },
+      { slug: "cannonball", name: "Cannonball", type: "FLAT_RIDE" },
+      { slug: "family-track", name: "Family Track", type: "FLAT_RIDE" },
+      { slug: "dune-buggy", name: "Dune Buggy", type: "KIDDIE" },
+      { slug: "stock-track", name: "Stock Track", type: "KIDDIE" },
+      { slug: "kiddie-track", name: "Kiddie Track", type: "KIDDIE" },
+      { slug: "skycoaster", name: "Skycoaster", type: "FLAT_RIDE" },
+      { slug: "bumper-boats", name: "Bumper Boats", type: "WATER_RIDE" },
+      { slug: "gravity-storm", name: "Gravity Storm", type: "FLAT_RIDE" },
     ],
   },
   {
@@ -3334,7 +3387,7 @@ export const parks: SeedPark[] = [
     city: "Woodford",
     state: "VA",
     foundedYear: 2026,
-    description: "Amusement park in Woodford, VA. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "Indoor park at Kalahari Resorts Spotsylvania; announced to open in fall 2026, not yet operating.",
     rides: [
     ],
   },
@@ -3438,8 +3491,11 @@ export const parks: SeedPark[] = [
     city: "Quechee",
     state: "VT",
     foundedYear: 1985,
-    description: "Amusement park in Quechee, VT. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "3 rides and attractions listed from the park's own information (https://www.greateruppervalley.com/businesses/vt-quechee-quechee-gorge-village).",
     rides: [
+      { slug: "jet-star", name: "Jet Star", type: "ROLLER_COASTER" },
+      { slug: "antique-carousel", name: "Antique Carousel", type: "FLAT_RIDE" },
+      { slug: "miniature-train", name: "Miniature Train", type: "TRANSPORT" },
     ],
   },
   {
@@ -3497,8 +3553,10 @@ export const parks: SeedPark[] = [
     city: "Spokane",
     state: "WA",
     foundedYear: 1974,
-    description: "Amusement park in Spokane, WA. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "2 rides and attractions listed from the park's own information (https://my.spokanecity.org/riverfrontspokane/attractions/).",
     rides: [
+      { slug: "looff-carrousel", name: "Looff Carrousel", type: "FLAT_RIDE", opened: 1909 },
+      { slug: "numerica-skyride", name: "Numerica SkyRide", type: "TRANSPORT" },
     ],
   },
   {
@@ -3533,8 +3591,9 @@ export const parks: SeedPark[] = [
     city: "Kingwood",
     state: "WV",
     foundedYear: 1993,
-    description: "Amusement park in Kingwood, WV. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "1 ride and attraction listed from the park's own information (https://wvtourism.com/up-close-with-wv-wildlife/).",
     rides: [
+      { slug: "zoo-train", name: "Zoo Train", type: "TRANSPORT" },
     ],
   },
   {
@@ -3544,7 +3603,7 @@ export const parks: SeedPark[] = [
     city: "Wheeling",
     state: "WV",
     foundedYear: 1900,
-    description: "Amusement park in Wheeling, WV. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "Municipal recreation park - pool, water slide, mini-golf, skating and paddle boats; no amusement rides.",
     rides: [
     ],
   },
@@ -3601,8 +3660,11 @@ export const parks: SeedPark[] = [
     city: "Tuscumbia",
     state: "AL",
     foundedYear: 2005,
-    description: "Amusement park in Tuscumbia, AL. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "3 rides and attractions listed from the park's own information (https://www.colbertcountytourism.org/outdoors/spring-park/).",
     rides: [
+      { slug: "python", name: "Python", type: "ROLLER_COASTER" },
+      { slug: "tuscumbia-railway", name: "Tuscumbia Railway", type: "TRANSPORT" },
+      { slug: "carousel", name: "Carousel", type: "FLAT_RIDE" },
     ],
   },
   {
@@ -3638,8 +3700,21 @@ export const parks: SeedPark[] = [
     city: "Gulf Shores",
     state: "AL",
     foundedYear: 1986,
-    description: "Amusement park in Gulf Shores, AL. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "13 rides and attractions listed from the park's own information (https://watervilleusa.com/attractions/).",
     rides: [
+      { slug: "cannonball-run", name: "Cannonball Run", type: "ROLLER_COASTER" },
+      { slug: "north-shore-wave-pool", name: "North Shore Wave Pool", type: "WATER_RIDE" },
+      { slug: "lazy-river", name: "Lazy River", type: "WATER_RIDE" },
+      { slug: "dune-racer", name: "Dune Racer", type: "WATER_RIDE" },
+      { slug: "jet-stream", name: "Jet Stream", type: "WATER_RIDE" },
+      { slug: "triple-dog-dare", name: "Triple Dog Dare", type: "WATER_RIDE" },
+      { slug: "great-white", name: "Great White", type: "WATER_RIDE" },
+      { slug: "rainbow-falls", name: "Rainbow Falls", type: "WATER_RIDE" },
+      { slug: "screamin-demon", name: "Screamin' Demon", type: "WATER_RIDE" },
+      { slug: "the-gold-rush", name: "The Gold Rush", type: "WATER_RIDE" },
+      { slug: "wawa-world", name: "WaWa World", type: "KIDDIE" },
+      { slug: "flowrider", name: "FlowRider", type: "WATER_RIDE" },
+      { slug: "nascart-go-karts", name: "Nascart Go-Karts", type: "FLAT_RIDE" },
     ],
   },
   {
@@ -3727,17 +3802,6 @@ export const parks: SeedPark[] = [
     ],
   },
   {
-    slug: "frasiers-frontier",
-    name: "Frasier's Frontier",
-    chain: "INDEPENDENT",
-    city: "El Cajon",
-    state: "CA",
-    foundedYear: 1967,
-    description: "Amusement park in El Cajon, CA. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
-    rides: [
-    ],
-  },
-  {
     slug: "funderland-amusement-park",
     name: "Funderland Amusement Park",
     chain: "INDEPENDENT",
@@ -3805,8 +3869,13 @@ export const parks: SeedPark[] = [
     city: "Roseville",
     state: "CA",
     foundedYear: 2007,
-    description: "Amusement park in Roseville, CA. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "5 rides and attractions listed from the park's own information (https://johnspizza.com/).",
     rides: [
+      { slug: "boogie-bump-bumper-cars", name: "Boogie Bump Bumper Cars", type: "FLAT_RIDE" },
+      { slug: "twister", name: "Twister", type: "FLAT_RIDE" },
+      { slug: "kids-train", name: "Kids Train", type: "TRANSPORT" },
+      { slug: "teacups", name: "Teacups", type: "FLAT_RIDE" },
+      { slug: "dinosaur-carousel", name: "Dinosaur Carousel", type: "FLAT_RIDE" },
     ],
   },
   {
@@ -3816,8 +3885,13 @@ export const parks: SeedPark[] = [
     city: "Riverside",
     state: "CA",
     foundedYear: 2007,
-    description: "Amusement park in Riverside, CA. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "5 rides and attractions listed from the park's own information (https://johnspizza.com/riverside/games-attractions).",
     rides: [
+      { slug: "boogie-bump-bumper-cars", name: "Boogie Bump Bumper Cars", type: "FLAT_RIDE" },
+      { slug: "twister", name: "Twister", type: "FLAT_RIDE" },
+      { slug: "kids-train", name: "Kids Train", type: "TRANSPORT" },
+      { slug: "teacups", name: "Teacups", type: "FLAT_RIDE" },
+      { slug: "dinosaur-carousel", name: "Dinosaur Carousel", type: "FLAT_RIDE" },
     ],
   },
   {
@@ -3839,7 +3913,7 @@ export const parks: SeedPark[] = [
     city: "Oxnard",
     state: "CA",
     foundedYear: 2028,
-    description: "Amusement park in Oxnard, CA. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "Karls Adventure Village at Channel Islands Harbor is in planning; the developer targets a 2028 opening.",
     rides: [
     ],
   },
@@ -3890,7 +3964,7 @@ export const parks: SeedPark[] = [
     city: "Pomona",
     state: "CA",
     foundedYear: 1922,
-    description: "Amusement park in Pomona, CA. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "Fairplex hosts the L.A. County Fair each spring; its rides are a travelling carnival midway rather than permanent installations.",
     rides: [
     ],
   },
@@ -3937,8 +4011,14 @@ export const parks: SeedPark[] = [
     city: "Tucson",
     state: "AZ",
     foundedYear: 1992,
-    description: "Amusement park in Tucson, AZ. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "6 rides and attractions listed from the park's own information (https://funtasticks.com/attractions).",
     rides: [
+      { slug: "grand-prix-go-karts", name: "Grand Prix Go-Karts", type: "FLAT_RIDE" },
+      { slug: "rookie-karts", name: "Rookie Karts", type: "KIDDIE" },
+      { slug: "bumper-boats", name: "Bumper Boats", type: "WATER_RIDE" },
+      { slug: "atlantis-laser-tag", name: "Atlantis Laser Tag", type: "OTHER" },
+      { slug: "catalina-challenge", name: "Catalina Challenge", type: "OTHER" },
+      { slug: "cactus-springs", name: "Cactus Springs", type: "WATER_RIDE" },
     ],
   },
   {
@@ -3948,7 +4028,7 @@ export const parks: SeedPark[] = [
     city: "Glendale",
     state: "AZ",
     foundedYear: 2026,
-    description: "Amusement park in Glendale, AZ. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "Announced Hot Wheels, Barbie and Thomas & Friends attractions have not opened yet; no rides are operating.",
     rides: [
     ],
   },
@@ -4167,7 +4247,7 @@ export const parks: SeedPark[] = [
     city: "Steamboat Springs",
     state: "CO",
     foundedYear: 1963,
-    description: "Amusement park in Steamboat Springs, CO. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "The Outlaw Mountain Coaster closed permanently in 2022 to make way for the Wild Blue gondola.",
     rides: [
     ],
   },
@@ -4189,7 +4269,7 @@ export const parks: SeedPark[] = [
     city: "Cumming",
     state: "GA",
     foundedYear: 2027,
-    description: "Amusement park in Cumming, GA. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "Announced for Cumming, Georgia; not yet open.",
     rides: [
     ],
   },
@@ -4301,7 +4381,7 @@ export const parks: SeedPark[] = [
     city: "Lockport",
     state: "IL",
     foundedYear: 1905,
-    description: "Amusement park in Lockport, IL. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "A trolley park until the 1930s; today a municipal recreation park with playgrounds and trails, no amusement rides.",
     rides: [
     ],
   },
@@ -4318,24 +4398,18 @@ export const parks: SeedPark[] = [
     ],
   },
   {
-    slug: "donleys-wild-west-town",
-    name: "Donley's Wild West Town",
-    chain: "INDEPENDENT",
-    city: "Union",
-    state: "IL",
-    foundedYear: 1974,
-    description: "Amusement park in Union, IL. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
-    rides: [
-    ],
-  },
-  {
     slug: "enchanted-castle",
     name: "Enchanted Castle",
     chain: "INDEPENDENT",
     city: "Lombard",
     state: "IL",
-    description: "Amusement park in Lombard, IL. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "5 rides and attractions listed from the park's own information (https://enchanted.com/attractions/).",
     rides: [
+      { slug: "indoor-go-karts", name: "Indoor Go-Karts", type: "FLAT_RIDE" },
+      { slug: "bumper-cars", name: "Bumper Cars", type: "FLAT_RIDE" },
+      { slug: "catapult-thrill-ride", name: "Catapult Thrill Ride", type: "FLAT_RIDE" },
+      { slug: "lazer-frenzy-challenge", name: "Lazer Frenzy Challenge", type: "OTHER" },
+      { slug: "quest-ii-playland", name: "Quest II Playland", type: "KIDDIE" },
     ],
   },
   {
@@ -4381,8 +4455,14 @@ export const parks: SeedPark[] = [
     city: "Joliet",
     state: "IL",
     foundedYear: 1988,
-    description: "Amusement park in Joliet, IL. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "6 rides and attractions listed from the park's own information (https://hauntedtrailsjoliet.com/attractions/).",
     rides: [
+      { slug: "trails-raceway", name: "Trails Raceway", type: "FLAT_RIDE" },
+      { slug: "eagle-speedway", name: "Eagle Speedway", type: "FLAT_RIDE" },
+      { slug: "junior-karts", name: "Junior Karts", type: "KIDDIE" },
+      { slug: "bone-shaker", name: "Bone Shaker", type: "FLAT_RIDE" },
+      { slug: "monster-hop", name: "Monster Hop", type: "FLAT_RIDE" },
+      { slug: "tornado", name: "Tornado", type: "FLAT_RIDE" },
     ],
   },
   {
@@ -4482,8 +4562,12 @@ export const parks: SeedPark[] = [
     city: "Panama City Beach",
     state: "FL",
     foundedYear: 2004,
-    description: "Amusement park in Panama City Beach, FL. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "4 rides and attractions listed from the park's own information (https://cobraadventurepark.com/).",
     rides: [
+      { slug: "dragon-wagon", name: "Dragon Wagon", type: "ROLLER_COASTER" },
+      { slug: "max-flight-simulator", name: "Max Flight Simulator", type: "OTHER" },
+      { slug: "the-vertical-accelerator", name: "The Vertical Accelerator", type: "FLAT_RIDE" },
+      { slug: "the-wild-thing", name: "The Wild Thing", type: "FLAT_RIDE" },
     ],
   },
   {
@@ -4493,8 +4577,11 @@ export const parks: SeedPark[] = [
     city: "Fort Myers Beach",
     state: "FL",
     foundedYear: 2012,
-    description: "Amusement park in Fort Myers Beach, FL. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "3 rides and attractions listed from the park's own information (https://fasttraxent.com/attractions).",
     rides: [
+      { slug: "indoor-go-kart-track", name: "Indoor Go-Kart Track", type: "FLAT_RIDE" },
+      { slug: "junior-karts", name: "Junior Karts", type: "KIDDIE" },
+      { slug: "mini-karts", name: "Mini Karts", type: "KIDDIE" },
     ],
   },
   {
@@ -4533,7 +4620,7 @@ export const parks: SeedPark[] = [
     city: "Hialeah",
     state: "FL",
     foundedYear: 1925,
-    description: "Amusement park in Hialeah, FL. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "Now Hialeah Park Racing & Casino; the roller coaster and dance hall from its early amusement-park era are long gone.",
     rides: [
     ],
   },
@@ -4544,8 +4631,11 @@ export const parks: SeedPark[] = [
     city: "Jacksonville",
     state: "FL",
     foundedYear: 1914,
-    description: "Amusement park in Jacksonville, FL. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "3 rides and attractions listed from the park's own information (https://www.jacksonvillezoo.org/plan-your-visit).",
     rides: [
+      { slug: "wildlife-train", name: "Wildlife Train", type: "TRANSPORT" },
+      { slug: "wildlife-carousel", name: "Wildlife Carousel", type: "FLAT_RIDE" },
+      { slug: "4d-theater", name: "4D Theater", type: "SHOW" },
     ],
   },
   {
@@ -4555,8 +4645,11 @@ export const parks: SeedPark[] = [
     city: "Port Charlotte",
     state: "FL",
     foundedYear: 2003,
-    description: "Amusement park in Port Charlotte, FL. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "3 rides and attractions listed from the park's own information (https://www.kidstarpark.com/attractions).",
     rides: [
+      { slug: "go-karts", name: "Go Karts", type: "FLAT_RIDE" },
+      { slug: "star-mountain", name: "Star Mountain", type: "KIDDIE" },
+      { slug: "icombat-laser-tag", name: "iCOMBAT Laser Tag", type: "OTHER" },
     ],
   },
   {
@@ -4566,8 +4659,9 @@ export const parks: SeedPark[] = [
     city: "Williston",
     state: "FL",
     foundedYear: 2011,
-    description: "Amusement park in Williston, FL. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "1 ride and attraction listed from the park's own information (https://www.kirbyfarm.com/).",
     rides: [
+      { slug: "kirby-family-farm-railroad", name: "Kirby Family Farm Railroad", type: "TRANSPORT" },
     ],
   },
   {
@@ -4577,8 +4671,16 @@ export const parks: SeedPark[] = [
     city: "Kissimmee",
     state: "FL",
     foundedYear: 1986,
-    description: "Amusement park in Kissimmee, FL. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "8 rides and attractions listed from the park's own information (https://www.myoldtownusa.com/things-to-do/rides).",
     rides: [
+      { slug: "old-town-ferris-wheel", name: "Old Town Ferris Wheel", type: "FLAT_RIDE" },
+      { slug: "carousel", name: "Carousel", type: "FLAT_RIDE" },
+      { slug: "crazy-couch", name: "Crazy Couch", type: "FLAT_RIDE" },
+      { slug: "paratrooper", name: "Paratrooper", type: "FLAT_RIDE" },
+      { slug: "tilt-a-whirl", name: "Tilt-A-Whirl", type: "FLAT_RIDE" },
+      { slug: "old-town-slingshot", name: "Old Town Slingshot", type: "FLAT_RIDE" },
+      { slug: "vomatron", name: "Vomatron", type: "FLAT_RIDE" },
+      { slug: "hurricane", name: "Hurricane", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -4635,8 +4737,11 @@ export const parks: SeedPark[] = [
     chain: "INDEPENDENT",
     city: "Lafayette",
     state: "IN",
-    description: "Amusement park in Lafayette, IN. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "3 rides and attractions listed from the park's own information (https://www.lafayette.in.gov/1584/Train-Rides).",
     rides: [
+      { slug: "columbian-park-train", name: "Columbian Park Train", type: "TRANSPORT" },
+      { slug: "columbian-park-carousel", name: "Columbian Park Carousel", type: "FLAT_RIDE", opened: 2026 },
+      { slug: "pedal-boats", name: "Pedal Boats", type: "WATER_RIDE" },
     ],
   },
   {
@@ -4646,8 +4751,13 @@ export const parks: SeedPark[] = [
     city: "Columbia City",
     state: "IN",
     foundedYear: 1990,
-    description: "Amusement park in Columbia City, IN. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "5 rides and attractions listed from the park's own information (https://paigescrossing.com/).",
     rides: [
+      { slug: "runaway-train", name: "Runaway Train", type: "ROLLER_COASTER" },
+      { slug: "twister", name: "Twister", type: "FLAT_RIDE" },
+      { slug: "the-himalaya", name: "The Himalaya", type: "FLAT_RIDE" },
+      { slug: "frog-hopper", name: "Frog Hopper", type: "KIDDIE" },
+      { slug: "go-karts", name: "Go-Karts", type: "FLAT_RIDE" },
     ],
   },
   {
@@ -4669,8 +4779,12 @@ export const parks: SeedPark[] = [
     city: "Indianapolis",
     state: "IN",
     foundedYear: 1964,
-    description: "Amusement park in Indianapolis, IN. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "4 rides and attractions listed from the park's own information (https://www.indianapoliszoo.com/visit/rides-attractions/).",
     rides: [
+      { slug: "kombo-family-coaster", name: "Kombo Family Coaster", type: "ROLLER_COASTER", manufacturer: "Zierer", opened: 2001 },
+      { slug: "endangered-species-carousel", name: "Endangered Species Carousel", type: "FLAT_RIDE" },
+      { slug: "skyline", name: "Skyline", type: "TRANSPORT" },
+      { slug: "white-river-junction-train", name: "White River Junction Train", type: "TRANSPORT" },
     ],
   },
   {
@@ -4729,8 +4843,11 @@ export const parks: SeedPark[] = [
     city: "Des Moines",
     state: "IA",
     foundedYear: 1930,
-    description: "Amusement park in Des Moines, IA. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "3 rides and attractions listed from the park's own information (https://www.iowastatefair.org/entertainment/attractions).",
     rides: [
+      { slug: "reichardt-family-giant-slide", name: "Reichardt Family Giant Slide", type: "OTHER" },
+      { slug: "ye-old-mill", name: "Ye Old Mill", type: "DARK_RIDE" },
+      { slug: "sky-glider", name: "Sky Glider", type: "TRANSPORT" },
     ],
   },
   {
@@ -4755,8 +4872,13 @@ export const parks: SeedPark[] = [
     city: "Bettendorf",
     state: "IA",
     foundedYear: 2024,
-    description: "Amusement park in Bettendorf, IA. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "5 rides and attractions listed from the park's own information (https://www.malibujacksquadcities.com/).",
     rides: [
+      { slug: "spinning-roller-coaster", name: "Spinning Roller Coaster", type: "ROLLER_COASTER" },
+      { slug: "swinging-ship", name: "Swinging Ship", type: "FLAT_RIDE" },
+      { slug: "wipeout", name: "Wipeout", type: "FLAT_RIDE" },
+      { slug: "dark-ride", name: "Dark Ride", type: "DARK_RIDE" },
+      { slug: "go-karts", name: "Go-Karts", type: "FLAT_RIDE" },
     ],
   },
   {
@@ -4825,7 +4947,7 @@ export const parks: SeedPark[] = [
     city: "Bonner Springs",
     state: "KS",
     foundedYear: 2031,
-    description: "Amusement park in Bonner Springs, KS. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "Kansas City location announced but not yet built; no rides are operating.",
     rides: [
     ],
   },
@@ -4922,8 +5044,13 @@ export const parks: SeedPark[] = [
     city: "Gilbertsville",
     state: "KY",
     foundedYear: 2008,
-    description: "Amusement park in Gilbertsville, KY. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "5 rides and attractions listed from the park's own information (https://kyshoresfun.com/).",
     rides: [
+      { slug: "go-karts", name: "Go-Karts", type: "FLAT_RIDE" },
+      { slug: "the-hurricane", name: "The Hurricane", type: "FLAT_RIDE" },
+      { slug: "giant-slide", name: "Giant Slide", type: "OTHER" },
+      { slug: "zip-line-canopy-tour", name: "Zip Line Canopy Tour", type: "OTHER" },
+      { slug: "rock-wall", name: "Rock Wall", type: "OTHER" },
     ],
   },
   {
@@ -5043,8 +5170,16 @@ export const parks: SeedPark[] = [
     city: "Ocean City",
     state: "MD",
     foundedYear: 1981,
-    description: "Amusement park in Ocean City, MD. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "8 rides and attractions listed from the park's own information (https://www.bajaoc.com/).",
     rides: [
+      { slug: "road-racer-track", name: "Road Racer Track", type: "FLAT_RIDE" },
+      { slug: "stock-car-track", name: "Stock Car Track", type: "FLAT_RIDE" },
+      { slug: "bullit-track", name: "Bullit Track", type: "FLAT_RIDE" },
+      { slug: "slick-track", name: "Slick Track", type: "FLAT_RIDE" },
+      { slug: "rookie-track", name: "Rookie Track", type: "KIDDIE" },
+      { slug: "bumper-boats", name: "Bumper Boats", type: "WATER_RIDE" },
+      { slug: "bumper-cars", name: "Bumper Cars", type: "FLAT_RIDE" },
+      { slug: "wacky-worm", name: "Wacky Worm", type: "ROLLER_COASTER" },
     ],
   },
   {
@@ -5054,8 +5189,9 @@ export const parks: SeedPark[] = [
     city: "Glen Echo",
     state: "MD",
     foundedYear: 1891,
-    description: "Amusement park in Glen Echo, MD. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "Amusement park closed 1968; the Dentzel Carousel is the only surviving ride. 1 ride and attraction listed from the park's own information (https://www.nps.gov/glec/planyourvisit/dentzel-carousel.htm).",
     rides: [
+      { slug: "dentzel-carousel", name: "Dentzel Carousel", type: "FLAT_RIDE", opened: 1921 },
     ],
   },
   {
@@ -5104,8 +5240,13 @@ export const parks: SeedPark[] = [
     city: "Greenbelt",
     state: "MD",
     foundedYear: 1996,
-    description: "Amusement park in Greenbelt, MD. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "5 rides and attractions listed from the park's own information (https://www.lolstations.com/attractionsandrides).",
     rides: [
+      { slug: "bumper-cars", name: "Bumper Cars", type: "FLAT_RIDE" },
+      { slug: "360-tumbler", name: "360 Tumbler", type: "FLAT_RIDE" },
+      { slug: "roller-skating", name: "Roller Skating", type: "OTHER" },
+      { slug: "blacklight-lasertag", name: "Blacklight LaserTag", type: "OTHER" },
+      { slug: "toddler-world", name: "Toddler World", type: "KIDDIE" },
     ],
   },
   {
@@ -5165,17 +5306,6 @@ export const parks: SeedPark[] = [
     description: "Amusement park in Charlemont, MA. 1 operating roller coaster cataloged by the Roller Coaster Database; other flat and family rides are not yet listed here.",
     rides: [
       { slug: "thunderbolt-mountain-coaster", name: "Thunderbolt Mountain Coaster", type: "ROLLER_COASTER", opened: 2014 },
-    ],
-  },
-  {
-    slug: "edaville-family-theme-park",
-    name: "Edaville Family Theme Park",
-    chain: "INDEPENDENT",
-    city: "Carver",
-    state: "MA",
-    foundedYear: 1945,
-    description: "Amusement park in Carver, MA. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
-    rides: [
     ],
   },
   {
@@ -5299,25 +5429,17 @@ export const parks: SeedPark[] = [
     ],
   },
   {
-    slug: "funland-amusement-park",
-    name: "Funland Amusement Park",
-    chain: "INDEPENDENT",
-    city: "Houghton Lake",
-    state: "MI",
-    foundedYear: 1956,
-    description: "Amusement park in Houghton Lake, MI. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
-    rides: [
-    ],
-  },
-  {
     slug: "fun-way-amusement-park",
     name: "Fun Way Amusement Park",
     chain: "INDEPENDENT",
     city: "Saginaw",
     state: "MI",
     foundedYear: 1996,
-    description: "Amusement park in Saginaw, MI. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "3 rides and attractions listed from the park's own information (https://www.funwayamusements.com/saginaw).",
     rides: [
+      { slug: "go-karts", name: "Go-Karts", type: "FLAT_RIDE" },
+      { slug: "bumper-boats", name: "Bumper Boats", type: "WATER_RIDE" },
+      { slug: "bungee-trampoline", name: "Bungee Trampoline", type: "FLAT_RIDE" },
     ],
   },
   {
@@ -5327,8 +5449,17 @@ export const parks: SeedPark[] = [
     city: "Holland",
     state: "MI",
     foundedYear: 1952,
-    description: "Amusement park in Holland, MI. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "9 rides and attractions listed from the park's own information (https://www.dutchvillage.com/rides.html).",
     rides: [
+      { slug: "harrys-windmill-ride", name: "Harry's Windmill Ride", type: "FLAT_RIDE" },
+      { slug: "carousel", name: "Carousel", type: "FLAT_RIDE", opened: 1924 },
+      { slug: "zweefmolen", name: "Zweefmolen", type: "FLAT_RIDE" },
+      { slug: "wooden-shoe-slide", name: "Wooden Shoe Slide", type: "KIDDIE" },
+      { slug: "tractor-time", name: "Tractor Time", type: "TRANSPORT" },
+      { slug: "tulip-tower", name: "Tulip Tower", type: "FLAT_RIDE" },
+      { slug: "petal-pumper-cars", name: "Petal Pumper Cars", type: "TRANSPORT" },
+      { slug: "stingray-pro-cars", name: "Stingray Pro Cars", type: "FLAT_RIDE" },
+      { slug: "water-balloon-battle-ships", name: "Water Balloon Battle Ships", type: "KIDDIE" },
     ],
   },
   {
@@ -5384,8 +5515,11 @@ export const parks: SeedPark[] = [
     city: "St. Paul",
     state: "MN",
     foundedYear: 1885,
-    description: "Amusement park in St. Paul, MN. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "3 rides and attractions listed from the park's own information (https://www.mnstatefair.org/rides-and-attractions).",
     rides: [
+      { slug: "ye-old-mill", name: "Ye Old Mill", type: "DARK_RIDE", opened: 1915 },
+      { slug: "skyride", name: "Skyride", type: "TRANSPORT" },
+      { slug: "giant-slide", name: "Giant Slide", type: "OTHER" },
     ],
   },
   {
@@ -5423,8 +5557,10 @@ export const parks: SeedPark[] = [
     city: "Hamel",
     state: "MN",
     foundedYear: 1982,
-    description: "Amusement park in Hamel, MN. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "2 rides and attractions listed from the park's own information (https://www.facebook.com/SkyrockFarm/).",
     rides: [
+      { slug: "skyrock-carousel", name: "Skyrock Carousel", type: "FLAT_RIDE" },
+      { slug: "skyrock-train", name: "Skyrock Train", type: "TRANSPORT" },
     ],
   },
   {
@@ -5503,7 +5639,7 @@ export const parks: SeedPark[] = [
     city: "Osage Beach",
     state: "MO",
     foundedYear: 2026,
-    description: "Amusement park in Osage Beach, MO. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "Resort and amusement park under construction at Lake of the Ozarks; opening pushed to the 2027 season.",
     rides: [
     ],
   },
@@ -5562,8 +5698,11 @@ export const parks: SeedPark[] = [
     city: "Biloxi",
     state: "MS",
     foundedYear: 2010,
-    description: "Amusement park in Biloxi, MS. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "3 rides and attractions listed from the park's own information (https://bigplaybiloxi.com/attractions/).",
     rides: [
+      { slug: "biloxi-hurricane", name: "Biloxi Hurricane", type: "ROLLER_COASTER" },
+      { slug: "go-karts", name: "Go-Karts", type: "FLAT_RIDE" },
+      { slug: "bumper-cars", name: "Bumper Cars", type: "FLAT_RIDE" },
     ],
   },
   {
@@ -5585,8 +5724,10 @@ export const parks: SeedPark[] = [
     city: "Hattiesburg",
     state: "MS",
     foundedYear: 1950,
-    description: "Amusement park in Hattiesburg, MS. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "2 rides and attractions listed from the park's own information (https://hattiesburgzoo.com/attractions-dining/).",
     rides: [
+      { slug: "hattiesburg-zoo-carousel", name: "Hattiesburg Zoo Carousel", type: "FLAT_RIDE", opened: 1941 },
+      { slug: "zoo-train", name: "Zoo Train", type: "TRANSPORT" },
     ],
   },
   {
@@ -5681,8 +5822,15 @@ export const parks: SeedPark[] = [
     city: "Bayville",
     state: "NY",
     foundedYear: 1853,
-    description: "Amusement park in Bayville, NY. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "7 rides and attractions listed from the park's own information (https://bayvilleadventurepark.com/attractions/).",
     rides: [
+      { slug: "bayville-adventure-express", name: "Bayville Adventure Express", type: "TRANSPORT" },
+      { slug: "adventure-tower", name: "Adventure Tower", type: "OTHER" },
+      { slug: "spider-mountain", name: "Spider Mountain", type: "OTHER" },
+      { slug: "adventure-water-slide", name: "Adventure Water Slide", type: "WATER_RIDE" },
+      { slug: "bumper-boats", name: "Bumper Boats", type: "WATER_RIDE" },
+      { slug: "lost-temple-of-the-forgotten-maze", name: "Lost Temple of the Forgotten Maze", type: "OTHER" },
+      { slug: "bungee-bounce", name: "Bungee Bounce", type: "FLAT_RIDE" },
     ],
   },
   {
@@ -5692,8 +5840,19 @@ export const parks: SeedPark[] = [
     city: "Medford",
     state: "NY",
     foundedYear: 1999,
-    description: "Amusement park in Medford, NY. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "11 rides and attractions listed from the park's own information (https://www.ultimaterollercoaster.com/themeparks/bullwinkles_ny/).",
     rides: [
+      { slug: "go-karts", name: "Go-Karts", type: "FLAT_RIDE" },
+      { slug: "bumper-boats", name: "Bumper Boats", type: "WATER_RIDE" },
+      { slug: "steam-train", name: "Steam Train", type: "TRANSPORT" },
+      { slug: "family-coaster", name: "Family Coaster", type: "ROLLER_COASTER" },
+      { slug: "spinning-tea-cups", name: "Spinning Tea Cups", type: "FLAT_RIDE" },
+      { slug: "carousel", name: "Carousel", type: "FLAT_RIDE" },
+      { slug: "samba-balloons", name: "Samba Balloons", type: "KIDDIE" },
+      { slug: "mini-jets", name: "Mini Jets", type: "KIDDIE" },
+      { slug: "kiddie-swing", name: "Kiddie Swing", type: "KIDDIE" },
+      { slug: "convoy-trucks", name: "Convoy Trucks", type: "KIDDIE" },
+      { slug: "rock-climbing-wall", name: "Rock Climbing Wall", type: "OTHER" },
     ],
   },
   {
@@ -5741,8 +5900,15 @@ export const parks: SeedPark[] = [
     city: "Elmira",
     state: "NY",
     foundedYear: 1879,
-    description: "Amusement park in Elmira, NY. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "7 rides and attractions listed from the park's own information (https://eldridgepark.org/new/).",
     rides: [
+      { slug: "eldridge-park-carousel", name: "Eldridge Park Carousel", type: "FLAT_RIDE", opened: 1924 },
+      { slug: "tilt-a-whirl", name: "Tilt-A-Whirl", type: "FLAT_RIDE" },
+      { slug: "flying-scooters", name: "Flying Scooters", type: "FLAT_RIDE" },
+      { slug: "miniature-train", name: "Miniature Train", type: "TRANSPORT" },
+      { slug: "pony-carts", name: "Pony Carts", type: "KIDDIE" },
+      { slug: "turtle-chase", name: "Turtle Chase", type: "KIDDIE" },
+      { slug: "kiddie-boats", name: "Kiddie Boats", type: "KIDDIE" },
     ],
   },
   {
@@ -5885,17 +6051,6 @@ export const parks: SeedPark[] = [
     ],
   },
   {
-    slug: "niagara-amusement-park-and-splash-world",
-    name: "Niagara Amusement Park & Splash World",
-    chain: "INDEPENDENT",
-    city: "Grand Island",
-    state: "NY",
-    foundedYear: 1961,
-    description: "Amusement park in Grand Island, NY. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
-    rides: [
-    ],
-  },
-  {
     slug: "orange-county-fairgrounds",
     name: "Orange County Fairgrounds",
     chain: "INDEPENDENT",
@@ -5912,8 +6067,12 @@ export const parks: SeedPark[] = [
     city: "Middletown",
     state: "NY",
     foundedYear: 2012,
-    description: "Amusement park in Middletown, NY. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "4 rides and attractions listed from the park's own information (https://rcdb.com/6442.htm).",
     rides: [
+      { slug: "python-pit", name: "Python Pit", type: "ROLLER_COASTER" },
+      { slug: "bumper-cars", name: "Bumper Cars", type: "FLAT_RIDE" },
+      { slug: "lazer-runner", name: "Lazer Runner", type: "OTHER" },
+      { slug: "under-the-sea", name: "Under the Sea", type: "KIDDIE" },
     ],
   },
   {
@@ -5947,7 +6106,7 @@ export const parks: SeedPark[] = [
     city: "Bartlett",
     state: "NH",
     foundedYear: 1965,
-    description: "Amusement park in Bartlett, NH. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "Summer operations have not run since 2019; the Nor'Easter Mountain Coaster and ziplines are being decommissioned.",
     rides: [
     ],
   },
@@ -5970,8 +6129,11 @@ export const parks: SeedPark[] = [
     city: "Nashua",
     state: "NH",
     foundedYear: 1979,
-    description: "Amusement park in Nashua, NH. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "3 rides and attractions listed from the park's own information (http://www.funworldnh.com/rides.html).",
     rides: [
+      { slug: "venetian-carousel", name: "Venetian Carousel", type: "FLAT_RIDE", opened: 1999 },
+      { slug: "himalaya", name: "Himalaya", type: "FLAT_RIDE" },
+      { slug: "indoor-playground", name: "Indoor Playground", type: "KIDDIE" },
     ],
   },
   {
@@ -6021,8 +6183,9 @@ export const parks: SeedPark[] = [
     city: "Atlantic City",
     state: "NJ",
     foundedYear: 1933,
-    description: "Amusement park in Atlantic City, NJ. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "1 ride and attraction listed from the park's own information (https://visitnj.org/central-pier-arcade-speedway).",
     rides: [
+      { slug: "central-pier-speedway", name: "Central Pier Speedway", type: "FLAT_RIDE" },
     ],
   },
   {
@@ -6147,8 +6310,17 @@ export const parks: SeedPark[] = [
     city: "Wildwood",
     state: "NJ",
     foundedYear: 1975,
-    description: "Amusement park in Wildwood, NJ. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "9 rides and attractions listed from the park's own information (https://www.splashzonewaterpark.com/attractions/).",
     rides: [
+      { slug: "the-beast-of-the-east", name: "The Beast of The East", type: "WATER_RIDE" },
+      { slug: "speed-dominator", name: "Speed Dominator", type: "WATER_RIDE" },
+      { slug: "adventure-river", name: "Adventure River", type: "WATER_RIDE" },
+      { slug: "midnight-run", name: "Midnight Run", type: "WATER_RIDE" },
+      { slug: "the-abyss", name: "The Abyss", type: "WATER_RIDE" },
+      { slug: "the-terminator", name: "The Terminator", type: "WATER_RIDE" },
+      { slug: "flowrider", name: "FlowRider", type: "WATER_RIDE" },
+      { slug: "zoe-zone", name: "Zoe Zone", type: "KIDDIE" },
+      { slug: "giggle-bay", name: "Giggle Bay", type: "KIDDIE" },
     ],
   },
   {
@@ -6184,8 +6356,20 @@ export const parks: SeedPark[] = [
     city: "Carolina Beach",
     state: "NC",
     foundedYear: 2009,
-    description: "Amusement park in Carolina Beach, NC. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "12 rides and attractions listed from the park's own information (https://cbboardwalk.com/).",
     rides: [
+      { slug: "giant-gondola-wheel", name: "Giant Gondola Wheel", type: "FLAT_RIDE" },
+      { slug: "the-tornado", name: "The Tornado", type: "FLAT_RIDE" },
+      { slug: "music-express", name: "Music Express", type: "FLAT_RIDE" },
+      { slug: "round-up", name: "Round Up", type: "FLAT_RIDE" },
+      { slug: "super-shot-drop-tower", name: "Super Shot Drop Tower", type: "FLAT_RIDE" },
+      { slug: "ali-baba", name: "Ali Baba", type: "FLAT_RIDE" },
+      { slug: "jumping-jumbos", name: "Jumping Jumbos", type: "KIDDIE" },
+      { slug: "wiggle-worm", name: "Wiggle Worm", type: "KIDDIE" },
+      { slug: "the-spinner", name: "The Spinner", type: "FLAT_RIDE" },
+      { slug: "bumper-cars", name: "Bumper Cars", type: "FLAT_RIDE" },
+      { slug: "carousel", name: "Carousel", type: "FLAT_RIDE" },
+      { slug: "sea-ray-pirate-ship", name: "Sea Ray Pirate Ship", type: "FLAT_RIDE" },
     ],
   },
   {
@@ -6195,8 +6379,11 @@ export const parks: SeedPark[] = [
     city: "Williamston",
     state: "NC",
     foundedYear: 1992,
-    description: "Amusement park in Williamston, NC. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "3 rides and attractions listed from the park's own information (https://www.ultimaterollercoaster.com/themeparks/deadwood/).",
     rides: [
+      { slug: "iron-horse-express", name: "Iron Horse Express", type: "TRANSPORT" },
+      { slug: "dinosaur-canyon-coaster", name: "Dinosaur Canyon Coaster", type: "ROLLER_COASTER" },
+      { slug: "carousel", name: "Carousel", type: "FLAT_RIDE" },
     ],
   },
   {
@@ -6209,17 +6396,6 @@ export const parks: SeedPark[] = [
     description: "Amusement park in Raleigh, NC. 1 operating roller coaster cataloged by the Roller Coaster Database; other flat and family rides are not yet listed here.",
     rides: [
       { slug: "spinning-coaster", name: "Spinning Coaster", type: "ROLLER_COASTER", opened: 2023 },
-    ],
-  },
-  {
-    slug: "ghost-town-village",
-    name: "Ghost Town Village",
-    chain: "INDEPENDENT",
-    city: "Maggie Valley",
-    state: "NC",
-    foundedYear: 1961,
-    description: "Amusement park in Maggie Valley, NC. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
-    rides: [
     ],
   },
   {
@@ -6265,8 +6441,17 @@ export const parks: SeedPark[] = [
     city: "Greensboro",
     state: "NC",
     foundedYear: 1984,
-    description: "Amusement park in Greensboro, NC. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "9 rides and attractions listed from the park's own information (https://emeraldpointe.com/).",
     rides: [
+      { slug: "daredevil-drop", name: "Daredevil Drop", type: "WATER_RIDE" },
+      { slug: "bombs-away", name: "Bombs Away", type: "WATER_RIDE" },
+      { slug: "bermuda-triangle", name: "Bermuda Triangle", type: "WATER_RIDE" },
+      { slug: "dr-von-darks-tunnel-of-terror", name: "Dr. Von Dark's Tunnel of Terror", type: "WATER_RIDE" },
+      { slug: "dragons-den", name: "Dragon's Den", type: "WATER_RIDE" },
+      { slug: "runaway-raft-ride", name: "Runaway Raft Ride", type: "WATER_RIDE" },
+      { slug: "the-edge", name: "The Edge", type: "WATER_RIDE" },
+      { slug: "thunder-bay-wave-pool", name: "Thunder Bay Wave Pool", type: "WATER_RIDE" },
+      { slug: "lazy-river", name: "Lazy River", type: "WATER_RIDE" },
     ],
   },
   {
@@ -6336,8 +6521,11 @@ export const parks: SeedPark[] = [
     city: "Cincinnati",
     state: "OH",
     foundedYear: 1875,
-    description: "Amusement park in Cincinnati, OH. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "3 rides and attractions listed from the park's own information (https://cincinnatizoo.org/plan-your-adventure/rides-attractions/).",
     rides: [
+      { slug: "safari-train", name: "Safari Train", type: "TRANSPORT" },
+      { slug: "conservation-carousel", name: "Conservation Carousel", type: "FLAT_RIDE" },
+      { slug: "scooter-pals", name: "Scooter Pals", type: "KIDDIE" },
     ],
   },
   {
@@ -6372,7 +6560,7 @@ export const parks: SeedPark[] = [
     city: "Rockbridge",
     state: "OH",
     foundedYear: 2027,
-    description: "Amusement park in Rockbridge, OH. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "Under construction; Ohio's first mountain coaster is scheduled to open in spring 2027.",
     rides: [
     ],
   },
@@ -6395,7 +6583,7 @@ export const parks: SeedPark[] = [
     city: "Bascom",
     state: "OH",
     foundedYear: 1890,
-    description: "Amusement park in Bascom, OH. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "Had amusement rides in the mid-20th century; since the 1990s it has operated as a campground and community recreation park.",
     rides: [
     ],
   },
@@ -6467,8 +6655,12 @@ export const parks: SeedPark[] = [
     city: "Olmsted Township",
     state: "OH",
     foundedYear: 1987,
-    description: "Amusement park in Olmsted Township, OH. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "4 rides and attractions listed from the park's own information (https://sntfun.com/pricing/).",
     rides: [
+      { slug: "grand-prix-track", name: "Grand Prix Track", type: "FLAT_RIDE" },
+      { slug: "rookie-track", name: "Rookie Track", type: "KIDDIE" },
+      { slug: "bumper-boats", name: "Bumper Boats", type: "WATER_RIDE" },
+      { slug: "laser-tag", name: "Laser Tag", type: "OTHER" },
     ],
   },
   {
@@ -6512,8 +6704,10 @@ export const parks: SeedPark[] = [
     chain: "INDEPENDENT",
     city: "Newton",
     state: "PA",
-    description: "Amusement park in Newton, PA. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "2 rides and attractions listed from the park's own information (https://rcdb.com/5186.htm).",
     rides: [
+      { slug: "herschell-spillman-carousel", name: "Herschell-Spillman Carousel", type: "FLAT_RIDE" },
+      { slug: "c-p-huntington-train", name: "C.P. Huntington Train", type: "TRANSPORT" },
     ],
   },
   {
@@ -6586,7 +6780,7 @@ export const parks: SeedPark[] = [
     city: "Altoona",
     state: "PA",
     foundedYear: 1893,
-    description: "Amusement park in Altoona, PA. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "Park grounds open for the 2026 season, but all amusement rides remain closed; Leap-The-Dips has not operated since 2024.",
     rides: [
     ],
   },
@@ -6596,30 +6790,10 @@ export const parks: SeedPark[] = [
     chain: "INDEPENDENT",
     city: "East Stroudsburg",
     state: "PA",
-    description: "Amusement park in East Stroudsburg, PA. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "2 rides and attractions listed from the park's own information (https://poconosplaypark.com/).",
     rides: [
-    ],
-  },
-  {
-    slug: "williams-grove-amusement-park",
-    name: "Williams Grove Amusement Park",
-    chain: "INDEPENDENT",
-    city: "Mechanicsburg",
-    state: "PA",
-    foundedYear: 1850,
-    description: "Amusement park in Mechanicsburg, PA. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
-    rides: [
-    ],
-  },
-  {
-    slug: "eagle-park",
-    name: "Eagle Park",
-    chain: "INDEPENDENT",
-    city: "Cache",
-    state: "OK",
-    foundedYear: 1957,
-    description: "Amusement park in Cache, OK. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
-    rides: [
+      { slug: "go-karts", name: "Go-Karts", type: "FLAT_RIDE" },
+      { slug: "kiddie-karts", name: "Kiddie Karts", type: "KIDDIE" },
     ],
   },
   {
@@ -6707,7 +6881,7 @@ export const parks: SeedPark[] = [
     city: "Salem",
     state: "OR",
     foundedYear: 1918,
-    description: "Amusement park in Salem, OR. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "Rides are a seasonal carnival midway supplied by a travelling operator and change from year to year.",
     rides: [
     ],
   },
@@ -6718,8 +6892,25 @@ export const parks: SeedPark[] = [
     city: "Myrtle Beach",
     state: "SC",
     foundedYear: 1994,
-    description: "Amusement park in Myrtle Beach, SC. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "17 rides and attractions listed from the park's own information (https://broadwaygrandprix.com/go-kart-tracks/).",
     rides: [
+      { slug: "pro-track", name: "Pro Track", type: "FLAT_RIDE" },
+      { slug: "high-bank-oval", name: "High Bank Oval", type: "FLAT_RIDE" },
+      { slug: "slick-track", name: "Slick Track", type: "FLAT_RIDE" },
+      { slug: "family-track", name: "Family Track", type: "FLAT_RIDE" },
+      { slug: "kids-track", name: "Kids Track", type: "KIDDIE" },
+      { slug: "jr-racer", name: "Jr. Racer", type: "KIDDIE" },
+      { slug: "speed-racer", name: "Speed Racer", type: "FLAT_RIDE" },
+      { slug: "carousel", name: "Carousel", type: "FLAT_RIDE" },
+      { slug: "kiddie-speedway", name: "Kiddie Speedway", type: "KIDDIE" },
+      { slug: "red-baron", name: "Red Baron", type: "KIDDIE" },
+      { slug: "tooter-train", name: "Tooter Train", type: "TRANSPORT" },
+      { slug: "tot-rods", name: "Tot Rods", type: "KIDDIE" },
+      { slug: "tea-cups", name: "Tea Cups", type: "FLAT_RIDE" },
+      { slug: "frog-hopper", name: "Frog Hopper", type: "KIDDIE" },
+      { slug: "tot-swing", name: "Tot Swing", type: "KIDDIE" },
+      { slug: "sky-wheel", name: "Sky Wheel", type: "KIDDIE" },
+      { slug: "bumper-boats", name: "Bumper Boats", type: "WATER_RIDE" },
     ],
   },
   {
@@ -6753,8 +6944,16 @@ export const parks: SeedPark[] = [
     city: "North Charleston",
     state: "SC",
     foundedYear: 1989,
-    description: "Amusement park in North Charleston, SC. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "8 rides and attractions listed from the park's own information (https://frankies.com/charleston-pricing-attractions/).",
     rides: [
+      { slug: "spinning-coaster", name: "Spinning Coaster", type: "ROLLER_COASTER" },
+      { slug: "super-jumper", name: "Super Jumper", type: "FLAT_RIDE" },
+      { slug: "music-express", name: "Music Express", type: "FLAT_RIDE" },
+      { slug: "the-claw", name: "The Claw", type: "FLAT_RIDE" },
+      { slug: "zero-gravity", name: "Zero Gravity", type: "FLAT_RIDE" },
+      { slug: "drop-zone", name: "Drop Zone", type: "FLAT_RIDE" },
+      { slug: "bumper-boats", name: "Bumper Boats", type: "WATER_RIDE" },
+      { slug: "go-karts", name: "Go-Karts", type: "FLAT_RIDE" },
     ],
   },
   {
@@ -6776,8 +6975,17 @@ export const parks: SeedPark[] = [
     city: "Dillon",
     state: "SC",
     foundedYear: 2001,
-    description: "Amusement park in Dillon, SC. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "9 rides and attractions listed from the park's own information (https://rcdb.com/4899.htm).",
     rides: [
+      { slug: "carousel", name: "Carousel", type: "FLAT_RIDE" },
+      { slug: "srv-reality-ride", name: "SRV Reality Ride", type: "OTHER" },
+      { slug: "mini-himalaya", name: "Mini-Himalaya", type: "FLAT_RIDE" },
+      { slug: "ferris-wheel", name: "Ferris Wheel", type: "FLAT_RIDE" },
+      { slug: "train", name: "Train", type: "TRANSPORT" },
+      { slug: "quadzilla", name: "Quadzilla", type: "FLAT_RIDE" },
+      { slug: "antique-cars", name: "Antique Cars", type: "FLAT_RIDE" },
+      { slug: "red-baron-airplanes", name: "Red Baron Airplanes", type: "KIDDIE" },
+      { slug: "bumper-cars", name: "Bumper Cars", type: "FLAT_RIDE" },
     ],
   },
   {
@@ -6899,8 +7107,18 @@ export const parks: SeedPark[] = [
     city: "Spring",
     state: "TX",
     foundedYear: 1984,
-    description: "Amusement park in Spring, TX. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "10 rides and attractions listed from the park's own information (https://www.sixflags.com/splashtown/attractions).",
     rides: [
+      { slug: "wahoo-wave", name: "Wahoo Wave", type: "WATER_RIDE" },
+      { slug: "flowrider", name: "FlowRider", type: "WATER_RIDE" },
+      { slug: "bonzai-pipelines", name: "Bonzai Pipelines", type: "WATER_RIDE" },
+      { slug: "stingray-racer", name: "Stingray Racer", type: "WATER_RIDE" },
+      { slug: "tornado", name: "Tornado", type: "WATER_RIDE" },
+      { slug: "paradise-plunge", name: "Paradise Plunge", type: "WATER_RIDE" },
+      { slug: "ripqurl", name: "RipQurl", type: "WATER_RIDE" },
+      { slug: "coconut-bay", name: "Coconut Bay", type: "KIDDIE" },
+      { slug: "tree-house", name: "Tree House", type: "KIDDIE" },
+      { slug: "lazy-river", name: "Lazy River", type: "WATER_RIDE" },
     ],
   },
   {
@@ -6940,25 +7158,16 @@ export const parks: SeedPark[] = [
     ],
   },
   {
-    slug: "kiddieland-2",
-    name: "KiddieLand",
-    chain: "INDEPENDENT",
-    city: "Waco",
-    state: "TX",
-    foundedYear: 1965,
-    description: "Amusement park in Waco, TX. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
-    rides: [
-    ],
-  },
-  {
     slug: "landa-park",
     name: "Landa Park",
     chain: "INDEPENDENT",
     city: "New Braunfels",
     state: "TX",
     foundedYear: 1973,
-    description: "Amusement park in New Braunfels, TX. No roller coasters are cataloged by the Roller Coaster Database for this park; any flat or family rides it operates are not yet listed here.",
+    description: "2 rides and attractions listed from the park's own information (https://landaparkrr.com/).",
     rides: [
+      { slug: "landa-park-railroad", name: "Landa Park Railroad", type: "TRANSPORT", opened: 1969 },
+      { slug: "paddle-boats", name: "Paddle Boats", type: "WATER_RIDE" },
     ],
   },
   {

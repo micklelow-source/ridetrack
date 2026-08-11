@@ -80,19 +80,38 @@ The [Hobby plan](https://vercel.com/pricing) is free for personal, non-commercia
 
 1. **Create the database.** In Neon, create a project and copy both connection strings (pooled and direct).
 2. **Import the repo** at [vercel.com/new](https://vercel.com/new). Vercel detects Next.js; no build settings need changing — `npm run build` already runs `prisma generate` first, which is required because Vercel caches `node_modules` between builds.
-3. **Set environment variables** in the Vercel project (Production *and* Preview):
-   - `DATABASE_URL` — pooled Neon URL
-   - `DIRECT_URL` — direct Neon URL
-   - `AUTH_SECRET` — generate with `npx auth secret`
-   - `AUTH_GOOGLE_ID` / `AUTH_GOOGLE_SECRET`
+3. **Set five environment variables** in the Vercel project (Production *and* Preview):
+
+   | Variable | Value |
+   | --- | --- |
+   | `DATABASE_URL` | Neon **pooled** URL — the host containing `-pooler` |
+   | `DIRECT_URL` | Neon **direct** URL — the host without `-pooler` |
+   | `AUTH_SECRET` | `openssl rand -base64 32`, or `npx auth secret` |
+   | `AUTH_GOOGLE_ID` | Google OAuth client ID |
+   | `AUTH_GOOGLE_SECRET` | Google OAuth client secret |
+
+   The build itself does not need these — `prisma generate` runs fine without them, so a deploy will go green before they are set. The app only fails at *runtime*, so a successful build is not evidence the variables are right.
+
+   You do not need `AUTH_URL` or `NEXTAUTH_URL`: Auth.js trusts the host automatically on Vercel.
 4. **Apply the schema and seed**, pointing at the direct URL:
    ```bash
    DATABASE_URL="<direct-url>" DIRECT_URL="<direct-url>" npm run db:deploy
    DATABASE_URL="<direct-url>" DIRECT_URL="<direct-url>" npm run db:seed
    ```
-5. **Add the redirect URI** `https://<your-project>.vercel.app/api/auth/callback/google` to your Google OAuth client, or sign-in will fail with `redirect_uri_mismatch`.
+5. **Add the redirect URI** `https://<your-project>.vercel.app/api/auth/callback/google` to your Google OAuth client, or sign-in fails with `redirect_uri_mismatch`. Add the `https://` production URL exactly — no trailing slash, and Google will not accept a wildcard. Preview deployments get a different hostname each time, so sign-in only works on preview URLs you add explicitly.
 
 Deploys happen automatically on every push to `main`.
+
+### Troubleshooting
+
+| Symptom | Cause |
+| --- | --- |
+| `redirect_uri_mismatch` on sign-in | The exact callback URL is not in the Google client's authorized redirect URIs. |
+| `The table "public.Park" does not exist` | `db:deploy` has not been run against this database. |
+| Parks list renders empty | Schema applied but `db:seed` not run. |
+| `Can't reach database server` | `DATABASE_URL` is missing `?sslmode=require`, or it is the direct URL where the pooled one belongs. |
+| `prepared statement "s0" already exists` | `DATABASE_URL` points at the direct host instead of the pooled one. |
+| Timeouts under load, but fine when idle | Same cause: serverless needs the `-pooler` host. |
 
 ## Adding more parks
 

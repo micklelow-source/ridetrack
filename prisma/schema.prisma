@@ -3,8 +3,12 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
+  // Pooled connection used by the app at runtime (serverless opens many
+  // short-lived connections, so a pooler is required, not optional).
   url      = env("DATABASE_URL")
+  // Direct, unpooled connection: migrations cannot run through a pooler.
+  directUrl = env("DIRECT_URL")
 }
 
 // --- NextAuth models -------------------------------------------------

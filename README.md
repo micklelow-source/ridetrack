@@ -24,16 +24,25 @@ The static site is rebuilt and redeployed by [`.github/workflows/pages.yml`](.gi
 ## Tech stack
 
 - [Next.js](https://nextjs.org) (App Router) + TypeScript + Tailwind CSS
-- [Prisma](https://www.prisma.io) + SQLite for local dev (swap the datasource for Postgres/MySQL in production)
+- [Prisma](https://www.prisma.io) + PostgreSQL
 - [NextAuth.js v5](https://authjs.dev) with the Google provider + Prisma adapter (database sessions)
 - Server Actions for all mutations (no separate REST API layer)
 
 ## Getting started
 
+You need a PostgreSQL database. The quickest local one:
+
+```bash
+docker run --name ridetrack-db -e POSTGRES_PASSWORD=postgres \
+  -e POSTGRES_DB=ridetrack -p 5432:5432 -d postgres:16
+```
+
+Then:
+
 ```bash
 npm install
-cp .env.example .env   # fill in AUTH_GOOGLE_ID / AUTH_GOOGLE_SECRET, see below
-npm run db:migrate     # creates prisma/dev.db and applies the schema
+cp .env.example .env   # set DATABASE_URL + DIRECT_URL, and the Google keys below
+npm run db:migrate     # applies the schema
 npm run db:seed        # seeds parks + rides
 npm run dev
 ```
@@ -49,15 +58,41 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ### Database
 
-Local dev uses SQLite (`prisma/dev.db`, gitignored). For production, switch `provider` in `prisma/schema.prisma` to `postgresql` (or your provider of choice), point `DATABASE_URL` at it, and re-run `npm run db:migrate`.
+PostgreSQL, via Prisma. Two connection strings are required:
+
+- `DATABASE_URL` — **pooled**. The app runs on serverless functions that open many short-lived connections, so it must go through a pooler.
+- `DIRECT_URL` — **unpooled**. Migrations cannot run through a pooler.
+
+With a plain local Postgres both can be the same URL. On Neon, the pooled host is the one with `-pooler` in the hostname.
 
 Useful scripts:
 
 ```bash
-npm run db:migrate   # create/apply a migration
+npm run db:migrate   # create/apply a migration (development)
+npm run db:deploy    # apply existing migrations (production/CI)
 npm run db:seed      # (re-)seed parks and rides
 npm run db:studio    # browse the database in Prisma Studio
 ```
+
+## Deploying to Vercel
+
+The [Hobby plan](https://vercel.com/pricing) is free for personal, non-commercial projects and is enough to run this. Vercel's filesystem is ephemeral, so the database has to be hosted — [Neon](https://neon.tech) has a free tier and pairs well with it.
+
+1. **Create the database.** In Neon, create a project and copy both connection strings (pooled and direct).
+2. **Import the repo** at [vercel.com/new](https://vercel.com/new). Vercel detects Next.js; no build settings need changing — `npm run build` already runs `prisma generate` first, which is required because Vercel caches `node_modules` between builds.
+3. **Set environment variables** in the Vercel project (Production *and* Preview):
+   - `DATABASE_URL` — pooled Neon URL
+   - `DIRECT_URL` — direct Neon URL
+   - `AUTH_SECRET` — generate with `npx auth secret`
+   - `AUTH_GOOGLE_ID` / `AUTH_GOOGLE_SECRET`
+4. **Apply the schema and seed**, pointing at the direct URL:
+   ```bash
+   DATABASE_URL="<direct-url>" DIRECT_URL="<direct-url>" npm run db:deploy
+   DATABASE_URL="<direct-url>" DIRECT_URL="<direct-url>" npm run db:seed
+   ```
+5. **Add the redirect URI** `https://<your-project>.vercel.app/api/auth/callback/google` to your Google OAuth client, or sign-in will fail with `redirect_uri_mismatch`.
+
+Deploys happen automatically on every push to `main`.
 
 ## Adding more parks
 

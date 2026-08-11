@@ -1,5 +1,20 @@
+import { existsSync } from "fs";
 import { PrismaClient } from "@prisma/client";
 import { parks } from "./seed-data";
+
+// Load .env ourselves. `npm install` runs `prisma generate` via postinstall,
+// which happens BEFORE you copy .env.example to .env — a client generated at
+// that point does not pick the file up later, so seeding died with
+// "Environment variable not found: DATABASE_URL" despite .env sitting right
+// there. Variables already in the environment win, which is what the deploy
+// docs rely on when they pass the direct URL inline.
+if (existsSync(".env")) {
+  try {
+    process.loadEnvFile(".env");
+  } catch {
+    // malformed or unreadable .env — fall back to the real environment
+  }
+}
 
 const prisma = new PrismaClient();
 

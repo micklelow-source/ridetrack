@@ -42,8 +42,7 @@ Then:
 ```bash
 npm install
 cp .env.example .env   # set DATABASE_URL + DIRECT_URL, and the Google keys below
-npm run db:migrate     # applies the schema
-npm run db:seed        # seeds parks + rides
+npm run db:setup       # applies the schema, then seeds parks + rides
 npm run dev
 ```
 
@@ -70,6 +69,7 @@ Useful scripts:
 ```bash
 npm run db:migrate   # create/apply a migration (development)
 npm run db:deploy    # apply existing migrations (production/CI)
+npm run db:setup     # migrate deploy + seed, in one go
 npm run db:seed      # (re-)seed parks and rides
 npm run db:studio    # browse the database in Prisma Studio
 ```
@@ -93,11 +93,14 @@ The [Hobby plan](https://vercel.com/pricing) is free for personal, non-commercia
    The build itself does not need these — `prisma generate` runs fine without them, so a deploy will go green before they are set. The app only fails at *runtime*, so a successful build is not evidence the variables are right.
 
    You do not need `AUTH_URL` or `NEXTAUTH_URL`: Auth.js trusts the host automatically on Vercel.
-4. **Apply the schema and seed**, pointing at the direct URL:
+4. **Apply the schema and seed** from your own machine, pointing at the
+   **direct** URL for both (migrations cannot run through a pooler):
    ```bash
-   DATABASE_URL="<direct-url>" DIRECT_URL="<direct-url>" npm run db:deploy
-   DATABASE_URL="<direct-url>" DIRECT_URL="<direct-url>" npm run db:seed
+   DIRECT="postgresql://user:pass@ep-xxx.region.aws.neon.tech/dbname?sslmode=require"
+   DATABASE_URL="$DIRECT" DIRECT_URL="$DIRECT" npm run db:setup
    ```
+   `db:setup` runs `migrate deploy` and then the seed. It should end with
+   `Seeded 417 parks and 2660 rides.`
 5. **Add the redirect URI** `https://<your-project>.vercel.app/api/auth/callback/google` to your Google OAuth client, or sign-in fails with `redirect_uri_mismatch`. Add the `https://` production URL exactly — no trailing slash, and Google will not accept a wildcard. Preview deployments get a different hostname each time, so sign-in only works on preview URLs you add explicitly.
 
 Deploys happen automatically on every push to `main`.
@@ -108,7 +111,8 @@ Deploys happen automatically on every push to `main`.
 | --- | --- |
 | `redirect_uri_mismatch` on sign-in | The exact callback URL is not in the Google client's authorized redirect URIs. |
 | `The table "public.Park" does not exist` | `db:deploy` has not been run against this database. |
-| Parks list renders empty | Schema applied but `db:seed` not run. |
+| Parks list renders empty | Schema applied but the seed did not run. |
+| `Environment variable not found: DATABASE_URL` when seeding | The Prisma client was generated before `.env` existed. `prisma/seed.ts` now loads `.env` itself; if you hit this elsewhere, re-run `npx prisma generate`. |
 | `Can't reach database server` | `DATABASE_URL` is missing `?sslmode=require`, or it is the direct URL where the pooled one belongs. |
 | `prepared statement "s0" already exists` | `DATABASE_URL` points at the direct host instead of the pooled one. |
 | Timeouts under load, but fine when idle | Same cause: serverless needs the `-pooler` host. |

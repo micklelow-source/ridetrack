@@ -1,10 +1,20 @@
 # RideTrack
 
-A web app for tracking your personal ride status at amusement parks, checking in when you visit, and sharing your status with family and friends. Organized by park, starting with major USA amusement parks.
+A web app for tracking your personal ride status at amusement parks, checking in when you visit, and sharing your status with family and friends. Organized by park, covering **417 USA amusement parks and 2,660 rides** across 49 states.
+
+## Live site
+
+**https://micklelow-source.github.io/ridetrack/**
+
+That link is a self-contained static build: browse every park, filter by ride type, and mark rides as ridden / want to ride / favorite. It keeps your tracking in the browser's `localStorage`, so it needs no account and nothing leaves your device.
+
+Google sign-in, check-ins with visibility settings, friends, and shareable `/u/<username>` profiles all need a server, a database and OAuth credentials, so they only run in the full Next.js app — see [Getting started](#getting-started) to run it locally, or deploy it to a Node host such as Vercel.
+
+The static site is rebuilt and redeployed by [`.github/workflows/pages.yml`](.github/workflows/pages.yml) whenever the park data changes on `main`. To build it yourself: `npm run build:site` (output in `site/dist/`).
 
 ## Features
 
-- **Browse parks** — search, filter, and sort 69 seeded USA amusement parks across 38 states (Disney, Universal, Six Flags, Cedar Fair legacy parks, SeaWorld/Busch Gardens, Herschend, and notable independents) with 587 rides.
+- **Browse parks** — search, filter, and sort 417 USA amusement parks across 49 states (Disney, Universal, Six Flags, Cedar Fair legacy parks, SeaWorld/Busch Gardens, Herschend, and hundreds of independents) with 2,660 rides.
 - **Track ride status** — mark each ride as *ridden*, *want to ride*, or *favorite* per park.
 - **Check in** — check in at a park with an optional note, and choose who can see it (public, friends, or just you).
 - **Google sign-in** — login via your Google account (NextAuth).
@@ -51,7 +61,7 @@ npm run db:studio    # browse the database in Prisma Studio
 
 ## Adding more parks
 
-Park and ride data lives in `prisma/seed-data.ts` as a plain TypeScript array — it currently covers the major US chains plus notable independents (69 parks / 587 rides across 38 states). It lists each park's notable rides rather than literally every attraction, so there's still room to extend it. To do so:
+Park and ride data lives in `prisma/seed-data.ts` as a plain TypeScript array — 417 parks / 2,660 rides across 49 states, built from the Roller Coaster Database, Wikipedia attraction lists, and individual park websites. Coverage is uneven by design: the major parks are close to complete, while many smaller parks list only their coasters, and 33 parks have no rides listed at all (each says why in its description). To extend it:
 
 1. Add a new `SeedPark` entry (or more `SeedRide`s to an existing park) to `prisma/seed-data.ts`.
 2. Run `npm run db:seed` — it upserts, and it also **prunes**: anything removed from `seed-data.ts` is deleted from the database, so the seed file is the single source of truth.

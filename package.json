@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:site": "tsx scripts/build-site.ts",
     "start": "next start",
     "lint": "eslint",
     "db:seed": "tsx prisma/seed.ts",
